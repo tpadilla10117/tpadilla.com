@@ -1,6 +1,9 @@
+/* lets me use JSX */
 import React from 'react';
+/* Allows us to attach app to dom */
 import ReactDOM from 'react-dom';
-import App from './App';
+
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
