@@ -17,6 +17,9 @@ import {
 
   import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
 
+
+
+  /* 3/30 - NEEDS TO BE REFACTORED TO REFLECT CUSTOM CSS */
 const EmailFormComponent = (props) => {
 
     return <> 
