@@ -16,9 +16,9 @@ function App() {
                 <Route path="/portfolio">
                     <Portfolio />
                 </Route>
-                {/* <Route path="/contact">
+                <Route path="/contact">
                     <EmailFormComponent />
-                </Route> */}
+                </Route>
                 <Route path="/about">
                     <AboutMeComponent />
                 </Route>

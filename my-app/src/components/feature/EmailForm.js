@@ -2,18 +2,7 @@ import React, { useEffect, useState } from 'react';
 /* import axios from 'axios'; */
 
 
-/* import '../../assets/css/EmailForm.css' */
-
-import {
-    FormControl,
-    FormLabel,
-    FormErrorMessage,
-    FormHelperText,
-    Input,
-    Textarea,
-    Button,
-    ButtonGroup
-  } from "@chakra-ui/react"
+import '../../assets/css/EmailForm.css'
 
   import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
 
@@ -28,24 +17,35 @@ const EmailFormComponent = (props) => {
                 <h5>Want to Get in Touch? <br/> Send me an Email!</h5>
             </dic>
             <form className="email-form">
-                <FormControl id="first-name" className="input-one" isRequired>
-                    <FormLabel>Name</FormLabel>
-                    <Input placeholder="Sasuke" />
-                </FormControl>
+                <label for="first-name" isRequired>First Name</label>
+                <input type="text" placeholder="Sasuke"></input>
                 <br/>
-                <FormControl id="email" className="input-two">
-                    <FormLabel>Email</FormLabel>
-                    <Input type ="email" placeholder="avenger@uchiha.com" />
-                </FormControl>
+
+                <textarea placeholder="What would you like to ask me?" />
                 <br/>
-                <Textarea placeholder="What would you like to ask me?" />
                 <ul className="icons contactIcons">
                     <li>{<SiGithub />}</li>
                     <li>{<SiFacebook/>}</li>
                     <li>{<SiInstagram/>}</li>
                     <li> {<SiLinkedin/>}</li>
                 </ul>
-                <Button mt={4} colorScheme="blue" isLoading={props.isSubmitting} type="submit">Submit</Button>
+
+                {/* <FormControl id="first-name" className="input-one" isRequired>
+                    <FormLabel>Name</FormLabel>
+                    <Input placeholder="Sasuke" />
+                </FormControl>
+                <br/>
+
+                <FormControl id="email" className="input-two">
+                    <FormLabel>Email</FormLabel>
+                    <Input type ="email" placeholder="avenger@uchiha.com" />
+                </FormControl>
+                <br/>
+
+                <Textarea placeholder="What would you like to ask me?" />
+
+                 */}
+                <input type="submit" value="Submit"></input>
             </form>
         </div>
     

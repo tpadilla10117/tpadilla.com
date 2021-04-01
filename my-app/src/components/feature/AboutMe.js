@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-/* import axios from 'axios';
-import '../../assets/css/AboutMe.css'; */
+
+import '../../assets/css/AboutMe.css';
 import { IoLogoJavascript, IoLogoNodejs, IoLogoCss3 } from "react-icons/io";
 import { SiPostgresql, SiReact  } from "react-icons/si";
 import { FaStripe } from "react-icons/fa";

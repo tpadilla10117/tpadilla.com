@@ -1,7 +1,6 @@
 import React, { useEffect, useState, Component } from 'react';
 
-/* import axios from 'axios';
-import '../../assets/css/Portfolio.css'; */
+import '../../assets/css/Portfolio.css';
 
 import { Link, NavLink } from 'react-router-dom';
 

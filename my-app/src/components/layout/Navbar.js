@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-/* import axios from 'axios'; */
 
-/* import '../../assets/css/Navbar.css'; */
+import '../../assets/css/Navbar.css';
 
 import { Link, NavLink } from 'react-router-dom';
 
