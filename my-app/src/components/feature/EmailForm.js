@@ -34,20 +34,26 @@ const EmailFormComponent = (props) => {
                 </div>
                 <div className="btn-box">
                     <p>By sending a message, you agree to not spam</p>
+                    <textarea className="message-text" placeholder="What would you like to ask me?" />
+                    <button type="submit" value="Submit">Submit</button>
                 </div>
                 <br/>
 
-                <textarea placeholder="What would you like to ask me?" />
+                {/* <textarea placeholder="What would you like to ask me?" /> */}
 
                 <br/>
-                <ul className="icons contactIcons">
-                    <li>{<SiGithub />}</li>
-                    <li>{<SiFacebook/>}</li>
-                    <li>{<SiInstagram/>}</li>
-                    <li> {<SiLinkedin/>}</li>
-                </ul>
+                <div className="other-content">
+                    <p>Check me out on Social Media!</p>
+                    <div className="links">
+                        <ul className="icons contactIcons">
+                            <li className="github">{<SiGithub />}</li>
+                            <li className="facebook">{<SiFacebook/>}</li>
+                            <li className="instagram">{<SiInstagram/>}</li>
+                            <li className="linkedin"> {<SiLinkedin/>}</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <input type="submit" value="Submit"></input>
             </form>
         </div>
     
