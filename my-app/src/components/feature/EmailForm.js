@@ -10,16 +10,31 @@ const EmailFormComponent = (props) => {
 
     return <> 
         <div id="form-wrapper">
-            <dic className="intro-text">
+            <div className="intro-text">
                 <h5>Want to Get in Touch? <br/> Send me an Email!</h5>
-            </dic>
+            </div>
             <form className="email-form">
-                <label for="first-name" id="first-name" className="input-one" required>First Name: </label>
-                <input type="text" placeholder="Sasuke"></input>
-                <br/>
+                <div className="name-input">
+                    <div id="input-one">
+                        <label for="first-name" className="first-name" required>First Name: </label>
+                        <input type="text" placeholder="Sasuke"></input>
+                    </div>
 
-                <label for="email" id="email" className="input-two">Email: </label>
-                <input type="email" placeholder="avenger@uchiha.com" name="email"></input>
+                    <div id="input-two">
+                        <label for="last-name" className="last-name" required>Last Name: </label>
+                        <input type="text" placeholder="Uchiha"></input>
+                    </div>
+
+
+                </div>
+                <br/>
+                <div className="email-input">
+                    <label for="email" id="email" className="input-two">Email: </label>
+                    <input type="email" placeholder="avenger@uchiha.com" name="email"></input>
+                </div>
+                <div className="btn-box">
+                    <p>By sending a message, you agree to not spam</p>
+                </div>
                 <br/>
 
                 <textarea placeholder="What would you like to ask me?" />
