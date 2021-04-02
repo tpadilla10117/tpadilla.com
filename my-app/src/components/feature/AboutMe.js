@@ -4,7 +4,6 @@ import '../../assets/css/AboutMe.css';
 import { IoLogoJavascript, IoLogoNodejs, IoLogoCss3 } from "react-icons/io";
 import { SiPostgresql, SiReact  } from "react-icons/si";
 import { FaStripe } from "react-icons/fa";
-/* import trin.jpg from '../../assets/images/trin.jpg'; */
 
 const AboutMeComponent = (props) => {
 

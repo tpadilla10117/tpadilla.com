@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Redirect, Link } from 'react-router-dom';
-import { Profile, Header, Projects, EmailFormComponent, AboutMeComponent, Portfolio } from './index';
+import { Profile, Header, EmailFormComponent, AboutMeComponent, Portfolio } from './index';
 
 function App() {
   return (
@@ -11,8 +11,6 @@ function App() {
             <div>
                 <Profile />
                 <Header />
-                {/* <Projects /> */}
-                {/* <EmailFormComponent /> */}
                 <Route path="/portfolio">
                     <Portfolio />
                 </Route>
