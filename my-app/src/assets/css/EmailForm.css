@@ -146,8 +146,14 @@
 
     .links a:nth-child(1):hover {
         /* background: #26242e; */
-        color: #50E3C2;
-        transition: color 500ms ease .1s;
+        /* color: #50E3C2;
+        transition: color 500ms ease .1s; */
+        animation-name: blowup;
+        animation-duration: 4s;
+    }
+
+    @keyframes blowup {
+        from {background-color: red;} to {background-color: yellow}
     }
 
     .links a:nth-child(2):hover {
