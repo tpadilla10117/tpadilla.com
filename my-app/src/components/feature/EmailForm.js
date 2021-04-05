@@ -10,10 +10,11 @@ const EmailFormComponent = (props) => {
 
     return <> 
         <div id="form-wrapper">
-            <div className="intro-text">
-                <h5>Want to Get in Touch? <br/> Send me an Email!</h5>
-            </div>
+            
             <form className="email-form">
+                <div className="intro-text">
+                    <h5>Want to Get in Touch? <br/> Send me an Email!</h5>
+                </div>
                 <div className="name-input">
                     <div id="input-one">
                         <label for="first-name" className="first-name" required>First Name: </label>
@@ -24,8 +25,6 @@ const EmailFormComponent = (props) => {
                         <label for="last-name" className="last-name" required>Last Name: </label>
                         <input type="text" placeholder="Uchiha"></input>
                     </div>
-
-
                 </div>
                 <br/>
                 <div className="email-input">
@@ -45,12 +44,10 @@ const EmailFormComponent = (props) => {
                 <div className="other-content">
                     <p>Check me out on Social Media!</p>
                     <div className="links">
-                        <ul className="icons contactIcons">
-                            <li className="github">{<SiGithub />}</li>
-                            <li className="facebook">{<SiFacebook/>}</li>
-                            <li className="instagram">{<SiInstagram/>}</li>
-                            <li className="linkedin"> {<SiLinkedin/>}</li>
-                        </ul>
+                            <a href="https://github.com/tpadilla10117" className="github">{<SiGithub />}</a>
+                            <a href="#" className="facebook">{<SiFacebook />}</a>
+                            <a href="#" className="instagram">{<SiInstagram />}</a>
+                            <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin />}</a>
                     </div>
                 </div>
 
