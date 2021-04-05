@@ -146,32 +146,60 @@
 
     .links a:nth-child(1):hover {
         /* background: #26242e; */
-        /* color: #50E3C2;
-        transition: color 500ms ease .1s; */
-        animation-name: blowup;
-        animation-duration: 4s;
+        color: #50E3C2;
+        transition: color 500ms ease .1s;
+        animation-name: scale;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
-    @keyframes blowup {
-        from {background-color: red;} to {background-color: yellow}
+    @keyframes scale {
+        0% {
+            transform: scale(2.5);
+        }
+        25% {
+            transform: scale(2.5);
+        }
+        75% {
+            transform: scale(2.5);
+        }
+        100% {
+            transform: scale(2.5);
+        }
     }
 
     .links a:nth-child(2):hover {
         /* background: blue; */
         color: #50E3C2;
         transition: color 500ms ease .1s;
+        transition: color 500ms ease .1s;
+        animation-name: scale;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     .links a:nth-child(3):hover {
         /* background: purple; */
         color: #50E3C2;
         transition: color 500ms ease .1s;
+        transition: color 500ms ease .1s;
+        animation-name: scale;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     .links a:nth-child(4):hover {
         /* background: aqua; */
         color: #50E3C2;
         transition: color 500ms ease .1s;
+        transition: color 500ms ease .1s;
+        animation-name: scale;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     /* .contactIcons {
