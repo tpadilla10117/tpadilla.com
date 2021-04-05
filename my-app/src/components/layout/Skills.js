@@ -31,6 +31,21 @@ const Skills = () => {
         <div className="skills-title">
             <p>My Skillz</p>
         </div>
+        <div className="skillsContainer">
+            <div className="skillsImages" data-aos="fade-in">
+                <ul>
+                    <li>
+                        <SiJavascript
+                            size="3em"
+                            color="yellow"
+                            style={ {backgroundColor: "black"}}
+                        />
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
 
 
 
