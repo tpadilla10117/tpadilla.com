@@ -149,7 +149,7 @@
         color: #50E3C2;
         transition: color 500ms ease .1s;
         animation-name: scale;
-        animation-duration: 2.5s;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
