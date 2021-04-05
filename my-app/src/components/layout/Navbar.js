@@ -35,8 +35,12 @@ import { Link, NavLink } from 'react-router-dom';
                                 <Link className="nav-item" to="/contact">
                                     CONTACT
                                 </Link>
-                                
                                 </li>
+
+                                <li>
+                                <Link className="nav-item" to="/skills">SKILLS</Link>
+                                </li>
+                                
                                 <li>
                                 <Link className="nav-item" to="/resume">
                                     RESUME

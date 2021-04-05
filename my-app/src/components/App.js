@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Redirect, Link } from 'react-router-dom';
-import { Profile, Header, EmailFormComponent, AboutMeComponent, Portfolio } from './index';
+import { Profile, Header, EmailFormComponent, AboutMeComponent, Portfolio, SkillsComponent } from './index';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
                     <Route path="/portfolio" exact component={Portfolio} />
                     <Route path="/contact" exact component={EmailFormComponent} />
                     <Route path="/about" exact component={AboutMeComponent}/>
+                    <Route path='/skills' exact component={SkillsComponent}/>
                 </Switch>
             </div>
         </Router>
