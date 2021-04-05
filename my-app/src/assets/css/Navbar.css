@@ -1,3 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    position: fixed;
+   /*  display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 100%;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    letter-spacing: 1px;
+}
+
 .nav-ul {
     width: 63w;
     margin: auto;
@@ -5,9 +32,53 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    /* border: 1px solid #50E3C2; */
+}
+
+.nav-item {
+    color: #50E3C2;
+}
+
+.nav-item:hover {
+    color: white;
+    transition: color 600ms ease 0s;
+}
+
+.brand {
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0.5rem;
+    position: fixed;
 }
 
 ol, ul {
     list-style: none;
 }
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+
+/* THIS IS WHERE I PUT RESPONSIVE MEDIA QUERIES */
+    @media (max-width: 600px) {
+        .toggle-button {
+            display:flex;
+        }
+    }

@@ -11,19 +11,11 @@ function App() {
             <div>
                 <Profile />
                 <Header />
-                <Route path="/portfolio">
-                    <Portfolio />
-                </Route>
-                <Route path="/contact">
-                    <EmailFormComponent />
-                </Route>
-                <Route path="/about">
-                    <AboutMeComponent />
-                </Route>
-                
-                {/* <Switch>
-                    <Route path="/projects" />
-                </Switch> */}
+                <Switch>
+                    <Route path="/portfolio" exact component={Portfolio} />
+                    <Route path="/contact" exact component={EmailFormComponent} />
+                    <Route path="/about" exact component={AboutMeComponent}/>
+                </Switch>
             </div>
         </Router>
   );
