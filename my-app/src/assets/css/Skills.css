@@ -1,0 +1,55 @@
+.skills-title {
+    margin-top: 5rem;
+    font-size: 56px;
+    letter-spacing: 0.005em;
+    /* font-family: Gilroy; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1d1d1f;
+    position: static;
+}
+
+/* EVERYTHING PERTAINING TO THE SKILLS-CONTAINER */
+    .skills-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-container li:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        filter: drop-shadow(2px 4px 8px lightgrey);
+    }
+
+    .skills-images li {
+        list-style: none;
+        margin: 20px;
+    }
+
+    .skills-container ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 625px;
+    }
+
+    /* Mobile Responsive: */
+    @media (max-width: 375px) {
+        .skills-title {
+            margin-top: 5rem;
+            font-size: 36px;
+            letter-spacing: 0.005em;
+            /* font-family: Gilroy; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1d1d1f;
+            position: static;
+        }
+
+        .skill-list {
+            font-size: 0.75rem;
+        }
+    }
