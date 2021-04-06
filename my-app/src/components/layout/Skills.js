@@ -83,7 +83,7 @@ const Skills = () => {
                     </li>
                 </ul>
                 <br />
-                <div className="skill-list" data-aos="fade-down">
+                {/* <div className="skill-list" data-aos="fade-down">
                     <b>
                         Languages: Javascript
                         <br />
@@ -93,7 +93,7 @@ const Skills = () => {
                         <br />
                         Additional Tools: Node.js, Githun, Git, Postman, Heroku, Netlify
                     </b>
-                </div>
+                </div> */}
 
             </div>
 

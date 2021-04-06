@@ -3,7 +3,8 @@
     font-size: 56px;
     letter-spacing: 0.005em;
     /* font-family: Gilroy; */
-    display: flex;
+    /* display: flex; */
+    display: grid;
     justify-content: center;
     align-items: center;
     color: #1d1d1f;
@@ -12,8 +13,12 @@
 
 /* EVERYTHING PERTAINING TO THE SKILLS-CONTAINER */
     .skills-container {
-        display: flex;
+        display: grid;
+        margin-top: 2rem;
         justify-content: center;
+        grid-template-columns: auto;
+        /* grid-gap: 10px; */
+        grid-template-areas: ".skills-images" ".skill-list"
     }
 
     .skills-container li:hover {
@@ -35,8 +40,14 @@
         max-width: 625px;
     }
 
+    /* .skill-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    } */
+
     /* Mobile Responsive: */
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
         .skills-title {
             margin-top: 5rem;
             font-size: 36px;
@@ -49,7 +60,20 @@
             position: static;
         }
 
-        .skill-list {
+        /* .skill-list {
             font-size: 0.75rem;
+        } */
+
+    @media (min-width: 320px) {
+        .skills-title {
+            font-size:20px;
+            margin-bottom: 1rem;
         }
+        /* .skills-container {
+            
+        } */
     }
+
+    }
+
+  
