@@ -5,6 +5,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#component-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas: "skills" "email";
+}
+
+.skills-component {
+    grid-area: skills;
+}
+
 #form-wrapper {
     position: absolute;
     top: 50%;
@@ -20,6 +31,7 @@
     align-items: center;
     justify-content:space-evenly;
     color: white;
+    grid-area: email;
     /* background-image: url("http://clubsolaris.com/imgs/tips-to-take-care-of-the-beach-during-your-vacations/beach-sea-cancun-sun.png") */
 }
 
@@ -200,4 +212,12 @@
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
+    }
+
+/* THIS IS FOR RESPONSIVENESS */
+    @media (max-width: 728px) {
+        #component-wrapper {
+            grid-template-columns: auto auto;
+            grid-template-areas: "email" "skills";
+        }
     }
