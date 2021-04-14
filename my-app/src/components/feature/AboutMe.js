@@ -15,8 +15,8 @@ const AboutMeComponent = (props) => {
                     <img src={Image1} className="about-picture" alt="Trin Padilla" loading="lazy" id="left-image"></img>
                 </div>
                 <div className="sideBio">
-                    <h4>A Day In The Life Of Trin...</h4>
-                    <p>I grew up in a small Californian suburban town called Cordelia.  Growing up I've always yearned for more - I wondered about what the rest of the world was like and what people might be like.  That curiosity remains to this day - I seek to broaden my worldview and to experience as many firsts as I possibly can within this lifetime.  Over the years I have visited mostly neighboring states including: Oregon, Nevada, & Arizona.  My sights are now set on the rest of the United States and countries such as Japan, Canada, Italy, Greece, England, Germany, Switzerland, etc.</p>
+                    <h1>Heya!</h1><br/>
+                    <p>I'm a Jack-of-All-Trades: "Master of None though oftentimes better than a Master of One" type who's dediciated his life to learning and specializing in a handful of trades.  I find myself fascinated with both the creative arts and problem solving, which began when I picked up my first guitar at 16-years-old.  When I'm not melting faces with a rock solo or grooving out to a funk jam, you can find me "turtling" (yes - it's a thing!) it up behind a code editor or DAW.  I have a knack for rapid ideation in both music and design, especially in audio production and on digital mediums.  Like music and audio, users experience web-applications every day, and one of my many responsibilities is to ensure those experiences are profound, memorable, and inutitive (to name a few).  Whether behind a guitar, ProTools, pen & paper, or a code-editor, it's my duty to convey these experiences.   </p>
                     <br/><hr/><br/>
                     <ul className="stackIcons">
                         <li className="icons">{<IoLogoJavascript />}</li>
