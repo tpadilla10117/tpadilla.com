@@ -25,6 +25,17 @@
     transition-delay: 0s, 0s; */
 }
 
+#bio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.about-picture {
+    height: 400px;
+    width: 100%;
+}
+
 .stackIcons {
     display: flex;
     align-items: center;

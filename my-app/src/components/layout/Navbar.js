@@ -36,10 +36,6 @@ import { Link, NavLink } from 'react-router-dom';
                                     CONTACT
                                 </Link>
                                 </li>
-
-                                <li>
-                                <Link className="nav-item" to="/skills">SKILLS</Link>
-                                </li>
                                 
                                 <li>
                                 <Link className="nav-item" to="/resume">
