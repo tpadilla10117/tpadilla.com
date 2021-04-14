@@ -10,7 +10,7 @@ const EmailFormComponent = (props) => {
 
     return <> 
         <div id="component-wrapper">
-            <div className="skills-component"> <Skills /> </div>
+            {/* <div className="skills-component"> <Skills /> </div> */}
             <div id="form-wrapper">
                 
                 <form className="email-form">

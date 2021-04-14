@@ -99,7 +99,7 @@ const Skills = () => {
 
         </div>
 
-        <div className="skills-title">
+        {/* <div className="skills-title">
             <p>Audio Engineer / Musician</p>
         </div>
         <div className="skills-container">
@@ -130,7 +130,7 @@ const Skills = () => {
             </div>
 
         </div>
-
+ */}
 
 
         </>
