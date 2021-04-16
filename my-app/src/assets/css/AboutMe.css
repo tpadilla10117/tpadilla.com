@@ -43,6 +43,16 @@
     /* border-color: red; */
 }
 
+.about-heading {
+    margin-bottom: 1rem;
+    font-family: 'Trispace', sans-serif;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+}
+
 .stackIcons {
     display: flex;
     align-items: center;
