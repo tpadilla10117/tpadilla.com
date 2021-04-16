@@ -54,3 +54,80 @@
     height: 100px;
     width: 60px;
 } */
+
+/* LINKS STUFF */
+.links-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.links-about a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    color: #00D1FF;
+}
+
+.links-about a:nth-child(1):hover {
+    /* background: #26242e; */
+    color: #00BF58;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+    }
+    25% {
+        transform: scale(1.5);
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.links-about a:nth-child(2):hover {
+    /* background: blue; */
+    color: #00BF58;
+    transition: color 500ms ease .1s;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.links-about a:nth-child(3):hover {
+    /* background: purple; */
+    color: #00BF58;
+    transition: color 500ms ease .1s;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.links-about a:nth-child(4):hover {
+    /* background: aqua; */
+    color: #00BF58;
+    transition: color 500ms ease .1s;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
