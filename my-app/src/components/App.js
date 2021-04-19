@@ -3,13 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, Redirect, Link } from 'react-router-dom';
-import { Profile, Header, EmailFormComponent, AboutMeComponent, Portfolio, ContactComponent } from './index';
+import { Header, EmailFormComponent, AboutMeComponent, Portfolio, ContactComponent } from './index';
 
 function App() {
   return (
     <Router>
             <div>
-                <Profile />
                 <Header />
                 <Switch>
                     <Route path="/portfolio" exact component={Portfolio} />

@@ -1,4 +1,10 @@
   
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
 
 #mainPage-wrapper {
     position: absolute;
@@ -10,7 +16,7 @@
     border-radius: 10px;
     max-width: 100%;
     padding: 4.5rem 2.5rem 1.5rem 2.5rem;
-    background-color: #fff;
+    /* background-color: red; */
     border-radius: 4px;
     opacity: 1;
     display: flex;
@@ -28,42 +34,169 @@
 #bio-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 45px;
+    grid-gap: 60px;
+    
 }
+
+/* FOR THE IMG CARDS */
+    /* .overlay-practice {
+        position: relative;
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+    } */
+
+    /* This is where i can resize the box holding the pic */
+    /* .overlay-practice */ .img-box {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-practice .img-box:hover {
+        z-index: 1;
+        transform: scale(1.25);
+        box-shadow: 0 25px 40px rgba(0,0,0,.5);
+
+    }
+
+    .overlay-practice .img-box .img-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+    }
+
+    .overlay-practice .img-box .img-container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        /* background: linear-gradient(180deg,#00D1FF ,#00BF58); */
+        mix-blend-mode: multiply;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .overlay-practice .img-box:hover .img-container:before {
+        opacity: 1;
+    }
+
+
+
+    .overlay-practice .img-box .img-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .overlay-practice .img-box .img-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        padding: 20px;
+        align-items: flex-end;
+    }
+
+    .overlay-practice .img-box .img-content h2{
+        color: #fff;
+        transition: 0.5s;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 20px;
+        transform: translateY(200px);
+    }
+
+    .overlay-practice .img-box:hover .img-content h2{
+        transform: translateY(0);
+        transition-delay: 0.6s;
+    }
+
+    .overlay-practice .img-box .img-content p {
+        color: #fff;
+        transform: translateY(200px);
+        transition: 0.5s;
+        font-size: 14px;
+    }
+
+    .overlay-practice .img-box:hover .img-content p {
+        transform: translateY(0);
+        transition-delay: 0.6s;
+    }
 
 .img-container {
-    border-radius: 4px;
-    /* border-color: red; */
+    /* border-radius: 4px; */
+    /* background-color: red; */
+    /* padding: 4rem; */
+    /* float: right; */
+    
 }
 
-.about-picture {
-    height: 400px;
-    width: 100%;
-    margin-top: -25px;
-    /* border-color: red; */
-}
-
-.about-heading {
-    margin-bottom: 1rem;
-    font-family: 'Trispace', sans-serif;
-}
-
-p {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 300;
-}
-
-.stackIcons {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: .2rem;
-}
-
-/* .icons {
-    height: 100px;
-    width: 60px;
+/* .img-overlay {
+    position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 } */
+
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS EVERYTHING IN .sideBio container */
+
+    .sideBio {
+        background-color: white;
+        padding: 4rem;
+        border-radius: 30px;
+    }
+    .about-picture {
+        height: 400px;
+        width: 100%;
+        /* margin-top: -25px; */
+        /* border-radius: 2rem; */
+    }
+    /* .img-container:hover .img-overlay {
+        opacity: 1;
+    } */
+
+
+    .about-heading {
+        margin-bottom: 1rem;
+        font-family: 'Trispace', sans-serif;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 300;
+    }
+
+    .stackIcons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: .2rem;
+    }
 
 /* LINKS STUFF */
 .links-about {
