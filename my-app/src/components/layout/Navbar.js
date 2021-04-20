@@ -11,35 +11,35 @@ import { Link, NavLink } from 'react-router-dom';
             <div id="navbar-wrapper">
                 
                     <nav className="nav">
-                        <div className="brand">Trin P</div>
+                        {/* <div className="brand">Trin P</div> */}
                         <div className="toggle-button">
                             <span className="bar"></span>
                             <span className="bar"></span>
                             <span className="bar"></span>
                         </div>
-                        <div className="navbar-links">
+                        {/* <div className="navbar-links"> */}
                             <ul className="nav-ul">
-                                <li>
-                                <Link className="nav-item" to="/about">
-                                    ABOUT
-                                </Link>
+                                <li className="nav-item">
+                                {/* <Link className="nav-item" to="/about"> */}
+                                    About
+                                {/* </Link> */}
                                 
                                 </li>
-                                <li>
-                                <Link className="nav-item" to="/portfolio">
-                                    PORTFOLIO
-                                </Link>
+                                <li className="nav-item">
+                                {/* <Link className="nav-item" to="/portfolio"> */}
+                                    Portfolio
+                                {/* </Link> */}
                                 
                                 </li>
                                 <li>
                                 <Link className="nav-item" to="/contact">
-                                    CONTACT
+                                    Contact
                                 </Link>
                                 </li>
                                 
                                 <li>
                                 <Link className="nav-item" to="/resume">
-                                    RESUME
+                                    Resume
                                 </Link>
                                 
                                 </li>
@@ -49,7 +49,7 @@ import { Link, NavLink } from 'react-router-dom';
                                 {/* <li className="nav-item"><NavLink to="/contact"><a href="#contact">CONTACT</a></NavLink></li> */}
                                
                         </ul>
-                        </div>
+                        {/* </div> */}
 
                     </nav>
             

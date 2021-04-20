@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
             <>
             <div id="projects"></div>
             <div>
-                <hr className="project-break"></hr>
+                {/* <hr className="project-break"></hr> */}
             </div>
             <div className="project-title">
                 <p>My Portfolio</p>
