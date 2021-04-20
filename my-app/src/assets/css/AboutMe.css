@@ -34,17 +34,19 @@
 #bio-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
+    grid-gap: 20px;
     
 }
 
 /* FOR THE IMG CARDS */
-    /* .overlay-practice {
+    .overlay-practice {
         position: relative;
-        width: 1100px;
+        width: auto;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
-    } */
+        background-color: yellow;
+    }
 
     /* This is where i can resize the box holding the pic */
     /* .overlay-practice */ .img-box {
@@ -53,6 +55,7 @@
         height: 500px;
         overflow: hidden;
         transition: 0.5s;
+        /* background-color: black; */
     }
 
     .overlay-practice .img-box:hover {
@@ -99,6 +102,10 @@
         object-fit: cover;
     }
 
+    .img-container {
+        overflow: hidden;
+    }
+
     .overlay-practice .img-box .img-content {
         position: absolute;
         top: 0;
@@ -138,11 +145,16 @@
     }
 
 .img-container {
-    /* border-radius: 4px; */
-    /* background-color: red; */
+    border-radius: 30px;
+    background-color: red;
     /* padding: 4rem; */
     /* float: right; */
     
+}
+
+.img-box {
+    width: 100%;
+    background-color: purple;
 }
 
 /* .img-overlay {
