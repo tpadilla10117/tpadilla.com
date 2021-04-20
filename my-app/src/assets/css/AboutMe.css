@@ -45,7 +45,7 @@
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        background-color: yellow;
+        /* background-color: yellow; */
         align-items: center;
         justify-content: center;
         margin-right: 2rem;
@@ -144,7 +144,7 @@
 
     .overlay-practice .img-box:hover .img-content p {
         transform: translateY(0);
-        transition-delay: 0.6s;
+        transition-delay: 0.05s;
     }
 
 .img-container {
