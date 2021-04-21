@@ -9,6 +9,7 @@
     /* background: #418DFF; */
     background: linear-gradient(to right, #0050FF, #00F0FF);
     display: block;
+    margin: 0;
   }
   
   #root {

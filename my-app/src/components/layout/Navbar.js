@@ -23,18 +23,22 @@ import { Link, NavLink } from 'react-router-dom';
                                     <li>About</li>
                                 </Link> 
                                 
-                               
-                                
                                 <Link className="nav-item" to="/portfolio">
                                     <li>Portfolio</li>
                                 </Link>
                                 
+                                <Link className="nav-item" to="/landing">
+                                    <li>
+                                        TP
+                                    </li>
+                                </Link>
     
                                 <Link className="nav-item" to="/contact">
                                     <li>
                                         Contact
                                     </li>
                                 </Link>
+
                                 
                                 <Link className="nav-item" to="/resume">
                                     <li>

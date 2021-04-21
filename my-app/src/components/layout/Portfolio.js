@@ -14,7 +14,7 @@ export default class Portfolio extends Component {
     render() {
         return (
             <>
-            <div id="projects"></div>
+            {/* <div id="projects"></div> */}
             <div>
                 {/* <hr className="project-break"></hr> */}
             </div>
