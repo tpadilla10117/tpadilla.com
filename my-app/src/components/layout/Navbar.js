@@ -19,34 +19,28 @@ import { Link, NavLink } from 'react-router-dom';
                         </div>
                         {/* <div className="navbar-links"> */}
                             <ul className="nav-ul">
-                                <li className="nav-item">
-                                {/* <Link className="nav-item" to="/about"> */}
-                                    About
-                                {/* </Link> */}
+                                <Link to="/about" className="nav-item"> 
+                                    <li>About</li>
+                                </Link> 
                                 
-                                </li>
-                                <li className="nav-item">
-                                {/* <Link className="nav-item" to="/portfolio"> */}
-                                    Portfolio
-                                {/* </Link> */}
+                               
                                 
-                                </li>
-                                <li>
+                                <Link className="nav-item" to="/portfolio">
+                                    <li>Portfolio</li>
+                                </Link>
+                                
+    
                                 <Link className="nav-item" to="/contact">
-                                    Contact
+                                    <li>
+                                        Contact
+                                    </li>
                                 </Link>
-                                </li>
                                 
-                                <li>
                                 <Link className="nav-item" to="/resume">
-                                    Resume
+                                    <li>
+                                        Resume
+                                    </li>
                                 </Link>
-                                
-                                </li>
-
-                                {/* <li className="nav-item"><NavLink to="/portfolio"><a href="#portfolio">PORTFOLIO</a></NavLink></li> */}
-
-                                {/* <li className="nav-item"><NavLink to="/contact"><a href="#contact">CONTACT</a></NavLink></li> */}
                                
                         </ul>
                         {/* </div> */}

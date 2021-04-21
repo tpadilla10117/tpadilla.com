@@ -51,6 +51,61 @@ const AboutMeComponent = (props) => {
                     </ul> */}
                 </div>
             </div>
+            <div className="container">
+                <div className="box">
+                    <div className="imgBox">
+                  
+                    <img src={Image1}/>
+                    </div>
+
+                    <div className="details">
+                    <div className="content">
+                        <h2>This is the Card Title</h2>
+                        <p>This is the actual content on the card</p>
+                    </div>
+                    </div>
+
+                </div>
+                <div className="box">
+                    <div className="imgBox">
+                    
+                    <img src={Image1}/>
+                    </div>
+
+                    <div className="details">
+                    <div className="content">
+                        <h2>This is the Card Title</h2>
+                        <p>This is the actual content on the card</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="box">
+                    <div className="imgBox">
+                    
+                    <img src={Image1}/>
+                    </div>
+
+                    <div className="details">
+                    <div className="content">
+                        <h2>This is the Card Title</h2>
+                        <p>This is the actual content on the card</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="box">
+                    <div className="imgBox">
+                    
+                    <img src={Image1}/>
+                    </div>
+
+                    <div className="details">
+                    <div className="content">
+                        <h2>This is the Card Title</h2>
+                        <p>This is the actual content on the card</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
            
         </div>
     

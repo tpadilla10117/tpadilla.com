@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
-    background-color: black;
+    background-color: #1F1F1F;
     width: 100%;
     padding: 1.5rem;
 }
@@ -49,7 +49,8 @@ body {
 } */
 
 .nav-item {
-    color: #50E3C2;
+    color: #00D1FF;
+    text-decoration: none;
 }
 
 .nav-item:hover {
