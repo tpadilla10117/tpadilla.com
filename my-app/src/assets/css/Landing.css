@@ -11,13 +11,18 @@
 /* PART A: THIS IS TO BUILD THE CARDS ASSORTED IN ROWS*/
   /* 1) Basic layout of the parent projCard-container*/
   .projCard-container {
-    width: 1280px;
+    width: 1550px;
     min-height: 50px;
     margin: 70px auto 0;
-    margin-top:10rem;
+    margin-top:15rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* background-color: orangered; */
+  }
+
+  .projCard-container:hover {
+      cursor: pointer;
   }
 
 /* 2) Basic layout of the parent & child projCard-container*/
@@ -25,33 +30,34 @@
   /* E.g. without it, you similar sized boxes with width and height would be LARGER due to padding added*/
   .projCard-container .projCard-box {
     position: relative;
-    width: 300px;
+    width: 750px;
     height: 300px;
     background: #ff0;
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
+    overflow: hidden;
   }
 /* -----------------------------------------------------------------------------------*/
 
 /* PART B: THIS IS TO ZOOM IN ON THE IMAGE ONLY*/
 /* 3) Filling the image to the box projCard-container - overflow prevents it from spilling out */
     /* */
-    .projCard-container .projCard-box .img-container {
+    .projCard-container .projCard-box .img-wrapper {
       position: relative;
       overflow: hidden;
     }
 
 /* 4) Let's us apply transform in step 5 over a 2s duration */
       /* */
-      .projCard-container .projCard-box .img-container img {
+      .projCard-container .projCard-box .img-wrapper img {
         max-width: 100%;
         transition: transform 2s;
       }
 
 /* 5) Let's us Zoom the picture on the card in upon hover */
       /* */
-      .projCard-container .projCard-box:hover .img-container img {
+      .projCard-container .projCard-box:hover .img-wrapper img {
         transform: scale(1.2);
       }
 
@@ -84,18 +90,23 @@
 
 /* 8) Adjusting styles for header2 */
     /* */
-    .projCard-container .projCard-box .details-box .content-box h2{
-      margin: 0;
-      padding: 0;
+    /* .projCard-container .projCard-box .details-box .content-box h2{
+      margin-left: 20rem;
+      margin-top: 5rem;
+      padding-right: 20rem;
       font-size: 20px;
-      color: red;
-    }
+      color: blue;
+      text-align: center;
+      align-items: center;
+    } */
 
  /* 9) Adjusting styles for p */
     /* Text Overlay has no Zoom*/
     .projCard-container .projCard-box .details-box .content-box p {
-      margin: 10px 0 0;
-      padding: 0;
+      /* margin: 10px 0 0;
+      padding: 0; */
+      font-size: 50px;
+      margin-top: 11rem;
     }
 
   /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
@@ -103,4 +114,3 @@
     .projCard-container .projCard-box:hover .details-box {
       transform: scaleY(1)
     }
-

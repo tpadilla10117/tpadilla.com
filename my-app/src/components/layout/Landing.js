@@ -1,6 +1,7 @@
 import React, { useEffect, useState, Component } from 'react';
 
 import '../../assets/css/Landing.css';
+import Image3 from "../../../src/assets/images/hike.jpeg";
 /* import ProjectCards from '../feature/ProjectCards';
 import { picBox } from '../../utils'; */
 
@@ -18,21 +19,78 @@ const Landing = (props) => {
 
         <div className="projCard-container">
             <div className="projCard-box">
-                <div className="img-container">
-                {/* <img src="img1.jpg"/> */}
+                <div className="img-wrapper">
+                    <img src={Image3}/>
                 </div>
 
                 <div className="details-box">
                 <div className="content-box">
-                    <h2>This is the Card Title</h2>
+                    {/* <h2>This is the Card Title</h2> */}
                     <p>This is the actual content on the card</p>
                 </div>
                 </div>
 
             </div>
-            <div className="projCard-box"></div>
-            <div className="projCard-box"></div>
-            <div className="projCard-box"></div>
+            <div className="projCard-box">
+                <div className="img-wrapper">
+                    <img src={Image3}/>
+                </div>
+
+                <div className="details-box">
+                <div className="content-box">
+                    {/* <h2>This is the Card Title</h2> */}
+                    <p>This is the actual content on the card</p>
+                </div>
+                </div>
+            </div>
+            <div className="projCard-box">
+                <div className="img-wrapper">
+                    <img src={Image3}/>
+                </div>
+
+                <div className="details-box">
+                <div className="content-box">
+                    {/* <h2>This is the Card Title</h2> */}
+                    <p>This is the actual content on the card</p>
+                </div>
+                </div>
+            </div>
+            <div className="projCard-box">
+                <div className="img-wrapper">
+                    <img src={Image3}/>
+                </div>
+
+                <div className="details-box">
+                <div className="content-box">
+                    {/* <h2>This is the Card Title</h2> */}
+                    <p>This is the actual content on the card</p>
+                </div>
+                </div>
+            </div>
+            <div className="projCard-box">
+                <div className="img-wrapper">
+                    <img src={Image3}/>
+                </div>
+
+                <div className="details-box">
+                <div className="content-box">
+                    {/* <h2>This is the Card Title</h2> */}
+                    <p>This is the actual content on the card</p>
+                </div>
+                </div>
+            </div>
+            <div className="projCard-box">
+                <div className="img-wrapper">
+                    <img src={Image3}/>
+                </div>
+
+                <div className="details-box">
+                <div className="content-box">
+                    {/* <h2>This is the Card Title</h2> */}
+                    <p>This is the actual content on the card</p>
+                </div>
+                </div>
+            </div>
         </div>
       
         
