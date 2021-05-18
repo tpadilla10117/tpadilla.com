@@ -1,7 +1,11 @@
 import React, { useEffect, useState, Component } from 'react';
 
 import '../../assets/css/Landing.css';
-import Image3 from "../../../src/assets/images/hike.jpeg";
+import Image3 from "../../../src/assets/images/crwn_clothing_landing.png";
+import Image4 from "../../../src/assets/images/codalorians.png";
+import Image5 from "../../../src/assets/images/pixel_draw.png";
+import Image6 from "../../../src/assets/images/postbook.png";
+import Image7 from "../../../src/assets/images/robo_search.png";
 /* import ProjectCards from '../feature/ProjectCards';
 import { picBox } from '../../utils'; */
 
@@ -12,10 +16,6 @@ const Landing = (props) => {
 
         return (
         <>
-        
-
-       {/* /*  picBox.map( (image, index) => 
-        <ProjectCards key={'image' + index}/>) */ }
 
         <div className="projCard-container">
             <div className="projCard-box">
@@ -33,7 +33,7 @@ const Landing = (props) => {
             </div>
             <div className="projCard-box">
                 <div className="img-wrapper">
-                    <img src={Image3}/>
+                    <img src={Image4}/>
                 </div>
 
                 <div className="details-box">
@@ -45,7 +45,7 @@ const Landing = (props) => {
             </div>
             <div className="projCard-box">
                 <div className="img-wrapper">
-                    <img src={Image3}/>
+                    <img src={Image5}/>
                 </div>
 
                 <div className="details-box">
@@ -57,7 +57,7 @@ const Landing = (props) => {
             </div>
             <div className="projCard-box">
                 <div className="img-wrapper">
-                    <img src={Image3}/>
+                    <img src={Image6}/>
                 </div>
 
                 <div className="details-box">
@@ -69,7 +69,7 @@ const Landing = (props) => {
             </div>
             <div className="projCard-box">
                 <div className="img-wrapper">
-                    <img src={Image3}/>
+                    <img src={Image7}/>
                 </div>
 
                 <div className="details-box">
@@ -79,18 +79,18 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
-            <div className="projCard-box">
+            {/* <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={Image3}/>
                 </div>
 
                 <div className="details-box">
                 <div className="content-box">
-                    {/* <h2>This is the Card Title</h2> */}
+                    
                     <p>This is the actual content on the card</p>
                 </div>
                 </div>
-            </div>
+            </div> */}
         </div>
       
         </>
