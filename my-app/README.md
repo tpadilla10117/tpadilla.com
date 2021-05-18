@@ -1,3 +1,9 @@
+### // PROJECT DESCRIPTION
+My Personal Portfolio / Website
+
+## Work In Progress
+______________________________________________________________________________
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -30,3 +36,46 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+______________________________________________________________________________
+# Tech Stack:
+
+Frontend: React.js, SCSS, CSS, HTML
+
+______________________________________________________________________________
+# Project Structure:
+
+├── my-app 
+        ├── node_modules
+        ├── package-lock.json
+        ├── package.json
+        ├── public
+        │   └── favicon.ico
+        │   └── index.html
+        │   └── manifest.json
+        │   └── style.css
+        └── src
+            ├── assets
+            │   ├── css
+            │   │   ├── AboutMe.css
+            │   │   ├── Contact.css
+            │   │   ├── EmailForm.css
+            │   │   ├── Landing.css
+            │   │   ├── Navbar.css
+            │   │   ├── Portfolio.css
+            │   │   ├── Skills.css
+            │   ├── images
+            │   ├── resume
+            ├── components
+            │   ├── ActionPanel.js
+            │   ├── App.js
+            │   ├── Cell.js
+            │   ├── Grid.js
+            │   ├── Header.js
+            │   ├── Palette.js
+            │   
+            ├── utils
+            │   └── index.js
+            └── index.js
+______________________________________________________________________________
+
+Contributor: Trinidad Padilla: https://github.com/tpadilla10117
