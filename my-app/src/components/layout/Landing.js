@@ -93,9 +93,6 @@ const Landing = (props) => {
             </div>
         </div>
       
-        
-
-        
         </>
         )
 }
