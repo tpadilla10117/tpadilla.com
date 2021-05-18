@@ -30,7 +30,7 @@ const Landing = (props) => {
                 </div>
                 </div>
 
-            </div><br/><br/>
+            </div>
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={Image3}/>

@@ -52,7 +52,7 @@ const AboutMeComponent = (props) => {
                 </div>
             </div>
             <div className="container">
-                <div className="box">
+                {/* <div className="box">
                     <div className="imgBox">
                   
                     <img src={Image1}/>
@@ -104,9 +104,8 @@ const AboutMeComponent = (props) => {
                         <p>This is the actual content on the card</p>
                     </div>
                   </div>
-                </div>
+                </div>  */}
             </div>
-           
         </div>
     
     </>
