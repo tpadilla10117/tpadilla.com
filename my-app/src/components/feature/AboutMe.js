@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import '../../assets/css/AboutMe.css';
+import PersonalCard from './personal_card.jsx';
 import Image1 from "../../../src/assets/images/trin.jpg";
 import { IoLogoJavascript, IoLogoNodejs, IoLogoCss3 } from "react-icons/io";
 import { SiPostgresql, SiReact  } from "react-icons/si";
@@ -51,8 +52,18 @@ const AboutMeComponent = (props) => {
                     </ul> */}
                 </div>
             </div>
+
             <div className="container">
-                {/* <div className="box">
+                <PersonalCard />
+            </div>
+            
+
+
+
+
+
+           {/*  <div className="container">
+                <div className="box">
                     <div className="imgBox">
                   
                     <img src={Image1}/>
@@ -104,8 +115,10 @@ const AboutMeComponent = (props) => {
                         <p>This is the actual content on the card</p>
                     </div>
                   </div>
-                </div>  */}
-            </div>
+                </div> 
+
+                
+            </div> */}
         </div>
     
     </>
