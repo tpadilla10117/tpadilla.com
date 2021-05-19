@@ -1,6 +1,7 @@
 import React, { useEffect, useState, Component } from 'react';
 
 import '../../assets/css/Portfolio.css';
+import PersonalCard from '../feature/personal_card.jsx';
 
 /* EXAMPLE of IMPORTING IMAGES */
 
@@ -23,7 +24,7 @@ export default class Portfolio extends Component {
                 
                 
                 
-                
+                <PersonalCard />
                 
                 
                 

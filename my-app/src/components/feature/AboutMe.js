@@ -19,11 +19,11 @@ const AboutMeComponent = (props) => {
                     <div className="img-box">
                         <div className="img-container">
                             <img src={Image1} className="about-picture" alt="Trin Padilla" loading="lazy" id="left-image"></img>
-                            {/* <div className="img-overlay">Oh Hai!</div> */}
+                            
                         </div>
                         <div className="img-content">
                             <div>
-                                {/* <h2>Image Title</h2> */}
+                                
                                 <p>"Hello There"</p>
                             </div>
                         </div>
@@ -57,7 +57,6 @@ const AboutMeComponent = (props) => {
                 <PersonalCard />
             </div>
             
-
 
 
 

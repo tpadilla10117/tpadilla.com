@@ -1,10 +1,10 @@
 :root {
-    --primary: #FFCE00;
-    --secondary: #FE4880;
+    --primary: #2c426a;
+    --secondary: #f0e9dc;
     --dark: #212121;
     --light: #F3F3F3;
   }
-  
+  /* #f0e9dc, #00F0FF */
   * {
     margin: 0;
     padding: 0;
@@ -22,6 +22,9 @@
     width: 400px;
     height: 600px;
     perspective: 1000px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
   }
   
   /*Preserve-3d along with transform allows us to perform the transform in a 3D space*/
@@ -54,7 +57,7 @@
   }
   
   .card__face--front {
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
     display: flex;
     align-items: center;
     justify-content: center;
