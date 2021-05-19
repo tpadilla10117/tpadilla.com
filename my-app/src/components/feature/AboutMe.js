@@ -3,13 +3,16 @@ import React, { useEffect, useState } from 'react';
 import '../../assets/css/AboutMe.css';
 import PersonalCard from './personal_card.jsx';
 import Image1 from "../../../src/assets/images/trin.jpg";
-import { IoLogoJavascript, IoLogoNodejs, IoLogoCss3 } from "react-icons/io";
+/* import { IoLogoJavascript, IoLogoNodejs, IoLogoCss3 } from "react-icons/io";
 import { SiPostgresql, SiReact  } from "react-icons/si";
-import { FaStripe } from "react-icons/fa";
+import { FaStripe } from "react-icons/fa"; */
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
+import{ Flipped } from "../../utils/index.js";
 
 const AboutMeComponent = (props) => {
 
+    const { flip, setFlip, active, isActive } = props;
+    console.log("The flip from About component:", flip)
     return <> 
         <div id="mainPage-wrapper">
             <div id="bio-wrapper">
@@ -54,7 +57,7 @@ const AboutMeComponent = (props) => {
             </div>
 
             <div className="container">
-                <PersonalCard />
+                <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/>
             </div>
             
 
