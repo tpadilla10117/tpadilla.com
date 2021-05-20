@@ -6,6 +6,7 @@ import Codalorians from "../../../src/assets/images/codalorians.png";
 import PixelDraw from "../../../src/assets/images/pixel_draw.png";
 import Postbook from "../../../src/assets/images/postbook.png";
 import RoboSearch from "../../../src/assets/images/robo_search.png";
+import TechStackFooter from './Footer.jsx';
 /* import ProjectCards from '../feature/ProjectCards';
 import { picBox } from '../../utils'; */
 
@@ -58,7 +59,7 @@ const Landing = (props) => {
                 </div>
             </div>
             </a>
-            
+
             <a href="https://laughing-austin-fe12b7.netlify.app/#">
                 <div className="projCard-box">
                     <div className="img-wrapper">
@@ -101,6 +102,8 @@ const Landing = (props) => {
                 </div>
             </div> */}
         </div>
+        
+        <TechStackFooter />
       
         </>
         )

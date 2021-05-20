@@ -235,12 +235,12 @@
     line-height: 50px;
     text-align: center;
     border-radius: 3px;
-    color: #00D1FF;
+    color: #f0e9dc;
 }
 
 .links-about a:nth-child(1):hover {
-    /* background: #26242e; */
-    color: #00BF58;
+    
+    color: #00F0FF;
     transition: color 500ms ease .1s;
     animation-name: scale;
     animation-duration: .4s;
@@ -264,8 +264,8 @@
 }
 
 .links-about a:nth-child(2):hover {
-    /* background: blue; */
-    color: #00BF58;
+    
+    color: #00F0FF;
     transition: color 500ms ease .1s;
     transition: color 500ms ease .1s;
     animation-name: scale;
@@ -275,8 +275,8 @@
 }
 
 .links-about a:nth-child(3):hover {
-    /* background: purple; */
-    color: #00BF58;
+    
+    color: #00F0FF;
     transition: color 500ms ease .1s;
     transition: color 500ms ease .1s;
     animation-name: scale;
@@ -286,8 +286,8 @@
 }
 
 .links-about a:nth-child(4):hover {
-    /* background: aqua; */
-    color: #00BF58;
+    
+    color: #00F0FF;
     transition: color 500ms ease .1s;
     transition: color 500ms ease .1s;
     animation-name: scale;
