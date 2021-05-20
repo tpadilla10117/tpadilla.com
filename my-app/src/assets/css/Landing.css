@@ -72,7 +72,8 @@
       left: 10px;
       bottom: 10px;
       right: 10px;
-      background: rgba(0, 0, 0, .8);
+      background: #f0e9dc;
+      opacity: .98;
       transform: scaleY(0);
       transition: transform .5s;
     }
@@ -85,7 +86,7 @@
       transform: translateY(-50%);
       text-align: center;
       padding: 15px;
-      color: #fff;
+      color: /* #00F0FF */#fff;
     }
 
 /* 8) Adjusting styles for header2 */
