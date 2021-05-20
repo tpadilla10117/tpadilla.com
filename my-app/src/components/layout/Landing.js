@@ -3,7 +3,7 @@ import React, { useEffect, useState, Component } from 'react';
 import '../../assets/css/Landing.css';
 import Image3 from "../../../src/assets/images/crwn_clothing_landing.png";
 import Image4 from "../../../src/assets/images/codalorians.png";
-import Image5 from "../../../src/assets/images/pixel_draw.png";
+import PixelDraw from "../../../src/assets/images/pixel_draw.png";
 import Image6 from "../../../src/assets/images/postbook.png";
 import Image7 from "../../../src/assets/images/robo_search.png";
 /* import ProjectCards from '../feature/ProjectCards';
@@ -43,9 +43,11 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
+            <a href="https://objective-volhard-a4bd7a.netlify.app/">
+
             <div className="projCard-box">
                 <div className="img-wrapper">
-                    <img src={Image5}/>
+                    <img src={PixelDraw}/>
                 </div>
 
                 <div className="details-box">
@@ -55,6 +57,8 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
+            </a>
+            
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={Image6}/>
