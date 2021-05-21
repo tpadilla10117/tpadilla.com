@@ -6,7 +6,7 @@
   }
 
 .nav {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     display: block;
     /* background-color: black; */

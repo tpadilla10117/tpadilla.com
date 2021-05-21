@@ -1,4 +1,5 @@
 import React , {useState, useEffect} from 'react';
+import Image1 from "../../../src/assets/images/trin.jpg";
 
 import './personal_card.css';
 
@@ -27,12 +28,12 @@ console.log("this is active:", active)
 
                     <div className="card__face card__face--back">
                     <div className="card__header">
-                        <img className="pp" src="" alt=""/>
-                        <h2>Trinidad Padilla</h2>
+                        <img className="pp" src={Image1} alt=""/>
+                        <h2>Trin Padilla</h2>
                     </div>
                     <div className="card__body">
-                        <h3>Trin P</h3>
-                        <p>Lorem ipsum lorem fefefheff fewf ewfew fewfew fewfe, fewfewf ewfew fe wf ewf ewf, few few,f ewf ew,fe . few, few few f ewf ewf ew few few few few fe wf ew few few few,f ewf ewfewfwe,f ewf ewfewfewfewfewfewfewfewfewfewfewfewfewfewfew.</p>
+                        <h3>"Hello There"</h3>
+                        <p>You've found an easter egg</p>
                     </div>
                     </div>
                 </div>

@@ -38,26 +38,43 @@
   }
 
 
+.route-container{
+  position: relative;
+}
+
+.fade {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+}
+
 /* Route-Transition Styling */
   .fade-enter {
     opacity: 0;
+    transform: scale(1.1);
   }
   
  /*  .fade-enter */.fade-enter-active {
     opacity: 1;
-    transition: opacity 500ms ease-in;
+    transform: scale(1);
+    transition: opacity 300ms, transition 300ms /* ease-in */;
   }
+
+ /*  .fade-enter-done {
+    opacity: 1;
+  } */
 
   .fade-exit {
     opacity: 1;
+    transform: scale(1);
   }
 
   /* .fade-exit */.fade-exit-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 200ms, transform 300ms;
   }
 
   /* .fade-exit-done {
     opacity: 0;
-    transition: opacity 100ms ;
   } */
