@@ -1,13 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+.nav {
+    /* position: fixed; */
+    top: 0;
+    display: block;
+    /* background-color: black; */
+    width: 100%;
+}
+
 .nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background: #2c426a;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+/* .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    letter-spacing: 1px;
+}
+ */
+/* .nav-ul {
     width: 63w;
     margin: auto;
     color:white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    border: 1px solid #50E3C2;
+} */
+
+.nav-item {
+    color: #00D1FF;
+    text-decoration: none;
 }
+
+.nav-item:hover {
+    color: white;
+    transition: color 600ms ease 0s;
+}
+
+/* .brand {
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0.5rem;
+    position: fixed;
+} */
 
 ol, ul {
     list-style: none;
 }
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-family: 'Trispace', sans-serif;
+    font-weight: 300;
+}
+
+.toggle-button {
+    /* position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30px;
+    height: 20px; */
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+
+/* THIS IS WHERE I PUT RESPONSIVE MEDIA QUERIES */
+    @media (max-width: 600px) {
+        .toggle-button {
+            display:flex;
+        }
+    }

@@ -11,13 +11,44 @@ import { Link, NavLink } from 'react-router-dom';
             <div id="navbar-wrapper">
                 
                     <nav className="nav">
-                        <ul className="nav-ul">
-                            <li><NavLink to="/about"><a href="#about">ABOUT ME</a></NavLink></li>
-                            <li><NavLink to="/portfolio"><a href="#portfolio">PORTFOLIO</a></NavLink></li>
-                            <li><NavLink to="/contact"><a href="#contact">CONTACT</a></NavLink></li>
-                            <li><a href="#resume">RESUME</a></li>
-                            {/* <!-- <li><a href="#elements">Elements</a></li> --> */}
+                        {/* <div className="brand">Trin P</div> */}
+                        <div className="toggle-button">
+                            <span className="bar"></span>
+                            <span className="bar"></span>
+                            <span className="bar"></span>
+                        </div>
+                        {/* <div className="navbar-links"> */}
+                            <ul className="nav-ul">
+                                <Link to="/about" className="nav-item"> 
+                                    <li>About</li>
+                                </Link> 
+                                
+                                <Link className="nav-item" to="/portfolio">
+                                    <li>Portfolio</li>
+                                </Link>
+                                
+                                <Link className="nav-item" to="/landing">
+                                    <li>
+                                        TP
+                                    </li>
+                                </Link>
+    
+                                <Link className="nav-item" to="/contact">
+                                    <li>
+                                        Contact
+                                    </li>
+                                </Link>
+
+                                
+                                <Link className="nav-item" to="/resume">
+                                    <li>
+                                        Resume
+                                    </li>
+                                </Link>
+                               
                         </ul>
+                        {/* </div> */}
+
                     </nav>
             
             </div>

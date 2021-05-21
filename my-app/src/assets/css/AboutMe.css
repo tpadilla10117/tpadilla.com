@@ -1,22 +1,30 @@
   
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
 
 #mainPage-wrapper {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: 450px;
+    width: 100%;
+    height: 700px;
     border-radius: 10px;
     max-width: 100%;
     padding: 4.5rem 2.5rem 1.5rem 2.5rem;
-    background-color: rgba(255, 255, 255, 0.226);
+    /* background-color: red; */
     border-radius: 4px;
     opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    Margin-top: 30rem;
+   
     
     /* transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
     transition-property: opacity, transform;
@@ -25,14 +33,374 @@
     transition-delay: 0s, 0s; */
 }
 
-.stackIcons {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: .2rem;
+#bio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* background-color: purple; */
+    /* margin-right: 1.5rem; */
+    /* justify-content: center; */
 }
 
-/* .icons {
-    height: 100px;
-    width: 60px;
+/* FOR THE IMG CARDS */
+    .overlay-practice {
+        position: relative;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: yellow; */
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+    }
+
+    /* This is where i can resize the box holding the pic */
+    /* .overlay-practice */ .img-box {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        transition: 0.5s;
+        /* background-color: black; */
+    }
+
+    .overlay-practice .img-box:hover {
+        z-index: 1;
+        transform: scale(1.25);
+        box-shadow: 0 25px 40px rgba(0,0,0,.5);
+
+    }
+
+    .overlay-practice .img-box .img-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+    }
+
+    .overlay-practice .img-box .img-container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        /* background: linear-gradient(180deg,#00D1FF ,#00BF58); */
+        mix-blend-mode: multiply;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .overlay-practice .img-box:hover .img-container:before {
+        opacity: 1;
+    }
+
+
+
+    .overlay-practice .img-box .img-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .img-container {
+        overflow: hidden;
+    }
+
+    .overlay-practice .img-box .img-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        padding: 20px;
+        align-items: flex-end;
+    }
+
+    .overlay-practice .img-box .img-content h2{
+        color: #fff;
+        transition: 0.5s;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 20px;
+        transform: translateY(200px);
+    }
+
+    .overlay-practice .img-box:hover .img-content h2{
+        transform: translateY(0);
+        transition-delay: 0.6s;
+    }
+
+    .overlay-practice .img-box .img-content p {
+        color: #fff;
+        transform: translateY(200px);
+        transition: 0.5s;
+        font-size: 14px;
+    }
+
+    .overlay-practice .img-box:hover .img-content p {
+        transform: translateY(0);
+        transition-delay: 0.05s;
+    }
+
+.img-container {
+    border-radius: 30px;
+    background-color: red;
+    /* padding: 4rem; */
+    /* float: right; */
+    
+}
+
+.img-box {
+    width: 60%;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+/* .img-overlay {
+    position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 } */
+
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS EVERYTHING IN .sideBio container */
+
+    .sideBio {
+        background-color: white;
+        padding: 4rem;
+        border-radius: 30px;
+        width: 1000px;
+        margin-bottom: 2rem;
+        margin-right: 4rem;
+    }
+    .about-picture {
+        height: 400px;
+        width: 100%;
+        /* margin-top: -25px; */
+        /* border-radius: 2rem; */
+    }
+    /* .img-container:hover .img-overlay {
+        opacity: 1;
+    } */
+
+
+    .about-heading {
+        margin-bottom: 1rem;
+        font-family: 'Trispace', sans-serif;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 300;
+    }
+
+    .stackIcons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: .2rem;
+    }
+
+/* LINKS STUFF */
+.links-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.links-about a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    color: #f0e9dc;
+}
+
+.links-about a:nth-child(1):hover {
+    
+    color: #00F0FF;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+    }
+    25% {
+        transform: scale(1.5);
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.links-about a:nth-child(2):hover {
+    
+    color: #00F0FF;
+    transition: color 500ms ease .1s;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.links-about a:nth-child(3):hover {
+    
+    color: #00F0FF;
+    transition: color 500ms ease .1s;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.links-about a:nth-child(4):hover {
+    
+    color: #00F0FF;
+    transition: color 500ms ease .1s;
+    transition: color 500ms ease .1s;
+    animation-name: scale;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS EVERYTHING IN Image Cards container */
+
+
+
+/* PART A: THIS IS TO BUILD THE CARDS ASSORTED IN ROWS*/
+  /* 1) Basic layout of the parent container*/
+  .container {
+    width: 1280px;
+    min-height: 50px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+/* 2) Basic layout of the parent & child container*/
+  /* The box-sizing property allows us to include the padding and border in an element's total width and height - solves problem of padding adding to height*/
+  /* E.g. without it, you similar sized boxes with width and height would be LARGER due to padding added*/
+  .container .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+/* -----------------------------------------------------------------------------------*/
+
+/* PART B: THIS IS TO ZOOM IN ON THE IMAGE ONLY*/
+/* 3) Filling the image to the box container - overflow prevents it from spilling out */
+    /* */
+    .container .box .imgBox {
+      position: relative;
+      overflow: hidden;
+    }
+
+/* 4) Let's us apply transform in step 5 over a 2s duration */
+      /* */
+      .container .box .imgBox img {
+        max-width: 100%;
+        transition: transform 2s;
+      }
+
+/* 5) Let's us Zoom the picture on the card in upon hover */
+      /* */
+      .container .box:hover .imgBox img {
+        transform: scale(1.2);
+      }
+
+/* -----------------------------------------------------------------------------------*/
+
+/* PART C: THIS IS FOR ADDING TEXT ON TOP OF IMAGE*/
+/* 6) Add text directly on top of image - at this point, image zooms in, and text remains on top */
+    /* */
+    .container .box .details {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, .8);
+      transform: scaleY(0);
+      transition: transform .5s;
+    }
+
+ /* 7) Here we edit the content for the container over the image (image still zooms prior to this) */
+    /* The .content text is transformed to the middle of the container */
+    .container .box .details .content {
+      position: absolute;
+      top: 50px;
+      transform: translateY(-50%);
+      text-align: center;
+      padding: 15px;
+      color: #fff;
+    }
+
+/* 8) Adjusting styles for header2 */
+    /* */
+    .container .box .details .content h2{
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      color: #ff0;
+    }
+
+ /* 9) Adjusting styles for p */
+    /* Text Overlay has no Zoom*/
+    .container .box .details .content p {
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+  /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
+    /*The background image ALSO zooms-in on hover*/
+    .container .box:hover .details {
+      transform: scaleY(1)
+    }
+
+
+
+
+
+    /* FOR THE STACKED CARDS */
