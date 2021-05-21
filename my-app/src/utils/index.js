@@ -8,3 +8,9 @@ import Image1 from "../../src/assets/images/trin.jpg";
 
 
 export const Flipped = ['is-flipped'];
+
+export const CARDS = [
+    ['card-1',
+    'card-2',
+    'card-3']
+];

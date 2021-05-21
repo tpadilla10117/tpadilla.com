@@ -7,16 +7,19 @@ import { BrowserRouter as Router, Route, Switch, Redirect, Link } from 'react-ro
 import { useLocation } from 'react-router-dom';
 import { Header, EmailFormComponent, AboutMeComponent, Portfolio, ContactComponent, Landing } from './index';
 
-import { Flipped } from '../utils/index.js';
+import { Flipped, CARDS } from '../utils/index.js';
 
 function App() {
-  const location = useLocation();
+  
   const [ flip, setFlip ] = useState(Flipped[0]);
-  const [ active, isActive ] = useState("false");
-  /* console.log(Flipped[0]) */ //returns the array at its index
-  console.log("The flip from App component:", flip)
+  const [ active, setInActive ] = useState("true");
+  const [cardState, changeCardState] = useState({
+    activeObject: null,
+    objects: [{ id:1 }, {id: 2}, {id:3}]
+})
 
-  const About = <AboutMeComponent active={active} isActive={isActive} flip={flip} setFlip={setFlip}/>;
+  const [ activeCard, setActiveCard ] = useState(CARDS[0]);
+
 
   /* const routes = [
     { path: '/landing', name: 'Home', Component: Landing },
@@ -67,7 +70,7 @@ function App() {
   classNames="fade"
   unmountOnExit>
     <div className="fade">
-      <AboutMeComponent active={active} isActive={isActive}flip={flip} setFlip={setFlip} />
+      <AboutMeComponent active={active} setInActive={setInActive}flip={flip} setFlip={setFlip} activeCard={activeCard} setActiveCard={setActiveCard} cardState={cardState} changeCardState={changeCardState}/>
 
     </div>
   </CSSTransition>

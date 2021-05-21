@@ -8,8 +8,9 @@ import{ Flipped } from "../../utils/index.js";
 
 const AboutMeComponent = (props) => {
 
-    const { flip, setFlip, active, isActive } = props;
+    const { flip, setFlip, active, setInActive, activeCard, setActiveCard, cardState, changeCardState } = props;
     console.log("The flip from About component:", flip)
+
     return <> 
         <div id="mainPage-wrapper">
             <div id="bio-wrapper">
@@ -46,7 +47,11 @@ const AboutMeComponent = (props) => {
             </div>
 
             <div className="container">
-                <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/>
+
+                
+                    <PersonalCard active={active} setInActive={setInActive}flip={flip} setFlip={setFlip} activeCard={activeCard} setActiveCard={setActiveCard} cardState={cardState} changeCardState={changeCardState}/>
+                
+               {/*  <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip} activeCard={activeCard} setActiveCard={setActiveCard}/> */}
                 {/* <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/>
                 <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/> */}
             </div>
