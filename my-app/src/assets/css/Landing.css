@@ -32,31 +32,28 @@
     position: relative;
     width: 750px;
     height: 300px;
-    background: #ff0;
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
     overflow: hidden;
+    /* background: #ff0; */
   }
 /* -----------------------------------------------------------------------------------*/
 
 /* PART B: THIS IS TO ZOOM IN ON THE IMAGE ONLY*/
 /* 3) Filling the image to the box projCard-container - overflow prevents it from spilling out */
-    /* */
     .projCard-container .projCard-box .img-wrapper {
       position: relative;
       overflow: hidden;
     }
 
 /* 4) Let's us apply transform in step 5 over a 2s duration */
-      /* */
       .projCard-container .projCard-box .img-wrapper img {
         max-width: 100%;
         transition: transform 2s;
       }
 
 /* 5) Let's us Zoom the picture on the card in upon hover */
-      /* */
       .projCard-container .projCard-box:hover .img-wrapper img {
         transform: scale(1.2);
       }
@@ -65,14 +62,13 @@
 
 /* PART C: THIS IS FOR ADDING TEXT ON TOP OF IMAGE*/
 /* 6) Add text directly on top of image - at this point, image zooms in, and text remains on top */
-    /* */
     .projCard-container .projCard-box .details-box {
       position: absolute;
       top: 10px;
       left: 10px;
       bottom: 10px;
       right: 10px;
-      background: #f0e9dc;
+      background: #00F0FF;
       opacity: .98;
       transform: scaleY(0);
       transition: transform .5s;
@@ -86,7 +82,7 @@
       transform: translateY(-50%);
       text-align: center;
       padding: 15px;
-      color: /* #00F0FF */#fff;
+      color: /* #f0e9dc */#fff;
     }
 
 /* 8) Adjusting styles for header2 */

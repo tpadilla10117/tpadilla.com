@@ -1,5 +1,8 @@
 import React  from 'react';
-import Image1 from "../../../src/assets/images/trin.jpg";
+import Hike from "../../../src/assets/images/hike.jpeg";
+import GuitarSelfie from "../../../src/assets/images/GuitarSelfie.jpeg";
+import mtdiablo from "../../../src/assets/images/mtdiablo.jpeg";
+import SanDiego from "../../../src/assets/images/SanDiego.jpeg";
 
 import './personal_card.css';
 
@@ -22,9 +25,9 @@ const PersonalCard = (props) => {
     
 
     const cardInfo = [
-        { id: 1, name: "card card-1", image: "", frontHeader: "Fitness", backHeader2: '"Health is Wealth"', backHeader3: "Peace of Mind", text: "My greatest competitor is myself.  I don't compete with anyone.  Instead, I strive to push myself and constantly improve" },
-        { id: 2, name: "card card-2",image: "", frontHeader: "Guitarist", backHeader2: '"In the Deepest Ocean..."', backHeader3: "Music", text: "In my spare time I like to jam" },
-        { id: 3, name: "card card-3",image: "", frontHeader: "Adventurer", backHeader2:'"One Does Not Simply Walk into Mordor..."' , backHeader3: "Traversing the Earth", text: "As a suburb kid, I've dreamed of leaving my confounds and..." }
+        { id: 1, name: "card card-1", image: `${Hike}`, frontHeader: "Fitness", backHeader2: '"Health is Wealth"', backHeader3: "Peace of Mind", text: "My greatest competitor is myself.  I don't compete with anyone.  Instead, I strive to push myself and constantly improve" },
+        { id: 2, name: "card card-2",image: `${GuitarSelfie}`, frontHeader: "Guitarist", backHeader2: '"In the Deepest Ocean..."', backHeader3: "Music", text: "In my spare time I like to jam" },
+        { id: 3, name: "card card-3",image: `${SanDiego}`, frontHeader: "Adventurer", backHeader2:'"One Does Not Simply Walk into Mordor..."' , backHeader3: "Traversing the Earth", text: "As a suburb kid, I've dreamed of leaving my confounds and..." }
     ]
 
 
@@ -34,6 +37,7 @@ const PersonalCard = (props) => {
                 <div className={toggleActiveStyles(index)} onClick={() => { toggleActive(index)}}/* {active ? "card__inner" : `card__inner is-flipped active`} onClick={handleClassToggle} */>
                     <div className="card__face card__face--front">
                     <h2>{card.frontHeader}</h2>
+                    {/* <img className="" src={card.image} alt=""/> */}
                     </div>
 
                     <div className="card__face card__face--back">
