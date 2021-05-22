@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import '../../assets/css/AboutMe.css';
 import PersonalCard from './personal_card.jsx';
 import Trin from "../../../src/assets/images/trin.jpg";
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
-import{ Flipped } from "../../utils/index.js";
 
 const AboutMeComponent = (props) => {
 
-    const { flip, setFlip, active, setInActive, activeCard, setActiveCard, cardState, changeCardState } = props;
-    console.log("The flip from About component:", flip)
+    const { cardState, changeCardState } = props;
 
     return <> 
         <div id="mainPage-wrapper">
@@ -49,7 +47,7 @@ const AboutMeComponent = (props) => {
             <div className="container">
 
                 
-                    <PersonalCard active={active} setInActive={setInActive}flip={flip} setFlip={setFlip} activeCard={activeCard} setActiveCard={setActiveCard} cardState={cardState} changeCardState={changeCardState}/>
+                    <PersonalCard cardState={cardState} changeCardState={changeCardState}/>
                 
                {/*  <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip} activeCard={activeCard} setActiveCard={setActiveCard}/> */}
                 {/* <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../../assets/css/EmailForm.css'
 import Skills from '../layout/Skills';
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
