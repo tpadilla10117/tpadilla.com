@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import {NavbarComponent} from './index';
 
 /* Header is for the landing page header */

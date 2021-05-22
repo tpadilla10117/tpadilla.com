@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import '../../assets/css/AboutMe.css';
 import PersonalCard from './personal_card.jsx';
-import Image1 from "../../../src/assets/images/trin.jpg";
-/* import { IoLogoJavascript, IoLogoNodejs, IoLogoCss3 } from "react-icons/io";
-import { SiPostgresql, SiReact  } from "react-icons/si";
-import { FaStripe } from "react-icons/fa"; */
+import Trin from "../../../src/assets/images/trin.jpg";
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
-import{ Flipped } from "../../utils/index.js";
 
 const AboutMeComponent = (props) => {
 
-    const { flip, setFlip, active, isActive } = props;
-    console.log("The flip from About component:", flip)
+    const { cardState, changeCardState } = props;
+
     return <> 
         <div id="mainPage-wrapper">
             <div id="bio-wrapper">
@@ -21,7 +17,7 @@ const AboutMeComponent = (props) => {
                 <div className="overlay-practice">
                     <div className="img-box">
                         <div className="img-container">
-                            <img src={Image1} className="about-picture" alt="Trin Padilla" loading="lazy" id="left-image"></img>
+                            <img src={Trin} className="about-picture" alt="Trin Padilla" loading="lazy" id="left-image"></img>
                             
                         </div>
                         <div className="img-content">
@@ -45,19 +41,17 @@ const AboutMeComponent = (props) => {
                                 <a href="#" className="instagram">{<SiInstagram size={45}/>}</a>
                                 <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin size={45}/>}</a>
                     </div>
-                    {/* <ul className="stackIcons">
-                        <li className="icons">{<IoLogoJavascript />}</li>
-                        <li className="icons">{<SiPostgresql/>}</li>
-                        <li className="icons">{<IoLogoNodejs/>}</li>
-                        <li className="icons"> {<FaStripe/>}</li>
-                        <li className="icons">{<IoLogoCss3/>}</li>
-                        <li className="icons"> {<SiReact/>}</li>
-                    </ul> */}
                 </div>
             </div>
 
             <div className="container">
-                <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/>
+
+                
+                    <PersonalCard cardState={cardState} changeCardState={changeCardState}/>
+                
+               {/*  <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip} activeCard={activeCard} setActiveCard={setActiveCard}/> */}
+                {/* <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/>
+                <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/> */}
             </div>
             
 

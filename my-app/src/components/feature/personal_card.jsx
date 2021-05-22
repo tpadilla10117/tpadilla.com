@@ -1,4 +1,4 @@
-import React , {useState, useEffect} from 'react';
+import React  from 'react';
 import Image1 from "../../../src/assets/images/trin.jpg";
 
 import './personal_card.css';
@@ -6,41 +6,57 @@ import './personal_card.css';
 /* COMPONENT FOR INTERACTIVE CARDS ON ABOUT ME */
 const PersonalCard = (props) => {
    
-    const { flip, setFlip, active, isActive } = props;
+    const { cardState, changeCardState } = props;
 
-    /* Functionality works, but need a way to toggle the className "is__flipped" */
-    function handleClassToggle(e) {
-        e.preventDefault();
-        isActive(!active)
-        /* setFlip('card__inner is-flipped')
-        console.log("the flip from handleCLassToggle:", flip) */
+    
+/* Helper Function to toggle Active cards */
+    function toggleActive(index) {
+        changeCardState({...cardState, activeObject: cardState.objects[index]})
     }
-console.log("this is active:", active)
 
-    // for the card flip, need a click handler to target "card__inner"
-    console.log("This is from the personl card component:", flip)
+/* Helper Function to toggle the classNames that are styled */
+    function toggleActiveStyles(index) {
+        return cardState.objects[index] === cardState.activeObject ? "card__inner is-flipped active" : "card__inner";
+    }
+    
+    
+
+    const cardInfo = [
+        { id: 1, name: "card card-1", image: "", frontHeader: "Fitness", backHeader2: '"Health is Wealth"', backHeader3: "Peace of Mind", text: "My greatest competitor is myself.  I don't compete with anyone.  Instead, I strive to push myself and constantly improve" },
+        { id: 2, name: "card card-2",image: "", frontHeader: "Guitarist", backHeader2: '"In the Deepest Ocean..."', backHeader3: "Music", text: "In my spare time I like to jam" },
+        { id: 3, name: "card card-3",image: "", frontHeader: "Adventurer", backHeader2:'"One Does Not Simply Walk into Mordor..."' , backHeader3: "Traversing the Earth", text: "As a suburb kid, I've dreamed of leaving my confounds and..." }
+    ]
+
+
+    const renderCard = (card, index) => {
         return(
-            <div className="card">
-                <div className={active ? "card__inner" : `card__inner is-flipped`} onClick={handleClassToggle}>
+            <div className={card.name} key={"card-" + index}>
+                <div className={toggleActiveStyles(index)} onClick={() => { toggleActive(index)}}/* {active ? "card__inner" : `card__inner is-flipped active`} onClick={handleClassToggle} */>
                     <div className="card__face card__face--front">
-                    <h2>Developer Card</h2>
+                    <h2>{card.frontHeader}</h2>
                     </div>
 
                     <div className="card__face card__face--back">
                     <div className="card__header">
-                        <img className="pp" src={Image1} alt=""/>
-                        <h2>Trin Padilla</h2>
+                        <img className="pp" src={card.image} alt=""/>
+                        <h2>{card.backHeader2}</h2>
                     </div>
                     <div className="card__body">
-                        <h3>"Hello There"</h3>
-                        <p>You've found an easter egg</p>
+                        <h3>{card.backHeader3}</h3>
+                        <p>{card.text}</p>
                     </div>
                     </div>
                 </div>
-
-
-                
             </div>
+            
+        )
+    }
+
+        return(
+            <>
+            <div className="card">{cardInfo.map(renderCard)}</div>
+            </>
+            
             
         )
     

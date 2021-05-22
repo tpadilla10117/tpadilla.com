@@ -13,8 +13,6 @@ import { picBox } from '../../utils'; */
 
 const Landing = (props) => {
 
-    /* const {activeColor, cellList, setCellList} = props; */
-
         return (
         <>
 
