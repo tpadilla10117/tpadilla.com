@@ -20,3 +20,86 @@
     margin-top: 13rem;
     margin-left: 10rem;
 }
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS FOR RESPONSIVENESS*/
+
+/* @media all and (max-width: 500px) {
+    #mainPage-Wrapper {
+
+    }
+} */
+
+/* @media (orientation: landscape) {
+    #mainPage-Wrapper {
+
+    }
+} */
+
+/* Viewports between 320px and 480px wide */
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    #contact {
+        
+        transform: translate(-50%, -00%);
+        /* display: flex;
+        flex-direction: column; */
+        
+    }
+
+    .skills-container ul {
+        width: 120vw;
+    }
+
+    .email-form {
+        transform: translate(22%, -12%);
+        /* height: 290px; */
+       /*  border: .10px solid red; */
+        width: 100vw;
+        
+    }
+
+    #form-wrapper {
+        transform: translate(-32%, 00%);
+        width: 205vw;
+        height: 125vh;
+    }
+
+    #component-wrapper {
+        width: 21vw;
+    }
+
+    
+    /* .skills-container {
+        display: grid;
+        margin-top: 2rem;
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-areas: ".skills-images" ".skill-list"
+    } */
+
+
+} 
+
+   /* @media (min-width: 640px){
+ 
+    ...
+     
+    }
+     
+    @media (min-width: 768px){
+     
+    ...
+     
+    }
+     
+    @media (min-width: 1024px){
+     
+    ...
+     
+    }
+     
+    @media (min-width: 1200px){
+     
+    ...
+     
+    } */

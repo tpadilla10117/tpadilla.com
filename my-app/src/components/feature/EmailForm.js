@@ -16,12 +16,12 @@ const EmailFormComponent = (props) => {
                         <h5>Want to Get in Touch? <br/> Send me an Email!</h5>
                     </div>
                     <div className="name-input">
-                        <div id="input-one">
+                        <div className="input-one">
                             <label for="first-name" className="first-name" required>First Name: </label>
                             <input type="text" placeholder="Sasuke" name="email" required></input>
                         </div>
 
-                        <div id="input-two">
+                        <div className="input-two">
                             <label for="last-name" className="last-name" required>Last Name: </label>
                             <input type="text" placeholder="Uchiha" name="name" required></input>
                         </div>
