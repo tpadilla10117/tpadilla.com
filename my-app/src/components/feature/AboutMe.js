@@ -22,7 +22,6 @@ const AboutMeComponent = (props) => {
                         </div>
                         <div className="img-content">
                             <div>
-                                
                                 <p>"Hello There"</p>
                             </div>
                         </div>
@@ -45,76 +44,9 @@ const AboutMeComponent = (props) => {
             </div>
 
             <div className="container">
-
-                
-                    <PersonalCard cardState={cardState} changeCardState={changeCardState}/>
-                
-               {/*  <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip} activeCard={activeCard} setActiveCard={setActiveCard}/> */}
-                {/* <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/>
-                <PersonalCard active={active} isActive={isActive}flip={flip} setFlip={setFlip}/> */}
+                <PersonalCard cardState={cardState} changeCardState={changeCardState}/>
             </div>
             
-
-
-
-
-           {/*  <div className="container">
-                <div className="box">
-                    <div className="imgBox">
-                  
-                    <img src={Image1}/>
-                    </div>
-
-                    <div className="details">
-                    <div className="content">
-                        <h2>This is the Card Title</h2>
-                        <p>This is the actual content on the card</p>
-                    </div>
-                    </div>
-
-                </div>
-                <div className="box">
-                    <div className="imgBox">
-                    
-                    <img src={Image1}/>
-                    </div>
-
-                    <div className="details">
-                    <div className="content">
-                        <h2>This is the Card Title</h2>
-                        <p>This is the actual content on the card</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="box">
-                    <div className="imgBox">
-                    
-                    <img src={Image1}/>
-                    </div>
-
-                    <div className="details">
-                    <div className="content">
-                        <h2>This is the Card Title</h2>
-                        <p>This is the actual content on the card</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="box">
-                    <div className="imgBox">
-                    
-                    <img src={Image1}/>
-                    </div>
-
-                    <div className="details">
-                    <div className="content">
-                        <h2>This is the Card Title</h2>
-                        <p>This is the actual content on the card</p>
-                    </div>
-                  </div>
-                </div> 
-
-                
-            </div> */}
         </div>
     
     </>
