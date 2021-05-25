@@ -28,7 +28,7 @@
   
   /*Perspective: 1000px -> allows us to vamp up the 3D effect based on px value*/
   .card {
-    margin: 25px auto 0;
+    margin: 7px auto 0;
     width: 1200px;
     height: 600px;
     perspective: 1000px;
@@ -156,9 +156,9 @@
 
   @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
    
-    /* .card {
-        flex-direction: column;
-    } */
+    .card_body p {
+        font-size: 100px;
+    }
   }
 
   /* .card {
