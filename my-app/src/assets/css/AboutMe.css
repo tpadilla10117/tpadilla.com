@@ -23,23 +23,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    Margin-top: 30rem;
-   
-    
-    /* transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-    transition-property: opacity, transform;
-    transition-duration: 0.325s, 0.325s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s, 0s; */
+    Margin-top: 24rem;
 }
 
 #bio-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    /* background-color: purple; */
-    /* margin-right: 1.5rem; */
-    /* justify-content: center; */
+    grid-gap: 10px;
 }
 
 /* FOR THE IMG CARDS */
@@ -52,7 +42,8 @@
         /* background-color: yellow; */
         align-items: center;
         justify-content: center;
-        margin-right: 2rem;
+        margin-right: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     /* This is where i can resize the box holding the pic */
@@ -153,7 +144,7 @@
 
 .img-container {
     border-radius: 30px;
-    background-color: red;
+    /* background-color: red; */
     /* padding: 4rem; */
     /* float: right; */
     
@@ -161,7 +152,7 @@
 
 .img-box {
     width: 60%;
-    background-color: purple;
+    /* background-color: purple; */
     border-radius: 30px;
 }
 
@@ -309,7 +300,7 @@
   .container {
     width: 1280px;
     min-height: 50px;
-    margin: 70px auto 0;
+    margin: 5px auto 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -322,7 +313,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    background: #ff0;
+    /* background: #ff0; */
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
@@ -383,7 +374,7 @@
       margin: 0;
       padding: 0;
       font-size: 20px;
-      color: #ff0;
+      /* color: #ff0; */
     }
 
  /* 9) Adjusting styles for p */
@@ -398,3 +389,113 @@
     .container .box:hover .details {
       transform: scaleY(1)
     }
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS FOR RESPONSIVENESS*/
+
+/* @media all and (max-width: 500px) {
+    #mainPage-Wrapper {
+
+    }
+} */
+
+/* @media (orientation: landscape) {
+    #mainPage-Wrapper {
+
+    }
+} */
+
+/* Viewports between 320px and 480px wide */
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .sideBio {
+      /* background-color: green; */
+      /* width: 900px; */
+      width: 370vw;
+      transform: translate(-5%, -0%);
+      margin-top: 4.5rem;
+      /* background-color: #2c426a; */
+      background: linear-gradient(to top,#2c426a,#f0e9dc);
+      /* height: 30rem; */
+    }
+
+    .overlay-practice {
+        /* transform: translate(00%, -0%); */
+        width: 1400px;
+        margin-top: 600px;
+        transform: translate(-17%, -0%);
+    }
+
+    #bio-wrapper {
+        /* background-color: yellow; */
+        transform: translate(47%, -0%);
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+
+  @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .container {
+        background: orangered;
+      
+    }
+    
+  }
+
+ /*  #bio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+} */
+
+   /* .overlay-practice {
+        position: relative;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.5rem;
+        margin-bottom: 2rem;
+    }  */
+
+  /* sideBio {
+    background-color: white;
+    padding: 4rem;
+    border-radius: 30px;
+    width: 1000px;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+} */
+
+  /* .container {
+    width: 1280px;
+    min-height: 50px;
+    margin: 5px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
+
+  /* #mainPage-wrapper {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    max-width: 100%;
+    padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+    
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    Margin-top: 24rem;
+} */
