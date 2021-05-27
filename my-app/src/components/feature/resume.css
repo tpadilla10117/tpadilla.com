@@ -1,0 +1,16 @@
+.resume__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* top: 60%;
+    left: 50%; */
+    transform: translate(100%, 10%);
+}
+
+.resume__image {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 80vh;
+}

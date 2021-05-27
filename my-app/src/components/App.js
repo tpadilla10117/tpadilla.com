@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing } from './index';
+import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent } from './index';
 
 function App() {
 
@@ -69,6 +69,20 @@ function App() {
                   unmountOnExit>
                     <div className="fade">
                       <ContactComponent />
+
+                    </div>
+                  </CSSTransition>
+                )}
+                </Route>
+
+                <Route exact path="/resume">{({ match }) => (
+                  <CSSTransition
+                  in={match != null}
+                  timeout={300}
+                  classNames="fade"
+                  unmountOnExit>
+                    <div className="fade">
+                      <ResumeComponent />
 
                     </div>
                   </CSSTransition>

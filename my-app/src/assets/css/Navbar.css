@@ -24,27 +24,6 @@
     padding: 1.5rem;
 }
 
-/* .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    letter-spacing: 1px;
-}
- */
-/* .nav-ul {
-    width: 63w;
-    margin: auto;
-    color:white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly; 
-    border: 1px solid #50E3C2;
-} */
-
 .nav-item {
     color: #00D1FF;
     text-decoration: none;
