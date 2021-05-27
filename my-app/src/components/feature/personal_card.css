@@ -150,7 +150,7 @@
   }
   
   .card_body p {
-    color: var(--dark);
+    color: var(--primary);
     font-size: 18px;
     line-height: 1.5;
   }
