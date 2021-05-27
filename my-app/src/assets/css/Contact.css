@@ -37,7 +37,7 @@
 } */
 
 /* Viewports between 320px and 480px wide */
-@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+@media only screen and (/* min-device-width: 280px) and ( */max-device-width: 780px) {
     #contact {
         
         transform: translate(-50%, -00%);

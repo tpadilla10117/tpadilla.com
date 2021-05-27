@@ -58,7 +58,7 @@
 
     .overlay-practice .img-box:hover {
         z-index: 1;
-        transform: scale(1.25);
+        transform: scale(1.15);
         box-shadow: 0 25px 40px rgba(0,0,0,.5);
 
     }
@@ -179,7 +179,7 @@
         background-color: white;
         padding: 4rem;
         border-radius: 30px;
-        width: 1000px;
+        width: 65vw;
         margin-bottom: 2rem;
         margin-right: 4rem;
     }
