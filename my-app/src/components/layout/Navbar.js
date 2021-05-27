@@ -11,12 +11,13 @@ import { Link } from 'react-router-dom';
             <div id="navbar-wrapper">
                 
                     <nav className="nav">
-                        {/* <div className="brand">Trin P</div> */}
-                        <div className="toggle-button">
-                            <span className="bar"></span>
-                            <span className="bar"></span>
-                            <span className="bar"></span>
+                        <div className="logo">Trin P
                         </div>
+                        {/* <div className="toggle-button">
+                            <span className="bar"></span>
+                            <span className="bar"></span>
+                            <span className="bar"></span>
+                        </div> */}
                         {/* <div className="navbar-links"> */}
                             <ul className="nav-ul">
                                 <Link to="/about" className="nav-item"> 
@@ -48,6 +49,17 @@ import { Link } from 'react-router-dom';
                                
                         </ul>
                         {/* </div> */}
+                        <div className="burger">
+                            <div className="burger__line1">
+
+                            </div>
+                            <div className="burger__line2">
+
+                            </div>
+                            <div className="burger__line3">
+
+                            </div>
+                        </div>
 
                     </nav>
             
