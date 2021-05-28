@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import '../../assets/css/Navbar.css';
+/* import '../../assets/css/Navbar.css'; */
 
 import { Link, useLocation } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
@@ -9,6 +9,7 @@ import * as AiIcons from 'react-icons/ai';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import { SidebarData } from '../../utils';
 import { IconContext } from 'react-icons';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements.js';
 
 /* NavbarComponent is for the landing page header */
     
@@ -64,6 +65,44 @@ navSlide(); */
 
         return  (
             <div id="navbar-wrapper">
+
+                
+                <Nav>
+                    <NavbarContainer>
+                        <NavLogo>dolla</NavLogo>
+                        <MobileIcon>
+                            <FaIcons.FaBars/>
+                        </MobileIcon>
+                        <NavMenu>
+                            <NavItem>
+                                <NavLinks>
+                                {SidebarData.map( (item, index) => {
+                                    return (
+                                        
+                                        <Link to={item.path} className="nav-item">
+                                        <li key={index} className={item.cName}>
+                                                {item.icon}
+                                                <span>{item.title}</span>
+                                            </li>
+                                        </Link>
+                                        
+                                    )
+                                } )}
+
+                                </NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                        {/* <NavBtn>
+                            <NavBtnLink to='signup'>Sign Up</NavBtnLink>
+                        </NavBtn> */}
+                        
+                    </NavbarContainer>
+                </Nav>
+                
+               
+
+
+
                 <IconContext.Provider value={{color: '#f0e9dc'}}>
                     <div className="navbar">
                             <Link to='#' className="menu-bars">
@@ -71,10 +110,10 @@ navSlide(); */
                             </Link>
                     </div>
                     <nav className={sidebar ? 'nav active' : 'nav'}>
-                        {/* <div className="logo">Trin P
-                        </div> */}
+                        <div className="logo">Trin P
+                        </div> 
                        
-                            <ul className="nav-ul" onClick={showSidebar}> {/* same as nav-menu-items */}
+                            <ul className="nav-ul" onClick={showSidebar}> 
                                 <li className='navbar-toggle'>
                                     <Link to ="#" className='menu-bars'>
                                         <AiIcons.AiOutlineClose />

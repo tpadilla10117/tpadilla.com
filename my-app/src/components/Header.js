@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavbarComponent} from './index';
+import {NavbarComponent, SideBarComponent} from './index';
 
 /* Header is for the landing page header */
 
@@ -12,8 +12,8 @@ import {NavbarComponent} from './index';
                     {/* <!-- <span>TP</span> --> */}
                         {/* <span class="icon fa-circle"></span> */}
                     </div>
-        
                     <NavbarComponent navState={navState} changeNavState={changeNavState}/>
+                    <SideBarComponent />
                 </header>
             </div>
         )
