@@ -15,7 +15,7 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
     
     const NavbarComponent = (props) => {
 
-        const { navState, changeNavState } = props;
+        const { navState, changeNavState, navToggle } = props;
 
         const [sidebar, setSidebar] = useState(false);
         const showSidebar = () => setSidebar(!sidebar);
@@ -69,8 +69,8 @@ navSlide(); */
                 
                 <Nav>
                     <NavbarContainer>
-                        <NavLogo>dolla</NavLogo>
-                        <MobileIcon>
+                        <NavLogo>Trin P</NavLogo>
+                        <MobileIcon onClick={navToggle}>
                             <FaIcons.FaBars/>
                         </MobileIcon>
                         <NavMenu>

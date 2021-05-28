@@ -1,16 +1,20 @@
 import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements.js';
 
-const SidebarComponent = () => {
+const SidebarComponent = (props) => {
+
+    const {isOpen, navToggle} = props;
+
+
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={navToggle}>
+            <Icon onClick={navToggle}>
                 <CloseIcon />
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
                     {/* Remember to add the rest of the links */}
-                    <SidebarLink>
+                    <SidebarLink onClick={navToggle}>
                         About
                     </SidebarLink>
                 </SidebarMenu>
