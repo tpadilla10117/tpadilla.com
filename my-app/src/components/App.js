@@ -12,21 +12,11 @@ function App() {
     activeObject: null,
     objects: [{ id:1 }, {id: 2}, {id:3}]
   })
-
+/* State for Navbar */
   const [navState, changeNavState] = useState({
-    activeObject: null
+    activeObject: null,
+    objects: [{ id:1 }, {id: 2}, {id:3}]
   })
-
-/* const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-ul');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-  })
-} */
-
-
 
   return (
     
