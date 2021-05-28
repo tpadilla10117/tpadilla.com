@@ -5,6 +5,7 @@ import '../../assets/css/Navbar.css';
 import { Link, useLocation } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import { SidebarData } from '../../utils';
 import { IconContext } from 'react-icons';
