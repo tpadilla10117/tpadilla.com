@@ -4,7 +4,7 @@ import {NavbarComponent, SideBarComponent} from './index';
 /* Header is for the landing page header */
 
     const Header = (props) => {
-        const { navState, changeNavState } = props;
+        
         const [isOpen, setIsOpen] = useState(false);
 
         const navToggle = () => {
@@ -19,7 +19,7 @@ import {NavbarComponent, SideBarComponent} from './index';
                     {/* <!-- <span>TP</span> --> */}
                         {/* <span class="icon fa-circle"></span> */}
                     </div>
-                    <NavbarComponent  navToggle={navToggle} navState={navState} changeNavState={changeNavState}/>
+                    <NavbarComponent  navToggle={navToggle} />
                     <SideBarComponent isOpen={isOpen} navToggle={navToggle}/>
                 </header>
             </div>

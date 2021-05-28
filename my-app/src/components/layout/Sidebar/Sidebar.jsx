@@ -1,6 +1,7 @@
 import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements.js';
-
+import { SidebarData } from '../../../utils';
+import { Link } from 'react-router-dom';
 const SidebarComponent = (props) => {
 
     const {isOpen, navToggle} = props;
@@ -13,9 +14,19 @@ const SidebarComponent = (props) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    {/* Remember to add the rest of the links */}
                     <SidebarLink onClick={navToggle}>
-                        About
+                    {SidebarData.map( (item, index) => {
+                                    return (
+                                        
+                                        <Link to={item.path} className="nav-item">
+                                        <li key={index} className={item.cName}>
+                                                {item.icon}
+                                                <span>{item.title}</span>
+                                            </li>
+                                        </Link>
+                                        
+                                    )
+                                } )}
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>

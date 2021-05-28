@@ -1,5 +1,3 @@
-/* import logo from './logo.svg'; */
-
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -12,16 +10,14 @@ function App() {
     activeObject: null,
     objects: [{ id:1 }, {id: 2}, {id:3}]
   })
-/* State for Navbar */
-  const [navState, changeNavState] = useState({
-    activeObject: null,
-    objects: [{ id:1 }, {id: 2}, {id:3}]
-  })
 
   return (
     
             <div>
-                <Header navState={navState} changeNavState={changeNavState}/>
+                <CSSTransition >
+                  <Header/>
+                </CSSTransition>
+            
                 <div className="route-container">
                   
                 <Route exact path="/portfolio">{({ match }) => (
