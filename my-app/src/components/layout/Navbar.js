@@ -63,7 +63,7 @@ navSlide(); */
 
         return  (
             <div id="navbar-wrapper">
-                <IconContext.Provider value={{color: '#fff'}}>
+                <IconContext.Provider value={{color: '#f0e9dc'}}>
                     <div className="navbar">
                             <Link to='#' className="menu-bars">
                                 <FaIcons.FaBars onClick={showSidebar} />

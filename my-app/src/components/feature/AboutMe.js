@@ -13,7 +13,7 @@ const AboutMeComponent = (props) => {
         <div id="mainPage-wrapper">
             <div id="bio-wrapper">
 
-                {/* THIS IS WHERE IM EXPERIMENTING */}
+            {/* THIS IS FOR THE IMAGE OF ME*/}
                 <div className="overlay-practice">
                     <div className="img-box">
                         <div className="img-container">
