@@ -4,7 +4,7 @@ import Skills from './Skills.js';
 import '../../assets/css/Contact.css';
 
 
-/* 4/13 -> RENDERS THE SKILLS AND EMAILFORM COMPONENTS */
+/* RENDERS THE SKILLS AND EMAILFORM COMPONENTS */
 const Contact = () => {
     return (
         <>
