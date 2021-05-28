@@ -3,7 +3,8 @@ import {NavbarComponent} from './index';
 
 /* Header is for the landing page header */
 
-    const Header = () => {
+    const Header = (props) => {
+        const { navState, changeNavState } = props;
         return (
             <div id="headerwrapper">
                 <header id="header">
@@ -12,7 +13,7 @@ import {NavbarComponent} from './index';
                         {/* <span class="icon fa-circle"></span> */}
                     </div>
         
-                    <NavbarComponent />
+                    <NavbarComponent navState={navState} changeNavState={changeNavState}/>
                 </header>
             </div>
         )

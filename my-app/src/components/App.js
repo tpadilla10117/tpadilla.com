@@ -12,11 +12,16 @@ function App() {
     activeObject: null,
     objects: [{ id:1 }, {id: 2}, {id:3}]
   })
+/* State for Navbar */
+  const [navState, changeNavState] = useState({
+    activeObject: null,
+    objects: [{ id:1 }, {id: 2}, {id:3}]
+  })
 
   return (
     
             <div>
-                <Header />
+                <Header navState={navState} changeNavState={changeNavState}/>
                 <div className="route-container">
                   
                 <Route exact path="/portfolio">{({ match }) => (

@@ -1,25 +1,97 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import '../../assets/css/Navbar.css';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { AiOutlineConsoleSql } from 'react-icons/ai';
+import { SidebarData } from '../../utils';
+import { IconContext } from 'react-icons';
 
 /* NavbarComponent is for the landing page header */
     
-    const NavbarComponent = () => {
+    const NavbarComponent = (props) => {
+
+        const { navState, changeNavState } = props;
+
+        const [sidebar, setSidebar] = useState(false);
+        const showSidebar = () => setSidebar(!sidebar);
+
+    /* Helper Function to toggle Active Navbar */
+   /*  function toggleActive(index) {
+        changeNavState({...navState, activeObject: navState.objects[index]})
+    }
+ */
+/* Helper Function to toggle the classNames that are styled */
+    /* function toggleActiveStyles(index) {
+        return navState.objects[index] === navState.activeObject ? "nav-ul nav-active" : "nav-ul";
+    } */
+
+
+       /*  const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-ul');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+  //Toggle Nav
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+
+  //Animate Links
+  navLinks.forEach( (link, index) => {
+    if( link.style.animation) {
+      link.style.animation ='';
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`
+    }
+  })
+
+  //Burger Animation
+  burger.classList.toggle('toggle');
+
+
+  })
+}
+
+navSlide(); */
+
+
+
+
+
+
         return  (
             <div id="navbar-wrapper">
-                
-                    <nav className="nav">
-                        {/* <div className="brand">Trin P</div> */}
-                        <div className="toggle-button">
-                            <span className="bar"></span>
-                            <span className="bar"></span>
-                            <span className="bar"></span>
-                        </div>
-                        {/* <div className="navbar-links"> */}
-                            <ul className="nav-ul">
-                                <Link to="/about" className="nav-item"> 
+                <IconContext.Provider value={{color: '#fff'}}>
+                    <div className="navbar">
+                            <Link to='#' className="menu-bars">
+                                <FaIcons.FaBars onClick={showSidebar} />
+                            </Link>
+                    </div>
+                    <nav className={sidebar ? 'nav active' : 'nav'}>
+                        {/* <div className="logo">Trin P
+                        </div> */}
+                       
+                            <ul className="nav-ul" onClick={showSidebar}> {/* same as nav-menu-items */}
+                                <li className='navbar-toggle'>
+                                    <Link to ="#" className='menu-bars'>
+                                        <AiIcons.AiOutlineClose />
+                                    </Link>
+                                </li>
+                                {SidebarData.map( (item, index) => {
+                                    return (
+                                        
+                                        <Link to={item.path} className="nav-item">
+                                        <li key={index} className={item.cName}>
+                                                {item.icon}
+                                                <span>{item.title}</span>
+                                            </li>
+                                        </Link>
+                                        
+                                    )
+                                } )}
+                                {/* <Link to="/about" className="nav-item"> 
                                     <li>About</li>
                                 </Link> 
                                 
@@ -44,12 +116,13 @@ import { Link } from 'react-router-dom';
                                     <li>
                                         Resume
                                     </li>
-                                </Link>
+                                </Link> */}
                                
                         </ul>
                         {/* </div> */}
-
                     </nav>
+                </IconContext.Provider>
+                    
             
             </div>
         )
