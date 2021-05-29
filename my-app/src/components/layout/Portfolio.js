@@ -14,14 +14,26 @@ export default class Portfolio extends Component {
             <div className="project-title">
                 <p>My Portfolio</p>
             </div>
-            <main id="about-wrapper">
+            
+            {/* Where I plan on rendering the interactive project section */}
+            <section className="projects___section">
+
+                <div className="projects__container">
+                    <div className="content___container">
+
+                    </div>
+                    <div className="activeImg">
+
+                    </div>
+                    <div className="project__images">
+
+                    </div>
+
+                </div>
                 
-                
-                
-                
-    
-                   
-            </main>
+            </section>
+
+
             </>
         )
     }
