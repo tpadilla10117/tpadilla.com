@@ -1,0 +1,94 @@
+.resume__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* top: 60%;
+    left: 50%; */
+    transform: translate(100%, 6%);
+    height: 80vh;
+}
+
+.resume__image {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 80vh;
+    transition: 0.5s;
+}
+
+.resume__image:hover {
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS EVERYTHING FOR RESPONSIVE DESIGN */
+
+    /* For Portrait view */
+
+        @media screen and (max-width: 768px) {
+            .resume__container {
+                transform: translate(30%, 10%);
+            }
+        }
+
+        @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+            .resume__container {
+                transform: translate(2%, 2%);
+                
+            }
+
+            .resume__image {
+                height: 65vh;
+                transition: 0.5s;
+            }
+
+            /* @media(hover: hover) {
+                .resume__image:hover {
+                    z-index: 1;
+                    transform: scale(1.05);
+                    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+                }
+            } */
+        }
+
+
+    /* For Landscape view */
+
+    @media (orientation: landscape) and (max-width: 768px) {
+        .resume__container {
+            transform: translate(30%, 5%);
+            width: 55vw;
+        }
+
+        .resume__image {
+            height: 70vh;
+            transition: 0.5s;
+        }
+    }
+
+ /* @media (min-width: 640px){
+ 
+    ...
+     
+    }
+     
+    @media (min-width: 768px){
+     
+    ...
+     
+    }
+     
+    @media (min-width: 1024px){
+     
+    ...
+     
+    }
+     
+    @media (min-width: 1200px){
+     
+    ...
+
+    */
