@@ -28,16 +28,10 @@
 
     /* For Portrait view */
 
-        @media screen and (max-width: 768px) {
-            .resume__container {
-                transform: translate(30%, 10%);
-            }
-        }
-
         @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
             .resume__container {
-                transform: translate(2%, 2%);
-                
+                transform: translate(2%, 5%);
+    
             }
 
             .resume__image {
@@ -54,6 +48,65 @@
             } */
         }
 
+        @media only screen and (min-device-width: 480px) and (max-width: 768px) {
+            .resume__container {
+                transform: translate(30%, 10%);
+            }
+
+            .resume__image {
+                height: 65vh;
+                transition: 0.5s;
+            }
+        }
+
+        @media only screen and (min-device-width: 375px)and (max-width: 926px) {
+            .resume__container {
+                transform: translate(0%, 5%);
+                width: 95vw;
+            }
+
+            .resume__image {
+                height: 55vh;
+                transition: 0.5s;
+            }
+        }
+
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            .resume__container {
+                transform: translate(9%, 8%);
+                width: 80vw;
+            }
+
+            .resume__image {
+                height: 80vh;
+                transition: 0.5s;
+            }
+        }
+
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+            .resume__container {
+                transform: translate(45%, 8%);
+                width: 50vw;
+            }
+
+            .resume__image {
+                height: 80vh;
+                transition: 0.5s;
+            }
+        }
+
+        @media only screen and (min-device-width: 1366px) and (max-device-width: 2600px) {
+            .resume__container {
+                transform: translate(45%, 8%);
+                width: 50vw;
+            }
+
+            .resume__image {
+                height: 80vh;
+                transition: 0.5s;
+            }
+        }
 
     /* For Landscape view */
 
@@ -65,6 +118,30 @@
 
         .resume__image {
             height: 70vh;
+            transition: 0.5s;
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 1024px) {
+        .resume__container {
+            transform: translate(40%, 5%);
+            width: 55vw;
+        }
+
+        .resume__image {
+            height: 80vh;
+            transition: 0.5s;
+        }
+    }
+
+    @media (orientation: landscape) and (max-device-width: 1366px) {
+        .resume__container {
+            transform: translate(40%, 8%);
+            width: 55vw;
+        }
+
+        .resume__image {
+            height: 80vh;
             transition: 0.5s;
         }
     }
