@@ -46,10 +46,30 @@ export const SidebarMenu = styled.ul`
     }
 `;
 
+/* Where You Style the <li> tags */
+export const SidebarLi = styled.li`
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    font-family: 'Trispace', sans-serif;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 20px);
+    text-align: center;
+
+    &:hover{
+        color: #00D1FF;
+        transition: color 600ms ease 0s;
+    }
+`
+
 export const SidebarLink = styled(LinkScroll)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     font-size: 1.5rem;
     text-decoration: none;
     list-style: none;

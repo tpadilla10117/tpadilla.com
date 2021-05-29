@@ -7,7 +7,8 @@ export const Nav = styled.nav`
     height: 80px;
     /* margin-top: -80px; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+   width: 100%;
     align-items: center;
     font-size: 1rem;
     position: sticky;
@@ -26,19 +27,22 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    /* max-width: 1100px; */
+    /* justify-content: flex-end; */
+    
 `
 
 export const NavLogo = styled(LinkRouter)`
     color: #fff;
+    display: flex;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
-    display: flex;
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+    justify-content: flex-start;
 `
 export const MobileIcon = styled.div`
     display: none;

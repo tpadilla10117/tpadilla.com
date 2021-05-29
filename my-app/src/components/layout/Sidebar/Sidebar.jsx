@@ -1,5 +1,5 @@
 import React from 'react';
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements.js';
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarLi, SidebarRoute } from './SidebarElements.js';
 import { SidebarData } from '../../../utils';
 import { Link } from 'react-router-dom';
 const SidebarComponent = (props) => {
@@ -18,11 +18,11 @@ const SidebarComponent = (props) => {
                     {SidebarData.map( (item, index) => {
                                     return (
                                         
-                                        <Link to={item.path} className="nav-item">
-                                        <li key={index} className={item.cName}>
-                                                {item.icon}
-                                                <span>{item.title}</span>
-                                            </li>
+                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"}}>
+                                            <SidebarLi key={index} className={item.cName}>
+                                                    {/* {item.icon} */}
+                                                    <span>{item.title}</span>
+                                            </SidebarLi>
                                         </Link>
                                         
                                     )
