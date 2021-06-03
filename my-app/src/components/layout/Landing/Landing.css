@@ -202,7 +202,7 @@
       
   }
 
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
     .projCard-container {
          
       display: flex;
@@ -249,8 +249,9 @@
       
       /* border: solid brown; */
       top: 60px;
-      transform: translate(16%, -12%);
-      width: 500px;
+      transform: translate(20%, -12%);
+      /* width: 500px; */
+      width:60vw;
     }
 
     .projCard-container .projCard-box .details-box .content-box p {
@@ -261,7 +262,7 @@
 
   }
 
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  @media only screen and (min-device-width: 1000px) and (max-device-width: 1366px) {
     .projCard-container {
          
       display: flex;
