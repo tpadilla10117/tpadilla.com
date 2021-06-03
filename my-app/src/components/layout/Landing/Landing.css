@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
     /* background-color: orangered; */
   }
 
@@ -36,7 +37,8 @@
     box-sizing: border-box;
     display: inline-block;
     overflow: hidden;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    /* border: 1px solid #BF4E30; */
     /* background: #ff0; */
   }
 /* -----------------------------------------------------------------------------------*/
@@ -69,7 +71,7 @@
       left: 10px;
       bottom: 10px;
       right: 10px;
-      background: #2c426a;
+      background: #07678E;
       border-radius: 18px;
       opacity: .95;
       transform: scaleY(0);
@@ -106,6 +108,7 @@
       padding: 0; */
       font-size: 50px;
       margin-top: 11rem;
+      color: #F0E9DC
     }
 
   /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
@@ -121,22 +124,12 @@
     /* For Portrait view */
     @media only screen and (min-device-width: 375px)and (max-width: 926px) {
       .projCard-container /* .projCard-box */ {
-          /* transform: translate(-0%, 0%); */
-          /* width:150vw; */
-          /* height: 100vh; */
-
-          /* position: relative;
-          width: 750px;
-          height: 300px;
-          margin: 10px;
-          box-sizing: border-box;
-          display: inline-block;
-          overflow: hidden;
-          border-radius: 18px; */
+         
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           width: 100%;
+          
 
           
       }
@@ -144,6 +137,7 @@
       .projCard-container .projCard-box {
         width: 325px;
         height: 300px;
+        display: inline-block;
         /* background-position: center;
         background-size: cover; */
         
@@ -153,24 +147,20 @@
        
         background-size: cover;
         background-position: center;
+        height: 300px;
         
       
       }
 
       .projCard-container .projCard-box .img-wrapper img {
        
+        /* width: 180%; */
+        /* width: 100%; */
         max-width: 180%;
-        width: 700px;
-       
-      }
+        padding-right: 15rem;
+        height: 300px;
 
-      .projCard-container .projCard-box .details-box {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        bottom: 10px;
-        right: 10px;
-        
+       
       }
 
       .projCard-container .projCard-box .details-box .content-box {
@@ -187,7 +177,7 @@
         /* margin: 10px 0 0;
         padding: 0; */
         font-size: 25px;
-        margin-top: 5rem;
+        margin-top: 11rem;
       }
   
 
