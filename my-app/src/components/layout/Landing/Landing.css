@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS EVERYTHING IN Image Cards projCard-container */
+
+/* PART A: THIS IS TO BUILD THE CARDS ASSORTED IN ROWS*/
+  /* 1) Basic layout of the parent projCard-container*/
+  .projCard-container {
+    width: 1550px;
+    min-height: 50px;
+    margin: 70px auto 0;
+    margin-top:5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    /* background-color: orangered; */
+  }
+
+  .projCard-container:hover {
+      cursor: pointer;
+  }
+
+/* 2) Basic layout of the parent & child projCard-container*/
+  /* The box-sizing property allows us to include the padding and border in an element's total width and height - solves problem of padding adding to height*/
+  /* E.g. without it, you similar sized boxes with width and height would be LARGER due to padding added*/
+  .projCard-container .projCard-box {
+    position: relative;
+    width: 750px;
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    /* border-radius: 18px; */
+    /* border: 1px solid #BF4E30; */
+    /* background: #ff0; */
+  }
+/* -----------------------------------------------------------------------------------*/
+
+/* PART B: THIS IS TO ZOOM IN ON THE IMAGE ONLY*/
+/* 3) Filling the image to the box projCard-container - overflow prevents it from spilling out */
+    .projCard-container .projCard-box .img-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+/* 4) Let's us apply transform in step 5 over a 2s duration */
+      .projCard-container .projCard-box .img-wrapper img {
+        max-width: 100%;
+        transition: transform 2s;
+      }
+
+/* 5) Let's us Zoom the picture on the card in upon hover */
+      .projCard-container .projCard-box:hover .img-wrapper img {
+        transform: scale(1.2);
+      }
+
+/* -----------------------------------------------------------------------------------*/
+
+/* PART C: THIS IS FOR ADDING TEXT ON TOP OF IMAGE*/
+/* 6) Add text directly on top of image - at this point, image zooms in, and text remains on top */
+    .projCard-container .projCard-box .details-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      background: #07678E;
+      border-radius: 18px;
+      opacity: .95;
+      transform: scaleY(0);
+      transition: transform .5s;
+    }
+
+ /* 7) Here we edit the content for the projCard-container over the image (image still zooms prior to this) */
+    /* The .content-box text is transformed to the middle of the projCard-container */
+    .projCard-container .projCard-box .details-box .content-box {
+      position: absolute;
+      top: 50px;
+      transform: translateY(-50%);
+      text-align: center;
+      padding: 15px;
+      color: /* #f0e9dc */#fff;
+    }
+
+/* 8) Adjusting styles for header2 */
+    /* */
+    /* .projCard-container .projCard-box .details-box .content-box h2{
+      margin-left: 20rem;
+      margin-top: 5rem;
+      padding-right: 20rem;
+      font-size: 20px;
+      color: blue;
+      text-align: center;
+      align-items: center;
+    } */
+
+ /* 9) Adjusting styles for p */
+    /* Text Overlay has no Zoom*/
+    .projCard-container .projCard-box .details-box .content-box p {
+      /* margin: 10px 0 0;
+      padding: 0; */
+      font-size: 50px;
+      margin-top: 11rem;
+      color: #F0E9DC
+    }
+
+  /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
+    /*The background image ALSO zooms-in on hover*/
+    .projCard-container .projCard-box:hover .details-box {
+      transform: scaleY(1)
+    }
+
+
+/* ------------------------------------------------------------------------------- */
+/* THIS IS EVERYTHING FOR RESPONSIVE DESIGN */
+
+    /* For Portrait view */
+    @media only screen and (min-device-width: 375px)and (max-width: 926px) {
+      .projCard-container /* .projCard-box */ {
+         
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 100%;
+          
+      }
+
+      .projCard-container .projCard-box {
+        width: 325px;
+        height: 300px;
+      }
+
+      .projCard-container .projCard-box .img-wrapper {
+       
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+      
+      }
+
+      .projCard-container .projCard-box .img-wrapper img {
+       
+        max-width: 180%;
+        padding-right: 15rem;
+        height: 300px;
+
+      }
+
+      .projCard-container .projCard-box .details-box .content-box p {
+        font-size: 25px;
+        margin-top: 11rem;
+      }
+  
+      
+  }
+
+    
+
+   /*  @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+      .resume__container {
+          transform: translate(2%, 5%);
+
+      }
+
+      .resume__image {
+          height: 65vh;
+          transition: 0.5s;
+      } */
+
+      /* @media(hover: hover) {
+          .resume__image:hover {
+              z-index: 1;
+              transform: scale(1.05);
+              box-shadow: 0 25px 40px rgba(0,0,0,.5);
+          }
+      } */
+  
+
+  /* @media only screen and (min-device-width: 480px) and (max-width: 768px) {
+      .resume__container {
+          transform: translate(30%, 10%);
+      }
+
+      .resume__image {
+          height: 65vh;
+          transition: 0.5s;
+      }
+  }
+
+  @media only screen and (min-device-width: 375px)and (max-width: 926px) {
+      .resume__container {
+          transform: translate(0%, 5%);
+          width: 95vw;
+      }
+
+      .resume__image {
+          height: 55vh;
+          transition: 0.5s;
+      }
+  }
+
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .resume__container {
+          transform: translate(9%, 8%);
+          width: 80vw;
+      }
+
+      .resume__image {
+          height: 80vh;
+          transition: 0.5s;
+      }
+  }
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+      .resume__container {
+          transform: translate(45%, 8%);
+          width: 50vw;
+      }
+
+      .resume__image {
+          height: 80vh;
+          transition: 0.5s;
+      }
+  }
+
+  @media only screen and (min-device-width: 1366px) and (max-device-width: 2600px) {
+      .resume__container {
+          transform: translate(45%, 8%);
+          width: 50vw;
+      }
+
+      .resume__image {
+          height: 80vh;
+          transition: 0.5s;
+      }
+  } */
+
+/* For Landscape view */
+
+/* @media (orientation: landscape) and (max-width: 768px) {
+  .resume__container {
+      transform: translate(30%, 5%);
+      width: 55vw;
+  }
+
+  .resume__image {
+      height: 70vh;
+      transition: 0.5s;
+  }
+} */
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .projCard-container /* .projCard-box */ {
+        
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+      
+  }
+
+  .projCard-container .projCard-box {
+    width: 350px;
+    height: 300px;
+    transform: translate(5%, -15%);
+  }
+
+  .projCard-container .projCard-box .img-wrapper {
+  
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+  }
+
+  .projCard-container .projCard-box .img-wrapper img {
+  
+    max-width: 180%;
+    padding-right: 15rem;
+    height: 300px;
+
+  }
+
+  .projCard-container .projCard-box .details-box .content-box p {
+    font-size: 25px;
+    margin-top: 11rem;
+  }
+}
+
+/* @media (orientation: landscape) and (max-device-width: 1366px) {
+  .resume__container {
+      transform: translate(40%, 8%);
+      width: 55vw;
+  }
+
+  .resume__image {
+      height: 80vh;
+      transition: 0.5s;
+  }
+} */
