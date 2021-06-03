@@ -71,7 +71,7 @@
       left: 10px;
       bottom: 10px;
       right: 10px;
-      background: #07678E;
+      background: /* #07678E */ #2DBCB4;
       border-radius: 18px;
       opacity: .95;
       transform: scaleY(0);
@@ -108,7 +108,7 @@
       padding: 0; */
       font-size: 50px;
       margin-top: 11rem;
-      color: #F0E9DC
+      color: #fff
     }
 
   /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
@@ -272,6 +272,7 @@
     height: 300px;
     transform: translate(5%, -15%);
   }
+
 
   .projCard-container .projCard-box .img-wrapper {
   

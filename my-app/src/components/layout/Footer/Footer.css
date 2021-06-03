@@ -1,0 +1,39 @@
+
+
+
+/* .techStack-footer {
+    background: #BF4E30;
+   
+} */
+
+/* .skills-container {
+  
+    
+} */
+
+
+/* For Portrait view */
+/* @media only screen and (min-device-width: 375px)and (max-width: 926px) {
+    .skills-container {
+        display: flex;
+        background: #F0E9DC;
+        width: 100%;
+        border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    border: .7px solid rgba(255,255,255,.2);
+    align-items: center;
+    color: #2c426a;
+        
+    }
+
+    .skills-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20rem;
+    }
+
+
+} */
