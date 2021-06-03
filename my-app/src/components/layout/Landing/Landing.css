@@ -130,17 +130,11 @@
           flex-wrap: wrap;
           width: 100%;
           
-
-          
       }
 
       .projCard-container .projCard-box {
         width: 325px;
         height: 300px;
-        display: inline-block;
-        /* background-position: center;
-        background-size: cover; */
-        
       }
 
       .projCard-container .projCard-box .img-wrapper {
@@ -148,39 +142,22 @@
         background-size: cover;
         background-position: center;
         height: 300px;
-        
       
       }
 
       .projCard-container .projCard-box .img-wrapper img {
        
-        /* width: 180%; */
-        /* width: 100%; */
         max-width: 180%;
         padding-right: 15rem;
         height: 300px;
 
-       
-      }
-
-      .projCard-container .projCard-box .details-box .content-box {
-        position: absolute;
-        top: 50px;
-        transform: translateY(-50%);
-        text-align: center;
-        padding: 15px;
-        color: /* #f0e9dc */#fff;
-        
       }
 
       .projCard-container .projCard-box .details-box .content-box p {
-        /* margin: 10px 0 0;
-        padding: 0; */
         font-size: 25px;
         margin-top: 11rem;
       }
   
-
       
   }
 
@@ -278,21 +255,47 @@
       height: 70vh;
       transition: 0.5s;
   }
-}
+} */
 
 @media (orientation: landscape) and (max-width: 1024px) {
-  .resume__container {
-      transform: translate(40%, 5%);
-      width: 55vw;
+  .projCard-container /* .projCard-box */ {
+        
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+      
   }
 
-  .resume__image {
-      height: 80vh;
-      transition: 0.5s;
+  .projCard-container .projCard-box {
+    width: 350px;
+    height: 300px;
+    transform: translate(5%, -15%);
+  }
+
+  .projCard-container .projCard-box .img-wrapper {
+  
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+  }
+
+  .projCard-container .projCard-box .img-wrapper img {
+  
+    max-width: 180%;
+    padding-right: 15rem;
+    height: 300px;
+
+  }
+
+  .projCard-container .projCard-box .details-box .content-box p {
+    font-size: 25px;
+    margin-top: 11rem;
   }
 }
 
-@media (orientation: landscape) and (max-device-width: 1366px) {
+/* @media (orientation: landscape) and (max-device-width: 1366px) {
   .resume__container {
       transform: translate(40%, 8%);
       width: 55vw;
