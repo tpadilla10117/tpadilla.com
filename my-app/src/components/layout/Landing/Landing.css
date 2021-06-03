@@ -122,6 +122,64 @@
 /* THIS IS EVERYTHING FOR RESPONSIVE DESIGN */
 
     /* For Portrait view */
+
+    @media only screen and (min-device-width: 280px) and (max-width: 480px) {
+      .projCard-container  {
+         
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+      
+      }
+
+      .projCard-container .projCard-box {
+        width: 280px;
+        height: 300px;
+        transform: translate(0%, -10%);
+        
+      }
+
+      .projCard-container .projCard-box .img-wrapper {
+      
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+      
+      }
+
+      .projCard-container .projCard-box .img-wrapper img {
+      
+        max-width: 180%;
+        padding-right: 12rem;
+        height: 300px;
+
+      }
+
+      .projCard-container .projCard-box .details-box .content-box p {
+        font-size: 25px;
+        margin-top: 11rem;
+      }
+    }
+
+    @media only screen and (min-device-width: 480px) and (max-width: 768px) {
+      .projCard-container /* .projCard-box */ {
+         
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+      }
+
+      .projCard-container .projCard-box {
+        width: 280px;
+        height: 300px;
+        transform: translate(0%, -10%);
+        
+      }
+    }
+
     @media only screen and (min-device-width: 375px)and (max-width: 926px) {
       .projCard-container /* .projCard-box */ {
          
@@ -135,6 +193,7 @@
       .projCard-container .projCard-box {
         width: 325px;
         height: 300px;
+        
       }
 
       .projCard-container .projCard-box .img-wrapper {
@@ -159,6 +218,108 @@
       }
   
       
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .projCard-container {
+         
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      
+    }
+
+    .projCard-container .projCard-box {
+      margin-top: 2rem;
+      width: 90vw;
+      /* height: 300px; */
+      /* border: solid purple; */
+      transform: translate(2%, 0%);
+      box-sizing: border-box;
+      display: inline-block;
+    }
+
+    .projCard-container .projCard-box .img-wrapper {
+    
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      /* border: solid yellow; */
+    
+    }
+
+    .projCard-container .projCard-box .img-wrapper img {
+    
+      /* max-width: 180%; */
+      /* padding-right: 15rem; */
+      /* border: solid red; */
+     width: 125vw;
+     height: auto;
+
+    }
+
+    .projCard-container .projCard-box .details-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      
+
+    }
+
+    .projCard-container .projCard-box .details-box .content-box {
+      
+      /* border: solid brown; */
+      top: 60px;
+      transform: translate(16%, -12%);
+      width: 500px;
+    }
+
+    .projCard-container .projCard-box .details-box .content-box p {
+      font-size: 45px;
+      /* border: solid black; */
+      margin: 10px 0 0;
+    }
+
+  }
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .projCard-container {
+         
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      
+    }
+
+    .projCard-container .projCard-box {
+      width: 475px;
+      height: 300px;
+    }
+
+    .projCard-container .projCard-box .img-wrapper {
+    
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    
+    }
+
+    .projCard-container .projCard-box .img-wrapper img {
+    
+      max-width: 180%;
+      padding-right: 15rem;
+      height: 300px;
+
+    }
+
+    .projCard-container .projCard-box .details-box .content-box p {
+      font-size: 25px;
+      margin-top: 11rem;
+    }
   }
 
     
@@ -245,17 +406,62 @@
 
 /* For Landscape view */
 
-/* @media (orientation: landscape) and (max-width: 768px) {
-  .resume__container {
-      transform: translate(30%, 5%);
-      width: 55vw;
+/* @media (orientation: landscape) and (min-width: 468px) and (max-width: 768px) {
+  .projCard-container {
+        
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    
   }
 
-  .resume__image {
-      height: 70vh;
-      transition: 0.5s;
+  .projCard-container .projCard-box {
+    width: 350px;
+    height: 300px;
+    transform: translate(22%, 0%);
   }
 } */
+
+@media (orientation: landscape) and (max-width: 768px) {
+  .projCard-container {
+        
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+      
+  }
+
+  .projCard-container .projCard-box {
+    width: 350px;
+    height: 300px;
+    transform: translate(5%, -15%);
+  }
+
+
+  .projCard-container .projCard-box .img-wrapper {
+  
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+  }
+
+  .projCard-container .projCard-box .img-wrapper img {
+  
+    max-width: 180%;
+    padding-right: 15rem;
+    height: 300px;
+
+  }
+
+  .projCard-container .projCard-box .details-box .content-box p {
+    font-size: 25px;
+    margin-top: 11rem;
+  }
+}
+
 
 @media (orientation: landscape) and (max-width: 1024px) {
   .projCard-container /* .projCard-box */ {

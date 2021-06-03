@@ -42,8 +42,18 @@ export const SidebarMenu = styled.ul`
     text-align: center;
 
     @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
+        grid-template-rows: repeat(6, 80px);
+        
     }
+
+    @media screen and (max-width: 768px) {
+        grid-template-rows: repeat(6, 90px);
+    }
+
+    @media screen and (max-width: 1024px) {
+        grid-template-rows: repeat(6, 90px);
+    }
+
 `;
 
 /* Where You Style the <li> tags */
@@ -64,6 +74,11 @@ export const SidebarLi = styled.li`
         color: #00D1FF;
         transition: color 600ms ease 0s;
     }
+
+    /* @media screen and (max-width: 1024px) {
+        grid-template-rows: repeat(6, 30px);
+        font-size: 2.5em;
+    } */
 `
 
 export const SidebarLink = styled(LinkScroll)`
