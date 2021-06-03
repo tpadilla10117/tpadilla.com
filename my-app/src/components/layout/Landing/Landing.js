@@ -1,12 +1,12 @@
 import React, { useEffect, useState, Component } from 'react';
 
-import '../../assets/css/Landing.css';
-import CrwnClothing from "../../../src/assets/images/crwn_clothing_landing.png";
-import Codalorians from "../../../src/assets/images/codalorians.png";
-import PixelDraw from "../../../src/assets/images/pixel_draw.png";
-import Postbook from "../../../src/assets/images/postbook.png";
-import RoboSearch from "../../../src/assets/images/robo_search.png";
-import TechStackFooter from './Footer.jsx';
+import './Landing.css';
+import CrwnClothing from "../../../../src/assets/images/crwn_clothing_landing.png";
+import Codalorians from "../../../../src/assets/images/codalorians.png";
+import PixelDraw from "../../../../src/assets/images/pixel_draw.png";
+import Postbook from "../../../../src/assets/images/postbook.png";
+import RoboSearch from "../../../../src/assets/images/robo_search.png";
+import TechStackFooter from '../Footer.jsx';
 /* import ProjectCards from '../feature/ProjectCards';
 import { picBox } from '../../utils'; */
 
@@ -32,8 +32,10 @@ const Landing = (props) => {
 
             </div>
             <div className="projCard-box">
+                
                 <div className="img-wrapper">
                     <img src={Codalorians} alt="A clickable card of an application called `Codalorians`"/>
+                    
                 </div>
 
                 <div className="details-box">
@@ -43,23 +45,24 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
-            <a href="https://objective-volhard-a4bd7a.netlify.app/">
+            {/* <a href="https://objective-volhard-a4bd7a.netlify.app/"> */}
 
+            {/* NEED TO REPLACE IMG with pixel draw image */}
             <div className="projCard-box">
                 <div className="img-wrapper">
-                    <img src={PixelDraw} alt="A clickable card of an application called `Pixel Draw`"/>
+                    <img src={Postbook} alt="A clickable card of an application called `Pixel Draw`"/>
                 </div>
 
                 <div className="details-box">
                 <div className="content-box">
-                    {/* <h2>This is the Card Title</h2> */}
+                    
                     <p>A Simple, Grid-Based, Pixel-Art Creator</p>
                 </div>
                 </div>
             </div>
-            </a>
+            {/* </a> */}
 
-            <a href="https://laughing-austin-fe12b7.netlify.app/#">
+            {/* <a href="https://laughing-austin-fe12b7.netlify.app/#"> */}
                 <div className="projCard-box">
                     <div className="img-wrapper">
                         <img src={Postbook} alt="A clickable card of an application called `PostBook`"/>
@@ -72,9 +75,9 @@ const Landing = (props) => {
                     </div>
                     </div>
                 </div>
-            </a>
+            {/* </a> */}
 
-            <a href="https://tpadilla10117.github.io/robo_search/">
+            {/* <a href="https://tpadilla10117.github.io/robo_search/"> */}
                 <div className="projCard-box">
                     <div className="img-wrapper">
                         <img src={RoboSearch} alt="A clickable card of an application called `Robo Search`"/>
@@ -87,7 +90,7 @@ const Landing = (props) => {
                     </div>
                     </div>
                 </div>
-            </a>
+            {/* </a> */}
             {/* <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={Image3}/>
@@ -102,7 +105,7 @@ const Landing = (props) => {
             </div> */}
         </div>
         
-        <TechStackFooter />
+        {/* <TechStackFooter /> */}
       
         </>
         )
