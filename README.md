@@ -1,8 +1,9 @@
-### // PROJECT DESCRIPTION
+### PROJECT DESCRIPTION
 My Personal Portfolio / Website
-# trinpadilla.com
+
 
 ## Work In Progress
+### For a pre-alpha version, click the following: 
 ______________________________________________________________________________
 
 ## Available Scripts
