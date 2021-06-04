@@ -50,12 +50,12 @@ export const NavbarData = [
         cName: 'nav-text'
     },
 
-    {
+  /*   {
         title: 'Portfolio',
         path: '/portfolio',
         icon: <FaIcons.FaProjectDiagram />,
         cName: 'nav-text'
-    },
+    }, */
     {
         title: 'Contact',
         path: '/contact',

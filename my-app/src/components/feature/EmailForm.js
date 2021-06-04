@@ -47,7 +47,7 @@ const EmailFormComponent = (props) => {
                         <p>Check me out on Social Media!</p>
                         {/* 4/4: Look at how i sized the github icon */}
                         <div className="links">
-                                <a href="#" className="github">{<SiGithub /* size={70} *//>}</a>
+                                <a href="https://github.com/tpadilla10117" className="github">{<SiGithub /* size={70} *//>}</a>
                                 <a href="#" className="facebook">{<SiFacebook />}</a>
                                 <a href="#" className="instagram">{<SiInstagram />}</a>
                                 <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin />}</a>

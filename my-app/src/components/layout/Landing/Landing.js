@@ -19,7 +19,7 @@ const Landing = (props) => {
 
         <div className="projCard-container">
 
-        <a href="https://github.com/2006-cpu/codalorians">
+        <a href="https://github.com/tpadilla10117/crwn-clothing">
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={CrwnClothing} alt="A clickable card of an application called `Crwn Clothing`"/>
