@@ -3,7 +3,7 @@ My Personal Portfolio / Website
 
 
 ## Work In Progress
-### For a pre-alpha version, click the following: 
+### For a pre-alpha version, click the following: https://mystifying-carson-47291d.netlify.app/
 ______________________________________________________________________________
 
 ## Available Scripts
