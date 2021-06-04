@@ -403,7 +403,86 @@
     }
 
     @media only screen and (min-device-width: 375px)and (max-width: 768px) {
-        
+        .container {
+            width: 90vw;
+            transform: translate(-10%, 0%);
+        }
+
+        .container .card {
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            height: 200vh;
+            
+        }
+
+        .container .card h2 {
+            font-size: 13px;
+        }
+
+        .container .card h3 {
+            font-size: 15px;
+        }
+
+        .container .card p {
+            font-size: 12px;
+        }
+
+        #bio-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            margin-top: 10vh;
+            /* grid-gap: 60px; */
+        }
+
+        .overlay-practice {
+            width: 90vw;
+            margin-right: -10px;
+            margin-top: 70vh;
+            transform: translate(0%, 0%);
+            
+        }
+
+        .overlay-practice .img-box:hover {
+            z-index: 1;
+            transform: scale(1.05);
+            box-shadow: 0 25px 40px rgba(0,0,0,.5);
+    
+        }
+
+        .overlay-practice .img-box {
+            width: 90%;
+        }
+
+        .sideBio {
+            width: 90vw;
+            height: 90vh;
+            overflow-x: hidden;
+                overflow-y: auto;
+            /* margin-top: 20px;  */
+            /* transform: translate(-10%, 0%); */
+        }
+
+        .sideBio .links-about {
+            
+            padding-top: 0;
+            transform: translate(-18%, -70%);
+        }
+
+        .sideBio .links-about a{
+            
+            width: 120px;
+            height: 70px;
+            padding: .8rem;
+            
+        }
+
+        .sideBio p {
+            font-size: 12px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
 
     }
 
