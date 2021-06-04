@@ -2,6 +2,15 @@
 My Personal Portfolio / Website
 
 ## Work In Progress
+
+### **RECRUITERS**
+
+To view work in progress:
+
+You can visit an early alpha at: 
+
+1) Open a terminal
+2) Enter ###`npm start` in the "my-app" project directory
 ______________________________________________________________________________
 
 ## Available Scripts
