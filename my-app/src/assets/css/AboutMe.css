@@ -408,7 +408,68 @@
     }
 
     @media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+        .container {
+            width: 100%;
+        }
+
+        .container .card {
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+            height: 200vh;
+        }
+
+        .container .card h2 {
+            font-size: 30px;
+        }
+
+        .container .card p {
+            font-size: 20px;
+        }
+
+        #bio-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            margin-top: 10vh;
+            /* grid-gap: 60px; */
+        }
+
+        .overlay-practice {
+            width: 90vw;
+            margin-right: -10px;
+            margin-top: 30vh;
+            transform: translate(0%, 0%);
+            
+        }
+
+        .overlay-practice .img-box:hover {
+            z-index: 1;
+            transform: scale(1.05);
+            box-shadow: 0 25px 40px rgba(0,0,0,.5);
     
+        }
+
+        .overlay-practice .img-box {
+            width: 90%;
+        }
+
+        .sideBio {
+            width: 90vw;
+            height: 53vh;
+            /* margin-top: 20px;  */
+            /* transform: translate(-10%, 0%); */
+        }
+
+        .sideBio .links-about {
+            
+            padding-top: 0;
+            transform: translate(0%, -60%);
+        }
+
+        .sideBio p {
+            font-size: 16px;
+        }
 
     }
 
