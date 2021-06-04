@@ -396,48 +396,131 @@
 /* ------------------------------------------------------------------------------- */
 /* THIS IS FOR RESPONSIVENESS*/
 
-/* @media all and (max-width: 500px) {
-    #mainPage-Wrapper {
+  /* For Portrait view */
+
+    @media only screen and (min-device-width: 280px) and (max-width: 480px) {
 
     }
-} */
 
-/* @media (orientation: landscape) {
-    #mainPage-Wrapper {
-
-    }
-} */
-
-/* Viewports between 320px and 480px wide */
-@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-    .sideBio {
-      /* background-color: green; */
-      /* width: 900px; */
-      width: 370vw;
-      transform: translate(-5%, -0%);
-      margin-top: 4.5rem;
-      /* background-color: #2c426a; */
-      background: linear-gradient(to top,#2c426a,#f0e9dc);
-      /* height: 30rem; */
-    }
-
-    .overlay-practice {
-        width: 500vw;
-        margin-top: 600px;
-        transform: translate(-17%, -0%);
-    }
-
-    #bio-wrapper {
-        transform: translate(47%, -0%);
-        display: flex;
-        flex-direction: column;
-        font-size: 25px;
-        margin-top: 25rem;
-    }
-
-    .container {
-        width: 365vw;
-        transform: translate(-0%, -0%);
+    @media only screen and (min-device-width: 375px)and (max-width: 768px) {
         
+
     }
-  }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+    
+
+    }
+
+    @media only screen and (min-device-width: 1000px) and (max-device-width: 1366px) {
+        .container {
+            width: 100%;
+        }
+
+        .container .card {
+            width: 100vw;
+        }
+
+        .container .card h2 {
+            font-size: 18px;
+        }
+
+        .container .card p {
+            font-size: 15px;
+        }
+
+        #bio-wrapper {
+            /* display: flex; */
+            /* flex-direction: column; */
+            width: 90vw;
+            margin-top: 10vh;
+            grid-gap: 60px;
+        }
+
+        .overlay-practice {
+            width: 40vw;
+            margin-right: -10px;
+            transform: translate(-5%, 0%);
+        }
+
+        .overlay-practice .img-box:hover {
+            z-index: 1;
+            transform: scale(1.05);
+            box-shadow: 0 25px 40px rgba(0,0,0,.5);
+    
+        }
+
+        .overlay-practice .img-box {
+            width: 90%;
+        }
+
+        .sideBio {
+            width: 50vw;
+            height: 53vh;
+            /* margin-top: 20px;  */
+            transform: translate(-10%, 0%);
+        }
+
+        .sideBio .links-about {
+            
+            padding-top: 0;
+            transform: translate(0%, -60%);
+        }
+
+        .sideBio p {
+            font-size: 17px;
+        }
+    }
+
+
+/* For Landscape view */
+
+/* @media (orientation: landscape) and (min-width: 480px) and (max-width: 768px) {
+.projCard-container {
+      
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.projCard-container .projCard-box {
+  width: 90vw;
+  height: 300px;
+  transform: translate(1%, 0%);
+}
+
+.projCard-container .projCard-box .img-wrapper img {
+  
+ 
+  width: 125vw;
+  height: auto;
+
+}
+} */
+
+/* @media (orientation: landscape) and (min-width: 375px) and (max-width: 768px) {
+.projCard-container {
+      
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.projCard-container .projCard-box {
+  width: 90vw;
+  height: 300px;
+  transform: translate(1%, 0%);
+}
+
+.projCard-container .projCard-box .img-wrapper img {
+  
+ 
+  width: 125vw;
+  height: auto;
+
+}
+} */
