@@ -48,7 +48,7 @@ function App() {
                 )}
                 </Route>
 
-                <Route exact path="/landing">{({ match }) => (
+                <Route exact path="/">{({ match }) => (
                   <CSSTransition
                   in={match != null}
                   timeout={300}

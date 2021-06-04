@@ -7,7 +7,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 
 import { AiOutlineConsoleSql } from 'react-icons/ai';
-import { SidebarData } from '../../../utils';
+import { NavbarData } from '../../../utils';
 import { IconContext } from 'react-icons';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLi, NavBtn, NavBtnLink} from './NavbarElements.js';
 
@@ -37,14 +37,14 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
             {/* <IconContext.Provider value={{color: '#f0e9dc'}}> */}
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo>Trin P</NavLogo>
+                        <NavLogo to="/">Trin P</NavLogo>
                         <MobileIcon onClick={navToggle}>
                             <FaIcons.FaBars/>
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
                                 <NavLinks>
-                                {SidebarData.map( (item, index) => {
+                                {NavbarData.map( (item, index) => {
                                     return (
                                         
                                         <Link to={item.path} className="nav-item" style={{textDecoration: "none"}}>

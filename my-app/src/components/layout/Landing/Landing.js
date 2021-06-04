@@ -71,7 +71,7 @@ const Landing = (props) => {
                     <div className="details-box">
                     <div className="content-box">
                         {/* <h2>This is the Card Title</h2> */} 
-                        <p>A Craigslist Inspired App Where Users Can Post Items For Sale</p>
+                        <p>An App Where Users Can Post Items For Sale</p>
                     </div>
                     </div>
                 </div>
