@@ -18,6 +18,8 @@ const Landing = (props) => {
         <>
 
         <div className="projCard-container">
+
+        <a href="https://github.com/tpadilla10117/crwn-clothing">
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={CrwnClothing} alt="A clickable card of an application called `Crwn Clothing`"/>
@@ -29,8 +31,10 @@ const Landing = (props) => {
                     <p>An e-commerce for Stylish, Trendy Clothing</p>
                 </div>
                 </div>
-
             </div>
+        </a>
+
+            <a href="https://github.com/2006-cpu/codalorians">
             <div className="projCard-box">
                 
                 <div className="img-wrapper">
@@ -45,12 +49,12 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
-            {/* <a href="https://objective-volhard-a4bd7a.netlify.app/"> */}
+            </a>
 
-            {/* NEED TO REPLACE IMG with pixel draw image */}
+            <a href="https://objective-volhard-a4bd7a.netlify.app/">
             <div className="projCard-box">
                 <div className="img-wrapper">
-                    <img src={Postbook} alt="A clickable card of an application called `Pixel Draw`"/>
+                    <img src={PixelDraw} alt="A clickable card of an application called `Pixel Draw`"/>
                 </div>
 
                 <div className="details-box">
@@ -60,9 +64,9 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
-            {/* </a> */}
+            </a>
 
-            {/* <a href="https://laughing-austin-fe12b7.netlify.app/#"> */}
+            <a href="https://laughing-austin-fe12b7.netlify.app/#">
                 <div className="projCard-box">
                     <div className="img-wrapper">
                         <img src={Postbook} alt="A clickable card of an application called `PostBook`"/>
@@ -75,9 +79,9 @@ const Landing = (props) => {
                     </div>
                     </div>
                 </div>
-            {/* </a> */}
+            </a>
 
-            {/* <a href="https://tpadilla10117.github.io/robo_search/"> */}
+            <a href="https://tpadilla10117.github.io/robo_search/">
                 <div className="projCard-box">
                     <div className="img-wrapper">
                         <img src={RoboSearch} alt="A clickable card of an application called `Robo Search`"/>
@@ -90,7 +94,7 @@ const Landing = (props) => {
                     </div>
                     </div>
                 </div>
-            {/* </a> */}
+            </a>
             {/* <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={Image3}/>
