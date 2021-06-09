@@ -25,12 +25,12 @@ import { AiOutlineConsoleSql } from "react-icons/ai";
 const Skills = () => {
     return (
         <>
-        <div id="skills"></div>
+        {/* <div id="skills"></div> */}
         <div>
             <hr id="lineBreak"></hr>
         </div>
         <div className="skills-title">
-            <p>Fullstack UX Engineer</p>
+            <h4>Fullstack UX Engineer</h4>
         </div>
         <div className="skills-container">
             <div className="skills-images" data-aos="fade-in">

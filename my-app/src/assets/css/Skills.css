@@ -9,6 +9,7 @@
     align-items: center;
     color: #1d1d1f;
     position: static;
+    background-color: white;
 }
 
 /* EVERYTHING PERTAINING TO THE SKILLS-CONTAINER */
@@ -18,7 +19,8 @@
         justify-content: center;
         grid-template-columns: auto;
         /* grid-gap: 10px; */
-        grid-template-areas: ".skills-images" ".skill-list"
+        grid-template-areas: ".skills-images" ".skill-list";
+        background-color: white;
     }
 
     .skills-container li:hover {
@@ -46,41 +48,4 @@
         align-items: center;
     } */
 
-    /* Mobile Responsive: */
-    @media (max-width: 768px) {
-        .skills-title {
-            margin-top: 5rem;
-            font-size: 36px;
-            letter-spacing: 0.005em;
-            /* font-family: Gilroy; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #1d1d1f;
-            position: static;
-        }
-
-        /* .skill-list {
-            font-size: 0.75rem;
-        } */
-
-    /* @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-        .skills-container {
-            width: 10vw;
-            transform: translate(-50%, -00%);
-            max-width: 80%;
-        }
-
-    } */
-
-    /* @media (min-width: 320px) {
-        .skills-title {
-            font-size:20px;
-            margin-bottom: 1rem;
-        }
-        
-    } */
-
-    }
-
-  
+    
