@@ -316,6 +316,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
   }
 
 /* 2) Basic layout of the parent & child container*/
@@ -410,22 +411,33 @@
   /* For Portrait view */
 
     @media only screen and (min-device-width: 280px) and (max-width: 480px) {
+
+        #mainPage-wrapper {
+            width: 100%;
+            /* height:100%; */
+        }
+
         .container {
-            width: 90vw;
-            transform: translate(-10%, 0%);
+            width: 100%;
+            /* transform: translate(-10%, 0%); */
         }
 
         .container .card {
-            width: 90vw;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            height: 200vh;
-            
+            height: 1000px;
         }
+
 
         .container .card h2 {
             font-size: 13px;
         }
+
+        .container .card .card__inner .card__face.card__face--front h2 {
+            font-size: 30px;
+        }
+        
 
         .container .card h3 {
             font-size: 15px;
@@ -446,7 +458,7 @@
         .overlay-practice {
             width: 90vw;
             margin-right: -10px;
-            margin-top: 70vh;
+            margin-top: 60vh;
             transform: translate(0%, 0%);
             
         }
@@ -463,7 +475,7 @@
         }
 
         .sideBio {
-            width: 90vw;
+            width: 100%;
             height: 90vh;
             overflow-x: hidden;
             overflow-y: auto;
@@ -487,11 +499,8 @@
         .sideBio .links-about a{
             
             width: 100%;
-            /* height: 70px; */
-            /* padding: 1rem; */
             margin: 0rem 10px 25px 0px;
-            /* justify-content: center; */
-            /* align-items: center; */
+           
         }
 
         .sideBio p {
@@ -504,15 +513,15 @@
 
     @media only screen and (min-device-width: 375px)and (max-width: 768px) {
         .container {
-            width: 90vw;
-            transform: translate(-10%, 0%);
+            width: 100%;
+            /* transform: translate(-10%, 0%); */
         }
 
         .container .card {
-            width: 90vw;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            height: 200vh;
+            height: 1500px;
             
         }
 
@@ -567,14 +576,17 @@
         .sideBio .links-about {
             
             padding-top: 0;
-            transform: translate(-18%, -70%);
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 0px;
         }
 
         .sideBio .links-about a{
             
-            width: 120px;
+            width: 100%;
             /* height: 70px; */
             padding: .8rem;
+            margin: 0rem 10px 25px 0px;
             
         }
 
@@ -650,8 +662,10 @@
 
         .sideBio .links-about {
             
-            padding-top: 0;
-            transform: translate(0%, -60%);
+            padding-top: 0px;
+            /* transform: translate(0%, -60%); */
+            margin: 5rem;
+            display: flex;
         }
 
         .sideBio p {
@@ -724,7 +738,8 @@
         .sideBio .links-about {
             
             padding-top: 0;
-            transform: translate(0%, -60%);
+            /* transform: translate(0%, -60%); */
+            margin-top: 1.5rem;
         }
 
         .sideBio p {
@@ -737,30 +752,9 @@
 
 /* For Landscape view */
 
-/* @media (orientation: landscape) and (min-width: 480px) and (max-width: 768px) {
-.projCard-container {
-      
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  
+@media (orientation: landscape) and (min-width: 480px) and (max-width: 768px) {
+    
 }
-
-.projCard-container .projCard-box {
-  width: 90vw;
-  height: 300px;
-  transform: translate(1%, 0%);
-}
-
-.projCard-container .projCard-box .img-wrapper img {
-  
- 
-  width: 125vw;
-  height: auto;
-
-}
-} */
 
 /* @media (orientation: landscape) and (min-width: 375px) and (max-width: 768px) {
 .projCard-container {
@@ -843,7 +837,7 @@
     .sideBio .links-about {
         
         padding-top: 0;
-        transform: translate(0%, -60%);
+        /* transform: translate(0%, -60%); */
     }
 
     .sideBio p {
