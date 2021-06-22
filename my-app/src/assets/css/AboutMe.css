@@ -756,31 +756,6 @@
     
 }
 
-/* @media (orientation: landscape) and (min-width: 375px) and (max-width: 768px) {
-.projCard-container {
-      
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  
-}
-
-.projCard-container .projCard-box {
-  width: 90vw;
-  height: 300px;
-  transform: translate(1%, 0%);
-}
-
-.projCard-container .projCard-box .img-wrapper img {
-  
- 
-  width: 125vw;
-  height: auto;
-
-}
-} */
-
 @media (orientation: landscape) and (min-width: 1000px) and (max-height: 900px) {
     .container {
         width: 100%;
