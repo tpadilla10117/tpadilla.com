@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/EmailForm.css'
+import './EmailForm.css'
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
 
 const EmailFormComponent = (props) => {

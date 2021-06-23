@@ -156,22 +156,6 @@
     border-radius: 30px;
 }
 
-/* .img-overlay {
-    position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-} */
-
-
 /* ------------------------------------------------------------------------------- */
 /* THIS IS EVERYTHING IN .sideBio container */
 
@@ -303,12 +287,9 @@
 
 
 /* ------------------------------------------------------------------------------- */
-/* THIS IS EVERYTHING IN Image Cards container */
 
+/* Parent container of the About Me Cards*/
 
-
-/* PART A: THIS IS TO BUILD THE CARDS ASSORTED IN ROWS*/
-  /* 1) Basic layout of the parent container*/
   .container {
     width: 100%;
     /* min-height: 50px; */
@@ -319,92 +300,6 @@
     flex-wrap: wrap;
     position: relative;
   }
-
-/* 2) Basic layout of the parent & child container*/
-  /* The box-sizing property allows us to include the padding and border in an element's total width and height - solves problem of padding adding to height*/
-  /* E.g. without it, you similar sized boxes with width and height would be LARGER due to padding added*/
-  .container .box {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    /* background: #ff0; */
-    margin: 10px;
-    box-sizing: border-box;
-    display: inline-block;
-  }
-/* -----------------------------------------------------------------------------------*/
-
-/* PART B: THIS IS TO ZOOM IN ON THE IMAGE ONLY*/
-/* 3) Filling the image to the box container - overflow prevents it from spilling out */
-    /* */
-    .container .box .imgBox {
-      position: relative;
-      overflow: hidden;
-    }
-
-/* 4) Let's us apply transform in step 5 over a 2s duration */
-      /* */
-      .container .box .imgBox img {
-        max-width: 100%;
-        transition: transform 2s;
-      }
-
-/* 5) Let's us Zoom the picture on the card in upon hover */
-      /* */
-      .container .box:hover .imgBox img {
-        transform: scale(1.2);
-      }
-
-/* -----------------------------------------------------------------------------------*/
-
-/* PART C: THIS IS FOR ADDING TEXT ON TOP OF IMAGE*/
-/* 6) Add text directly on top of image - at this point, image zooms in, and text remains on top */
-    /* */
-    .container .box .details {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      bottom: 10px;
-      right: 10px;
-      background: rgba(0, 0, 0, .8);
-      transform: scaleY(0);
-      transition: transform .5s;
-    }
-
- /* 7) Here we edit the content for the container over the image (image still zooms prior to this) */
-    /* The .content text is transformed to the middle of the container */
-    .container .box .details .content {
-      position: absolute;
-      top: 50px;
-      transform: translateY(-50%);
-      text-align: center;
-      padding: 15px;
-      color: #fff;
-    }
-
-/* 8) Adjusting styles for header2 */
-    /* */
-    .container .box .details .content h2{
-      margin: 0;
-      padding: 0;
-      font-size: 20px;
-      /* color: #ff0; */
-    }
-
- /* 9) Adjusting styles for p */
-    /* Text Overlay has no Zoom*/
-    .container .box .details .content p {
-      margin: 10px 0 0;
-      padding: 0;
-    }
-
-  /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
-    /*The background image ALSO zooms-in on hover*/
-    .container .box:hover .details {
-      transform: scaleY(1)
-    }
-
-
 
 /* ------------------------------------------------------------------------------- */
 /* THIS IS FOR RESPONSIVENESS*/

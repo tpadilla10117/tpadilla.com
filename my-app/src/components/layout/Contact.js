@@ -1,5 +1,5 @@
 import React from "react";
-import EmailFormComponent from '../feature/EmailForm.js';
+import EmailFormComponent from '../feature/EmailForm/EmailForm.js';
 import Skills from './Skills.js';
 import '../../assets/css/Contact.css';
 
