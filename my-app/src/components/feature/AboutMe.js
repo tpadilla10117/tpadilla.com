@@ -44,7 +44,7 @@ const AboutMeComponent = (props) => {
             </div>
 
             <div className="container">
-                <PersonalCard cardState={cardState} changeCardState={changeCardState}/>
+                {/* <PersonalCard cardState={cardState} changeCardState={changeCardState}/> */}
             </div>
             
         </div>
