@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {
+/* import {
     SiJavascript,
     SiJquery,
     SiCss3,
@@ -17,9 +17,9 @@ import {
     FaBootstrap,
     FaGithub,
     FaGitAlt
-} from "react-icons/fa";
+} from "react-icons/fa"; */
 
-import { AiOutlineConsoleSql } from "react-icons/ai";
+/* import { AiOutlineConsoleSql } from "react-icons/ai"; */
 import "./Footer.css"
 
 const TechStackFooter = () => (
