@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './AboutMe.css';
-import PersonalCard from '../../feature/personal_card.jsx';
+import PersonalCard from '../../feature/PersonalCards/personal_card.jsx';
 import Trin from "../../../../src/assets/images/trin.jpg";
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import '../../assets/css/Skills.css';
+import './Skills.css';
 
 import {
     SiJavascript,
@@ -83,56 +83,10 @@ const Skills = () => {
                     </li>
                 </ul>
                 <br />
-                {/* <div className="skill-list" data-aos="fade-down">
-                    <b>
-                        Languages: Javascript
-                        <br />
-                        Frameworks/Libraries: React, JQuery, BootStrap 4 / React BootStrap
-                        <br />
-                        Database: PostgreSQL
-                        <br />
-                        Additional Tools: Node.js, Githun, Git, Postman, Heroku, Netlify
-                    </b>
-                </div> */}
 
             </div>
 
         </div>
-
-        {/* <div className="skills-title">
-            <p>Audio Engineer / Musician</p>
-        </div>
-        <div className="skills-container">
-            <div className="skills-images" data-aos="fade-in">
-                <ul>
-                    <li>
-                        <SiJavascript
-                            size="3em"
-                            color="yellow"
-                            style={ {backgroundColor: "black"}}
-                        />
-                    </li>
-                    
-                </ul>
-                <br />
-                <div className="skill-list" data-aos="fade-down">
-                    <b>
-                        DAW: Avid ProTools, Logic
-                        <br />
-                        Instruments: Electric Guitar, Acoustic Guitar, Piano
-                        <br />
-                        Database: PostgreSQL
-                        <br />
-                        Additional Tools: Node.js, Githun, Git, Postman, Heroku, Netlify
-                    </b>
-                </div>
-
-            </div>
-
-        </div>
- */}
-
-
         </>
     )
 }

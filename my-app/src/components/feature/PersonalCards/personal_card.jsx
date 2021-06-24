@@ -1,11 +1,8 @@
 import React  from 'react';
-import Hike from "../../../src/assets/images/hike.jpeg";
-import GuitarSelfie from "../../../src/assets/images/GuitarSelfie.jpeg";
-import SanDiego from "../../../src/assets/images/SanDiego.jpeg";
-import FortBragg1 from "../../../src/assets/images/FortBragg1.jpeg";
-/* import FortBragg2 from "../../../src/assets/images/FortBragg2.jpeg";
-import FortBragg4 from "../../../src/assets/images/FortBragg4.jpeg";
-import BeachPano from "../../../src/assets/images/BeachPano.jpeg"; */
+import Hike from "../../../../src/assets/images/hike.jpeg";
+import GuitarSelfie from "../../../../src/assets/images/GuitarSelfie.jpeg";
+import SanDiego from "../../../../src/assets/images/SanDiego.jpeg";
+import FortBragg1 from "../../../../src/assets/images/FortBragg1.jpeg";
 
 import './personal_card.css';
 
