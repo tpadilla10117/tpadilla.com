@@ -26,9 +26,6 @@ const Skills = () => {
     return (
         <>
         {/* <div id="skills"></div> */}
-        <div>
-            <hr id="lineBreak"></hr>
-        </div>
         <div className="skills-title">
             <h4>Fullstack UX Engineer</h4>
         </div>
