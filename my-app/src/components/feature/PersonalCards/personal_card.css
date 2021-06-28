@@ -29,8 +29,9 @@
   /*Perspective: 1000px -> allows us to vamp up the 3D effect based on px value*/
   .card {
     margin: 5px auto 0;
-    width: 1200px;
-    height: 600px;
+    /* width: 1200px; */
+    width: 100%;
+    height: 520px;
     perspective: 1000px;
     display: flex;
     flex-direction: row;

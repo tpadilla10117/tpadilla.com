@@ -1,10 +1,8 @@
-import React, { useEffect, useState, Component } from 'react';
+import React, { /* useEffect, useState,  */Component } from 'react';
 
-import '../../assets/css/Portfolio.css';
+import './Portfolio.css';
 
 /* EXAMPLE of IMPORTING IMAGES */
-
-/* import { Link, NavLink } from 'react-router-dom'; */
 
 export default class Portfolio extends Component {
     render() {

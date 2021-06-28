@@ -7,29 +7,29 @@
   }
 
 #mainPage-wrapper {
-    position: absolute;
+    /* position: absolute; */
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     width: 100%;
-    height: 700px;
+    height: 100%;
     border-radius: 10px;
     max-width: 100%;
-    padding: 4.5rem 2.5rem 1.5rem 2.5rem;
-    /* background-color: red; */
+    /* padding: 4.5rem 2.5rem 1.5rem 2.5rem; */
     border-radius: 4px;
     opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    Margin-top: 24rem;
+    /* Margin-top: 22rem; */
 }
 
 #bio-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    /* margin-top: 20rem; */
 }
 
 /* FOR THE IMG CARDS */
@@ -155,22 +155,6 @@
     /* background-color: purple; */
     border-radius: 30px;
 }
-
-/* .img-overlay {
-    position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-} */
-
 
 /* ------------------------------------------------------------------------------- */
 /* THIS IS EVERYTHING IN .sideBio container */
@@ -303,107 +287,19 @@
 
 
 /* ------------------------------------------------------------------------------- */
-/* THIS IS EVERYTHING IN Image Cards container */
 
+/* Parent container of the About Me Cards*/
 
-
-/* PART A: THIS IS TO BUILD THE CARDS ASSORTED IN ROWS*/
-  /* 1) Basic layout of the parent container*/
   .container {
-    width: 1280px;
-    min-height: 50px;
+    width: 100%;
+    /* min-height: 50px; */
+    height: 100%;
     margin: 1px auto 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
   }
-
-/* 2) Basic layout of the parent & child container*/
-  /* The box-sizing property allows us to include the padding and border in an element's total width and height - solves problem of padding adding to height*/
-  /* E.g. without it, you similar sized boxes with width and height would be LARGER due to padding added*/
-  .container .box {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    /* background: #ff0; */
-    margin: 10px;
-    box-sizing: border-box;
-    display: inline-block;
-  }
-/* -----------------------------------------------------------------------------------*/
-
-/* PART B: THIS IS TO ZOOM IN ON THE IMAGE ONLY*/
-/* 3) Filling the image to the box container - overflow prevents it from spilling out */
-    /* */
-    .container .box .imgBox {
-      position: relative;
-      overflow: hidden;
-    }
-
-/* 4) Let's us apply transform in step 5 over a 2s duration */
-      /* */
-      .container .box .imgBox img {
-        max-width: 100%;
-        transition: transform 2s;
-      }
-
-/* 5) Let's us Zoom the picture on the card in upon hover */
-      /* */
-      .container .box:hover .imgBox img {
-        transform: scale(1.2);
-      }
-
-/* -----------------------------------------------------------------------------------*/
-
-/* PART C: THIS IS FOR ADDING TEXT ON TOP OF IMAGE*/
-/* 6) Add text directly on top of image - at this point, image zooms in, and text remains on top */
-    /* */
-    .container .box .details {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      bottom: 10px;
-      right: 10px;
-      background: rgba(0, 0, 0, .8);
-      transform: scaleY(0);
-      transition: transform .5s;
-    }
-
- /* 7) Here we edit the content for the container over the image (image still zooms prior to this) */
-    /* The .content text is transformed to the middle of the container */
-    .container .box .details .content {
-      position: absolute;
-      top: 50px;
-      transform: translateY(-50%);
-      text-align: center;
-      padding: 15px;
-      color: #fff;
-    }
-
-/* 8) Adjusting styles for header2 */
-    /* */
-    .container .box .details .content h2{
-      margin: 0;
-      padding: 0;
-      font-size: 20px;
-      /* color: #ff0; */
-    }
-
- /* 9) Adjusting styles for p */
-    /* Text Overlay has no Zoom*/
-    .container .box .details .content p {
-      margin: 10px 0 0;
-      padding: 0;
-    }
-
-  /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
-    /*The background image ALSO zooms-in on hover*/
-    .container .box:hover .details {
-      transform: scaleY(1)
-    }
-
-
 
 /* ------------------------------------------------------------------------------- */
 /* THIS IS FOR RESPONSIVENESS*/
@@ -415,18 +311,18 @@
         #mainPage-wrapper {
             width: 100%;
             /* height:100%; */
+            padding: 2.5rem 2.5rem 1.5rem 2.5rem;
         }
 
         .container {
             width: 100%;
-            /* transform: translate(-10%, 0%); */
         }
 
         .container .card {
             width: 100%;
             display: flex;
             flex-direction: column;
-            height: 1000px;
+            /* height: 10; */
         }
 
 
@@ -451,14 +347,14 @@
             display: flex;
             flex-direction: column;
             width: 90vw;
-            margin-top: 10vh;
+            /* margin-top: 10vh; */
             /* grid-gap: 60px; */
         }
 
         .overlay-practice {
             width: 90vw;
             margin-right: -10px;
-            margin-top: 60vh;
+            /* margin-top: 60vh; */
             transform: translate(0%, 0%);
             
         }
@@ -512,6 +408,10 @@
     }
 
     @media only screen and (min-device-width: 375px)and (max-width: 768px) {
+        #mainPage-wrapper {
+            padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+        }
+
         .container {
             width: 100%;
             /* transform: translate(-10%, 0%); */
@@ -521,7 +421,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            height: 1500px;
+           /*  height: 100%; */
             
         }
 
@@ -541,14 +441,14 @@
             display: flex;
             flex-direction: column;
             width: 90vw;
-            margin-top: 10vh;
+            /* margin-top: 10vh; */
             /* grid-gap: 60px; */
         }
 
         .overlay-practice {
             width: 90vw;
             margin-right: -10px;
-            margin-top: 70vh;
+            /* margin-top: 70vh; */
             transform: translate(0%, 0%);
             
         }
@@ -576,8 +476,8 @@
         .sideBio .links-about {
             
             padding-top: 0;
-            display: grid;
-            grid-template-columns: 50% 50%;
+            display: flex;
+            /* grid-template-columns: 50% 50%; */
             margin: 0px;
         }
 
@@ -600,16 +500,21 @@
     }
 
     @media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+
+        #mainPage-wrapper {
+            padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+        }
+
         .container {
             width: 100%;
             transform: translate(0%, 0%);
         }
 
         .container .card {
-            width: 70vw;
+            /* width: 70vw; */
             display: flex;
             flex-direction: column;
-            height: 200vh;
+            /* height: 200vh; */
             /* transform: translate(0%, 0%); */
         }
 
@@ -629,7 +534,7 @@
             display: flex;
             flex-direction: column;
             width: 90vw;
-            margin-top: 10vh;
+            /* margin-top: 10vh; */
             /* grid-gap: 60px; */
             
         }
@@ -637,7 +542,7 @@
         .overlay-practice {
             width: 90vw;
             margin-right: -10px;
-            margin-top: 40vh;
+            /* margin-top: 40vh; */
             transform: translate(0%, 0%);
             
         }
@@ -683,12 +588,16 @@
     }
 
     @media only screen and (min-device-width: 1000px) and (max-device-width: 1366px) {
+        #mainPage-wrapper {
+            padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+        }
+
         .container {
             width: 100%;
         }
 
         .container .card {
-            width: 100vw;
+            /* width: 100vw; */
         }
 
         .container .card h2 {
@@ -703,7 +612,7 @@
             /* display: flex; */
             /* flex-direction: column; */
             width: 90vw;
-            margin-top: 10vh;
+            /* margin-top: 10vh; */
             grid-gap: 60px;
         }
 
@@ -750,36 +659,23 @@
     }
 
 
+
+    @media only screen and (min-device-width: 1366px) and (max-device-width: 2500px) {
+        #mainPage-wrapper {
+            padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+        }
+        
+    }
+
 /* For Landscape view */
 
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 768px) {
     
 }
 
-/* @media (orientation: landscape) and (min-width: 375px) and (max-width: 768px) {
-.projCard-container {
-      
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  
-}
-
-.projCard-container .projCard-box {
-  width: 90vw;
-  height: 300px;
-  transform: translate(1%, 0%);
-}
-
-.projCard-container .projCard-box .img-wrapper img {
-  
- 
-  width: 125vw;
-  height: auto;
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1000px) {
 
 }
-} */
 
 @media (orientation: landscape) and (min-width: 1000px) and (max-height: 900px) {
     .container {
@@ -787,7 +683,7 @@
     }
 
     .container .card {
-        width: 100vw;
+        /* width: 100vw; */
     }
 
     .container .card h2 {
@@ -802,7 +698,7 @@
         /* display: flex; */
         /* flex-direction: column; */
         width: 90vw;
-        margin-top: 10vh;
+        margin-top: 1vh;
         grid-gap: 60px;
     }
 

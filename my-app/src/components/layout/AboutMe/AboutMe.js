@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../../assets/css/AboutMe.css';
-import PersonalCard from './personal_card.jsx';
-import Trin from "../../../src/assets/images/trin.jpg";
+import './AboutMe.css';
+import PersonalCard from '../../feature/PersonalCards/personal_card.jsx';
+import Trin from "../../../../src/assets/images/trin.jpg";
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
 
 const AboutMeComponent = (props) => {
