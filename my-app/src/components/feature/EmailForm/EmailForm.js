@@ -23,26 +23,23 @@ const EmailFormComponent = (props) => {
                             <input type="text" className="name-txt-box" placeholder="Uchiha" name="name" required></input>
                         </div>
                     </div>
-                    <br/>
                     
                     <div className="email-input">
                         <label for="email" id="email" className="input-two">Email: </label>
                         <input type="email" className="name-txt-box" placeholder="avenger@uchiha.com" name="email"></input>
                     </div>
-                    <br/>
+                    
                     <div className="_subject">
-                        <label for="_subject" className="_subject">Subject </label>
-                        <input classname="form-input-box" type="text" name="_subject" /* value="New Email From Personal Site!" *//>
+                        <label for="_subject" className="_subject">Subject: </label>
+                        <input className="form-input-box" type="text" name="_subject" /* value="New Email From Personal Site!" *//>
                     </div>
                     <div className="btn-box">
                         <p>By sending a message, you agree to not spam</p>
                         <textarea className="message-text" placeholder="What would you like to ask me?" type="text" name="name"/>
-                        <button type="submit" value="Submit">Submit</button>
+                        <button type="submit" className="form-submit" value="Submit">Submit</button>
                     </div>
                     {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
-                    <br/>
-
-                    <br/>
+                    
                     <div className="other-content">
                         {/* <div className="social-txt"><p>Follow</p></div> */}
                         

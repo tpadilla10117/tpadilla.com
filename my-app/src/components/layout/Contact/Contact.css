@@ -55,7 +55,7 @@
         /* transform: translate(-4%, 00%); */
         width: 100%;
         height: 90vh;
-        margin-top: 42rem;
+        margin-top: 40rem;
         top:0%;
         left:0%;
         transform: translate(0%, 0%);
@@ -100,6 +100,7 @@
     .skills-container {
         /* justify-content: center; */
         /* align-items: center; */
+        margin-left: 6vw;
     }
 
     .skills-container ul {

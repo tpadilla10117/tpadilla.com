@@ -24,7 +24,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     /* border: .7px solid rgba(255,255,255,.2); */
     /* border: .7px solid red; */
     align-items: center;
@@ -53,6 +53,7 @@
 /* THIS IS FOR THE NAME INPUTS */
     .name-input {
         display: flex;
+        margin-top: 1rem;
     }
 
     .name-input input{
@@ -89,6 +90,7 @@
 /* THIS IS FOR THE EMAIL INPUTS */
     .email-input {
         display: flex;
+        margin-top: 1rem;
         flex-direction: column;
     }
 
@@ -101,13 +103,23 @@
        box-shadow: 0 0 10px #494f653b;
     }
 
-    /* ._subject.form-input-box {
+    ._subject {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    ._subject input {
+        height: 50px;
+        outline: none;
+        border: .5px solid #dbdbdb;
+        border-radius: 3px;
+        padding: .9rem;
         box-shadow: 0 0 10px #494f653b;
-        background: red;
-    } */
+    }
 
     .btn-box {
-        height: 100px;
+        /* height: 100px; */
     }
 
     .btn-box p {
@@ -117,8 +129,6 @@
     }
 
     .btn-box button {
-        /* width: 260px;
-        height: 45px; */
         font-size: 1rem;
         border-radius: 3em;
         border: 1px solid #494F65;
@@ -134,9 +144,11 @@
         padding: 8px 45px;
         line-height: initial;
         -webkit-transition: all 250ms ease 50ms;
+        /* transform: translate(40%, 0%); */
+        margin-top: 2rem;
+        margin-left: 3.5rem;
     }
 
-    /* 6/28 - Need to fix hover timing */
     .btn-box button:hover {
         background: var(--main-btn-color);
         box-shadow: 0 0 10px #494f653b;
@@ -177,7 +189,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     .links a{
