@@ -34,53 +34,52 @@ const Skills = () => {
                 <ul>
                     <li>
                         <SiJavascript
-                            size="3em"
+                            size="2.5em"
                             color="yellow"
                             style={ {backgroundColor: "black"}}
                         />
                     </li>
                     <li>
-                        <SiHtml5 size="3em" color="f06529" />
+                        <SiHtml5 size="2.5em" color="f06529" />
                     </li>
                     <li>
-                        <SiCss3 size="3em" color="2965f1" />
+                        <SiCss3 size="2.5em" color="2965f1" />
                     </li>
                     <li>
-                        <AiOutlineConsoleSql size="3em" color="#00758F" />
+                        <AiOutlineConsoleSql size="2.5em" color="#00758F" />
                     </li>
                     <li>
-                        <FaReact size="3em" color="61DBfB" />
+                        <FaReact size="2.5em" color="61DBfB" />
                     </li>
                     <li>
-                        <SiJquery size="3em" color="#0868AC" />
+                        <SiJquery size="2.5em" color="#0868AC" />
                     </li>
                     <li>
-                        <FaBootstrap size="3em" color="563d7c" />
+                        <FaBootstrap size="2.5em" color="563d7c" />
                     </li>
                     <li>
-                        <SiPostgresql size="3em" color="336791" />
+                        <SiPostgresql size="2.5em" color="336791" />
                     </li>
                     <li>
-                        <FaNode size="3em" color="3C873A" />
+                        <FaNode size="2.5em" color="3C873A" />
                     </li>
                     <li>
-                        <FaGithub size="3em" color="black" />
+                        <FaGithub size="2.5em" color="black" />
                     </li>
                     <li>
-                        <FaGitAlt size="3em" color="f34f29" />
+                        <FaGitAlt size="2.5em" color="f34f29" />
                     </li>
                     <li>
-                        <SiPostman size="3em" color="EF5B25" />
+                        <SiPostman size="2.5em" color="EF5B25" />
                     </li>
                     <li>
-                        <SiHeroku size="3em" color="6567a5" />
+                        <SiHeroku size="2.5em" color="6567a5" />
                     </li>
                     <li>
-                        <SiNetlify size="3em" color="00C7B7" />
+                        <SiNetlify size="2.5em" color="00C7B7" />
                     </li>
                 </ul>
-                <br />
-
+            
             </div>
 
         </div>

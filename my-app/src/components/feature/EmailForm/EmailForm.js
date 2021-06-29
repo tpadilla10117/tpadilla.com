@@ -15,23 +15,23 @@ const EmailFormComponent = (props) => {
                     <div className="name-input">
                         <div className="input-one">
                             <label for="first-name" className="first-name" required>First Name: </label>
-                            <input type="text" className="name-txt-box" placeholder="Sasuke" name="email" required></input>
+                            <input type="text" className="txt-box" placeholder="Sasuke" name="email" required></input>
                         </div>
 
                         <div className="input-two">
                             <label for="last-name" className="last-name" required>Last Name: </label>
-                            <input type="text" className="name-txt-box" placeholder="Uchiha" name="name" required></input>
+                            <input type="text" className="txt-box" placeholder="Uchiha" name="name" required></input>
                         </div>
                     </div>
                     
                     <div className="email-input">
                         <label for="email" id="email" className="input-two">Email: </label>
-                        <input type="email" className="name-txt-box" placeholder="avenger@uchiha.com" name="email"></input>
+                        <input type="email" className="txt-box" placeholder="avenger@uchiha.com" name="email"></input>
                     </div>
                     
                     <div className="_subject">
-                        <label for="_subject" className="_subject">Subject: </label>
-                        <input className="form-input-box" type="text" name="_subject" /* value="New Email From Personal Site!" *//>
+                        <label for="_subject">Subject: </label>
+                        <input className="txt-box" type="text" name="_subject" placeholder="S Rank Mission" /* value="New Email From Personal Site!" *//>
                     </div>
                     <div className="btn-box">
                         <p>By sending a message, you agree to not spam</p>
