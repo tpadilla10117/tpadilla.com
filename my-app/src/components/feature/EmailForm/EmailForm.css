@@ -117,15 +117,33 @@
     }
 
     .btn-box button {
-        width: 260px;
-        height: 45px;
+        /* width: 260px;
+        height: 45px; */
         font-size: 1rem;
-        border-radius: 2px;
-        border: none;
+        border-radius: 3em;
+        border: 1px solid #494F65;
+        color: #494F65;
         outline: none;
-        background: var(--main-btn-color);
+        /* background: var(--main-btn-color); */
         color: white;
         cursor: pointer;
+        background: transparent;
+        display: inline-block;
+        border-radius: 3em;
+        font-size: 1em;
+        padding: 8px 45px;
+        line-height: initial;
+        /* transition: all 250ms ease 50ms; */
+    }
+
+    /* 6/28 - Need to fix hover timing */
+    .btn-box button:hover {
+        background: var(--main-btn-color);
+        transition: color 2s ease 1s;
+        /* animation-name: scale; */
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     .message-text {

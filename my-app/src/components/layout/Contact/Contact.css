@@ -80,6 +80,62 @@
 }
 
 @media only screen and (min-device-width: 375px) and (max-width: 768px) {
+    #contact {
+        
+        /* transform: translate(-50%, -20%); */
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        
+    }
+
+    .skills {
+        margin-top: .5rem;
+    }
+
+    .skills-title {
+        margin-top: 2rem;
+    }
+
+    .skills-container {
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .skills-container ul {
+        width: 90vw;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .skills-title h4 {
+        font-size: 40px;
+    }
+
+
+    #form-wrapper {
+        /* transform: translate(-4%, 00%); */
+        width: 100%;
+        height: 70vh;
+        margin-top: 42rem;
+        top:0%;
+        left:0%;
+        transform: translate(0%, 0%);
+    }
+
+    .email {
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-form {
+        /* transform: translate(-4%, 0%); */
+        /* height: 290px; */
+       /*  border: .10px solid red; */
+        /* width: 80vw; */
+        
+    }
     
 
 }
