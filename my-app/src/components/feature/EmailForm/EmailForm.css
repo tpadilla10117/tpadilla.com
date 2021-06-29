@@ -5,35 +5,43 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --main-bg-color: #F0E9DC; /* Alabaster */
+    --sec-bg-color: #07678E; /* Blue Sapphire */
+    --main-btn-color: #2DBCB4; /* Tiffany Blue */
+    --neutral-color: #12130F; /* Smoky Black */
+    --misc-color: #BF4E30; /* Vermillion */
+}
+
 #form-wrapper {
     position: absolute;
     top: 50%;
     left: 70%;
     margin-top: 10vh;
-    /* margin-top: 30rem;
-    margin-left: 50rem; */
     transform: translate(-50%, -50%);
     width: /* 280px */ 450px;
     height: 520px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     /* border: .7px solid rgba(255,255,255,.2); */
-    border: .7px solid red;
+    /* border: .7px solid red; */
     align-items: center;
     justify-content:space-evenly;
     color: #2c426a;
     grid-area: email;
+    text-transform: uppercase;
     /* background-image: url("http://clubsolaris.com/imgs/tips-to-take-care-of-the-beach-during-your-vacations/beach-sea-cancun-sun.png") */
 }
 
 .intro-text {
     width: 260px;
     height: 60px;
-    margin: .2rem;
+    /* margin: .2rem; */
     font-size: 1.2rem;
-    color: #2c426a;
+    /* color: #2c426a; */
+    /* color: #BF4E30; */
 }
 
 .email-form {
@@ -45,31 +53,44 @@
 /* THIS IS FOR THE NAME INPUTS */
     .name-input {
         display: flex;
+        margin-top: 1rem;
     }
 
     .name-input input{
-        width: 130px;
+        width: 100%;
         height: 50px;
         outline: none;
         border: .5px solid #dbdbdb;
         padding: .9rem;
+        /* margin-right: .5rem; */
     }
 
     .input-one input {
         border-radius: 3px 0 0 3px;
+        box-shadow: 0 0 10px #494f653b;
     }
 
     .input-two input {
         border-radius: 0 3px 3px 0;
+        box-shadow: 0 0 10px #494f653b;
     }
 
     input::placeholder{
         color: #bfbfbf;
     }
 
+    .name-txt-box {
+        margin-top: .5rem;
+    }
+
+    /* .social-txt {
+        margin-top: 2rem;
+    } */
+
 /* THIS IS FOR THE EMAIL INPUTS */
     .email-input {
         display: flex;
+        margin-top: 1rem;
         flex-direction: column;
     }
 
@@ -79,28 +100,60 @@
        border: .5px solid #dbdbdb;
        border-radius: 3px;
        padding: .9rem;
+       box-shadow: 0 0 10px #494f653b;
+    }
+
+    ._subject {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    ._subject input {
+        height: 50px;
+        outline: none;
+        border: .5px solid #dbdbdb;
+        border-radius: 3px;
+        padding: .9rem;
+        box-shadow: 0 0 10px #494f653b;
     }
 
     .btn-box {
-        height: 100px;
+        /* height: 100px; */
     }
 
     .btn-box p {
-        font-size: .6rem;
+        font-size: .8rem;
         padding: 1rem 0;
         text-align: center;
     }
 
     .btn-box button {
-        width: 260px;
-        height: 45px;
         font-size: 1rem;
-        border-radius: 2px;
-        border: none;
+        border-radius: 3em;
+        border: 1px solid #494F65;
+        color: #494F65;
         outline: none;
-        background: #2c426a;
+        /* background: var(--main-btn-color); */
         color: white;
         cursor: pointer;
+        background: transparent;
+        display: inline-block;
+        border-radius: 3em;
+        font-size: 1em;
+        padding: 8px 45px;
+        line-height: initial;
+        -webkit-transition: all 250ms ease 50ms;
+        /* transform: translate(40%, 0%); */
+        margin-top: 2rem;
+        margin-left: 3.5rem;
+    }
+
+    .btn-box button:hover {
+        background: var(--main-btn-color);
+        box-shadow: 0 0 10px #494f653b;
+        /* transition: all 250ms ease 50ms; */
+        /* -webkit-transition: all 250ms ease 50ms; */
     }
 
     .message-text {
@@ -112,6 +165,7 @@
         outline: none;
         background: white;
         color: black;
+        box-shadow: 0 0 10px #494f653b;
     }
 
     .message-text::placeholder{
@@ -121,21 +175,21 @@
 
 /* THIS IS FOR THE ICON BOXES/PICS */
     .other-content{
-        width: 260px;
-        height: 90px;
+        /* width: 260px;
+        height: 90px; */
     }
 
     .other-content p {
         text-align: center;
         padding: .2rem;
-        font-size: .6rem;
+        font-size: 1rem;
     }
 
     .links {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: .5rem;
+        padding-top: 2rem;
     }
 
     .links a{
@@ -146,15 +200,15 @@
         line-height: 50px;
         text-align: center;
         border-radius: 3px;
-        color: #FFF;
+        color: var(--main-bg-color);
+        -webkit-transition: all 250ms ease 50ms;
     }
 
     .links a:nth-child(1):hover {
-        /* background: #26242e; */
-        color: #2c426a;
-        transition: color 500ms ease .1s;
+        color: var(--main-btn-color);
+        /* transition: color 500ms ease .1s; */
         animation-name: scale;
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
@@ -176,7 +230,7 @@
     /* background: linear-gradient(to top,#00F0FF 30%, #f0e9dc 60%); */
     .links a:nth-child(2):hover {
         /* background: blue; */
-        color: #2c426a;
+        color: var(--main-btn-color);
         transition: color 500ms ease .1s;
         transition: color 500ms ease .1s;
         animation-name: scale;
@@ -186,8 +240,7 @@
     }
 
     .links a:nth-child(3):hover {
-        /* background: purple; */
-        color: #2c426a;
+        color: var(--main-btn-color);
         transition: color 500ms ease .1s;
         transition: color 500ms ease .1s;
         animation-name: scale;
@@ -197,8 +250,7 @@
     }
 
     .links a:nth-child(4):hover {
-        /* background: aqua; */
-        color: #2c426a;
+        color: var(--main-btn-color);
         transition: color 500ms ease .1s;
         transition: color 500ms ease .1s;
         animation-name: scale;
