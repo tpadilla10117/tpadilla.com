@@ -2,14 +2,12 @@
     margin-top: 5rem;
     font-size: 56px;
     letter-spacing: 0.005em;
-    /* font-family: Gilroy; */
-    /* display: flex; */
     display: grid;
     justify-content: center;
     align-items: center;
     color: #1d1d1f;
     position: static;
-    background-color: white;
+    /* background-color: white; */
 }
 
 /* EVERYTHING PERTAINING TO THE SKILLS-CONTAINER */
@@ -18,9 +16,8 @@
         margin-top: 2rem;
         justify-content: center;
         grid-template-columns: auto;
-        /* grid-gap: 10px; */
         grid-template-areas: ".skills-images" ".skill-list";
-        background-color: white;
+        /* background-color: white; */
     }
 
     .skills-container li:hover {
