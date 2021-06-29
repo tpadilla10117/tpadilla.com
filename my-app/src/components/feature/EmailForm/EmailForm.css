@@ -82,6 +82,10 @@
         margin-top: .5rem;
     }
 
+    /* .social-txt {
+        margin-top: 2rem;
+    } */
+
 /* THIS IS FOR THE EMAIL INPUTS */
     .email-input {
         display: flex;
@@ -107,7 +111,7 @@
     }
 
     .btn-box p {
-        font-size: .6rem;
+        font-size: .8rem;
         padding: 1rem 0;
         text-align: center;
     }
@@ -157,7 +161,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 
     .links a{

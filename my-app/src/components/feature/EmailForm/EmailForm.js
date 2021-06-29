@@ -44,8 +44,8 @@ const EmailFormComponent = (props) => {
 
                     <br/>
                     <div className="other-content">
-                        <p>Check me out on Social Media!</p>
-                        {/* 4/4: Look at how i sized the github icon */}
+                        {/* <div className="social-txt"><p>Follow</p></div> */}
+                        
                         <div className="links">
                                 <a href="https://github.com/tpadilla10117" className="github">{<SiGithub size={35}/>}</a>
                                 <a href="#" className="facebook">{<SiFacebook size={35}/>}</a>
