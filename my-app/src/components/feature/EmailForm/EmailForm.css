@@ -133,17 +133,15 @@
         font-size: 1em;
         padding: 8px 45px;
         line-height: initial;
-        /* transition: all 250ms ease 50ms; */
+        -webkit-transition: all 250ms ease 50ms;
     }
 
     /* 6/28 - Need to fix hover timing */
     .btn-box button:hover {
         background: var(--main-btn-color);
-        transition: color 2s ease 1s;
-        /* animation-name: scale; */
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
+        box-shadow: 0 0 10px #494f653b;
+        /* transition: all 250ms ease 50ms; */
+        /* -webkit-transition: all 250ms ease 50ms; */
     }
 
     .message-text {
@@ -191,13 +189,14 @@
         text-align: center;
         border-radius: 3px;
         color: var(--main-bg-color);
+        -webkit-transition: all 250ms ease 50ms;
     }
 
     .links a:nth-child(1):hover {
         color: var(--main-btn-color);
-        transition: color 500ms ease .1s;
+        /* transition: color 500ms ease .1s; */
         animation-name: scale;
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
