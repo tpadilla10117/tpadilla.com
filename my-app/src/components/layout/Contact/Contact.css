@@ -13,7 +13,6 @@
 
 .skills {
     margin-top: 13rem;
-    /* margin-left: 10rem; */
     width: 100%;
 }
 
@@ -36,9 +35,21 @@
         margin-top: 2rem;
     }
 
+    .skills-images {
+        /* border: solid yellow; */
+    }
+
     .skills-container ul {
-        width: 90vw;
+        width: 50vw;
         justify-content: center;
+        /* border: solid red; */
+        /* margin-left: 10vw; */
+        padding: 1.1rem;
+        transform: translate(0%, 0%);
+    }
+
+    .skills-container li {
+        padding: .05rem;
     }
 
     .skills-title h4 {
@@ -48,8 +59,8 @@
     #form-wrapper {
         /* transform: translate(-4%, 00%); */
         width: 100%;
-        height: 90vh;
-        margin-top: 35rem;
+        height: 80vh;
+        margin-top: 20rem;
         top:0%;
         left:0%;
         transform: translate(0%, 0%);
@@ -59,18 +70,8 @@
         /* width: 100%; */
         display: flex;
         flex-direction: column;
-    }
-
-    .email-form {
-        /* transform: translate(-4%, 0%); */
-        /* height: 290px; */
-       /*  border: .10px solid red; */
-        /* width: 80vw; */
-        
-    }
-    
-    
-    
+        /* margin-top: 35rem; */
+    }    
 }
 
 @media only screen and (min-device-width: 375px) and (max-width: 768px) {
@@ -84,7 +85,7 @@
     .skills {
         margin-top: .5rem;
         width: 100%;
-        border: solid red;
+        /* border: solid red; */
     }
 
     .skills-title {
@@ -96,17 +97,18 @@
         /* align-items: center; */
         /* margin-left: 6vw; */
         width: 100%;
-        border: solid yellow;
+        /* border: solid yellow; */
     }
 
     .skills-images {
         width: 100%;
-        border: solid purple;
+        /* border: solid purple; */
     }
 
     .skills-container ul {
         /* width: 90vw; */
         justify-content: center;
+        transform: translate(0%,0%)
     }
 
     .skills-title h4 {
@@ -117,8 +119,8 @@
     #form-wrapper {
         /* transform: translate(-4%, 00%); */
         width: 100%;
-        height: 70vh;
-        margin-top: 32rem;
+        height: 65vh;
+        margin-top: 20rem;
         top:0%;
         left:0%;
         transform: translate(0%, 0%);
@@ -163,13 +165,26 @@
     }
 
     .skills-container {
-        margin-left: 6vw;
+        /* margin-left: 6vw; */
+    }
+
+    .skills-images {
+        width: 100%;
     }
 
     .skills-container ul {
         width: 90vw;
         /* justify-content: center; */
         align-items: center;
+        transform: translate(0%,0%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+
+    .skills-container li {
+        padding: .06rem;
     }
 
     .skills-title h4 {
@@ -181,7 +196,7 @@
         /* transform: translate(-4%, 00%); */
         width: 100%;
         height: 70vh;
-        margin-top: 20rem;
+        margin-top: 8rem;
         top:0%;
         left:0%;
         transform: translate(0%, 0%);

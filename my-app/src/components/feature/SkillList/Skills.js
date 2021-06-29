@@ -79,8 +79,7 @@ const Skills = () => {
                         <SiNetlify size="2.5em" color="00C7B7" />
                     </li>
                 </ul>
-                <br />
-
+            
             </div>
 
         </div>
