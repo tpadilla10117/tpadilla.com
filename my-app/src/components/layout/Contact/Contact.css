@@ -9,11 +9,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-
-    /* Display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
 }
 
 .skills {

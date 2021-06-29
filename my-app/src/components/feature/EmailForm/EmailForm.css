@@ -53,7 +53,7 @@
 /* THIS IS FOR THE NAME INPUTS */
     .name-input {
         display: flex;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
     }
 
     .name-input input{
@@ -79,13 +79,9 @@
         color: #bfbfbf;
     }
 
-    .name-txt-box {
+    .txt-box {
         margin-top: .5rem;
     }
-
-    /* .social-txt {
-        margin-top: 2rem;
-    } */
 
 /* THIS IS FOR THE EMAIL INPUTS */
     .email-input {
@@ -116,10 +112,6 @@
         border-radius: 3px;
         padding: .9rem;
         box-shadow: 0 0 10px #494f653b;
-    }
-
-    .btn-box {
-        /* height: 100px; */
     }
 
     .btn-box p {
@@ -166,11 +158,11 @@
         background: white;
         color: black;
         box-shadow: 0 0 10px #494f653b;
+        padding: .9rem;
     }
 
     .message-text::placeholder{
         color: #bfbfbf;
-        text-align: center;
     }
 
 /* THIS IS FOR THE ICON BOXES/PICS */
