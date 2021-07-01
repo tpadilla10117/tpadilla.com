@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarLi, SidebarRoute } from './SidebarElements.js';
-import './sample.css';
+import './SideBarTransition.css';
 import { SidebarData } from '../../../utils';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from "react-transition-group";
