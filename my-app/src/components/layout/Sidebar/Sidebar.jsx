@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarLi, SidebarRoute } from './SidebarElements.js';
+import './sample.css';
 import { SidebarData } from '../../../utils';
 import { Link } from 'react-router-dom';
-import { Transition } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 const SidebarComponent = (props) => {
 
     const {isOpen, navToggle} = props;
 
-/* 5/29 - Need to figure out why styled transition isnt working */
     return (
-        <Transition>
-        <SidebarContainer isOpen={isOpen} onClick={navToggle}>
+        <CSSTransition in={isOpen} timeout={300} classNames={"sideBarTransition"} unmountOnExit onEnter={() => navToggle} onExited={() => navToggle}>
+        <SidebarContainer isOpen={isOpen} /* onClick={navToggle} */>
+
+            {/* This is the X icon */}
             <Icon onClick={navToggle}>
                 <CloseIcon />
             </Icon>
@@ -39,7 +42,7 @@ const SidebarComponent = (props) => {
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
-        </Transition>
+        </CSSTransition>
     );
 };
 

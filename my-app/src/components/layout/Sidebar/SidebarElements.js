@@ -10,14 +10,14 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #07678E;;
+    background: #07678E;
     display: grid;
     align-items: center;
     top: 0;
     left: 0;
-    transition: 0.3 ease-in-out;
+    /* transition: 0.3 ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */
 `
 /* ------------------------------------------------------------------------------- */
 /* These are the Styles for the "x" on the sidebar: */

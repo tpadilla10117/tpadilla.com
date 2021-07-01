@@ -19,7 +19,7 @@ import {NavbarComponent, SideBarComponent} from './index';
                     {/* <!-- <span>TP</span> --> */}
                         {/* <span class="icon fa-circle"></span> */}
                     </div>
-                    <NavbarComponent  navToggle={navToggle} />
+                    <NavbarComponent  isOpen={isOpen} navToggle={navToggle} />
                     <SideBarComponent isOpen={isOpen} navToggle={navToggle}/>
                 </header>
             </div>
