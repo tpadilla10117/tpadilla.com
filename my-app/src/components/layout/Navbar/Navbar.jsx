@@ -29,7 +29,6 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
             window.addEventListener('scroll', changeNav)
         }, [])
 
-        /* 7/1 - Need to figure out why clicking on nav bar renders the sidebar regardless of the icon */
         return  (
             <div id="navbar-wrapper">
 

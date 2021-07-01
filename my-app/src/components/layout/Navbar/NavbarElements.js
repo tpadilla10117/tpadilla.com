@@ -3,17 +3,19 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? 'red' : '#07678E;;')};
+    background: ${({ scrollNav }) => (scrollNav ? '#07678E' : '#07678E;')};
     height: 80px;
     /* margin-top: -80px; */
     display: flex;
     justify-content: flex-end;
-   width: 100%;
+    width: 100%;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
+    box-shadow: 0 25px 40px rgba(#494f653b);
+    opacity: .96;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;

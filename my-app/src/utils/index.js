@@ -20,7 +20,7 @@ export const SidebarData = [
     },
 
     {
-        title: 'Portfolio',
+        title: 'UX Portfolio',
         path: '/portfolio',
         icon: <FaIcons.FaProjectDiagram />,
         cName: 'nav-text'
