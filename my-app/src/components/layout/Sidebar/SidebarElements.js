@@ -3,6 +3,8 @@ import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRouter } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 
+
+/* Transition doesn't work */
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
@@ -17,21 +19,23 @@ export const SidebarContainer = styled.aside`
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
+/* ------------------------------------------------------------------------------- */
+/* These are the Styles for the "x" on the sidebar: */
 
-export const CloseIcon = styled(FaIcons.FaTimes)`
-    color: #fff;
-`
+    export const CloseIcon = styled(FaIcons.FaTimes)`
+        color: #fff;
+    `
 
-export const Icon = styled.div`
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    background: transparent;
-    font-size: 2rem;
-    cursor: pointer;
-    outline: nine;
-`
-
+    export const Icon = styled.div`
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        background: transparent;
+        font-size: 2rem;
+        cursor: pointer;
+        outline: nine;
+    `
+/* ------------------------------------------------------------------------------- */
 export const SidebarWrapper = styled.div`
     color: #fff;
 `

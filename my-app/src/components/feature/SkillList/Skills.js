@@ -27,7 +27,7 @@ const Skills = () => {
         <>
         {/* <div id="skills"></div> */}
         <div className="skills-title">
-            <h4>Fullstack UX Engineer</h4>
+            <h5>Fullstack UX Engineer</h5>
         </div>
         <div className="skills-container">
             <div className="skills-images" data-aos="fade-in">

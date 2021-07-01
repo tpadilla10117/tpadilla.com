@@ -51,28 +51,36 @@
 
 
 /* THIS IS FOR THE NAME INPUTS */
-    .name-input {
+    /* .name-input {
         display: flex;
-    }
+        
+    } */
 
-    .name-input input{
-        width: 100%;
-        height: 50px;
-        outline: none;
-        border: .5px solid #dbdbdb;
-        padding: .9rem;
-        /* margin-right: .5rem; */
-    }
 
     .input-one input {
         border-radius: 3px 0 0 3px;
         box-shadow: 0 0 10px #494f653b;
+        width: 100%;
+        min-width: auto;
+        height: 50px;
+        outline: none;
+        border: .5px solid #dbdbdb;
+        padding: .9rem;
+        /* margin-top: 1rem; */
+        /* margin-right: 30px; */
     }
 
-    .input-two input {
+    /* .input-two input {
         border-radius: 0 3px 3px 0;
         box-shadow: 0 0 10px #494f653b;
-    }
+        width: 100%;
+        min-width: auto;
+        height: 50px;
+        outline: none;
+        border: .5px solid #dbdbdb;
+        padding: .9rem;
+        margin-top: 1rem;
+    } */
 
     input::placeholder{
         color: #bfbfbf;
