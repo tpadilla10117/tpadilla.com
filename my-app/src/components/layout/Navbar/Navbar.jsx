@@ -5,7 +5,6 @@ import * as FaIcons from 'react-icons/fa';
 import { NavbarData } from '../../../utils';
 import { IconContext } from 'react-icons';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLi, NavBtn, NavBtnLink} from './NavbarElements.js';
-import './Navbar.css';
 
 /* NavbarComponent is for the landing page header */
     
@@ -59,7 +58,7 @@ import './Navbar.css';
                                 {NavbarData.map( (item, index) => {
                                     return (
                                         
-                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"} } key={"nav-li-" + index}>
+                                        <Link to={item.path} className={toggleActiveStyles(index)} onClick={() => { toggleActiveNav(index)}} style={{textDecoration: "none"} } key={"nav-li-" + index}>
                                             <NavLi key={index} className={toggleActiveStyles(index)} onClick={() => { toggleActiveNav(index)}}>
                                                 <span>{item.title} {item.icon}</span>
                                             </NavLi>
