@@ -16,26 +16,30 @@ export const SidebarData = [
         title: 'About',
         path: '/about',
         icon: <AiIcons.AiOutlineUser />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        id: 2
     },
 
     {
         title: 'UX Portfolio',
         path: '/portfolio',
         icon: <FaIcons.FaProjectDiagram />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        id: 3
     },
     {
         title: 'Contact',
         path: '/contact',
         icon: <IoIcons.IoMdPhonePortrait />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        id: 4
     },
     {
         title: 'Resume',
         path: '/resume',
         icon: <AiIcons.AiOutlineFilePdf />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        id: 5
     }
     
 
@@ -47,7 +51,9 @@ export const NavbarData = [
         title: 'About',
         path: '/about',
         icon: <AiIcons.AiOutlineUser />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        activeObject: null,
+        id: 2
     },
 
   /*   {
@@ -60,13 +66,17 @@ export const NavbarData = [
         title: 'Contact',
         path: '/contact',
         icon: <IoIcons.IoMdPhonePortrait />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        activeObject: null,
+        id: 4
     },
     {
         title: 'Resume',
         path: '/resume',
         icon: <AiIcons.AiOutlineFilePdf />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        activeObject: null,
+        id: 5
     }
     
 

@@ -14,7 +14,7 @@ export const Nav = styled.nav`
     position: fixed;
     top: 0;
     z-index: 10;
-    box-shadow: 0 25px 40px rgba(#494f653b);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
     opacity: .96;
 
     @media screen and (max-width: 960px) {
@@ -73,10 +73,10 @@ export const NavMenu = styled.ul`
     }
 `
 
-export const NavItem = styled.li`
+/* export const NavItem = styled.li`
     height: 80px;
     list-style: none;
-`
+` */
 
 export const NavLinks = styled(LinkScroll)`
     color: #fff;
@@ -107,10 +107,19 @@ export const NavLi = styled.li `
     font-size: 0.8em;
     font-family: 'Trispace', sans-serif;
     font-weight: 300;
+    
 
     &:hover{
         color: #00D1FF;
         transition: color 600ms ease 0s;
+    }
+
+    &.active {
+        color: #red;
+        border-bottom: 5px solid red;
+        width: 100%;
+        border-radius: 1px;
+        transition: 0.5s ease;
     }
     
 `

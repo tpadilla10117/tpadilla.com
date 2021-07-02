@@ -24,7 +24,7 @@ const SidebarComponent = (props) => {
                     {SidebarData.map( (item, index) => {
                                     return (
                                         
-                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"}}>
+                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"}} key={index}>
                                             <SidebarLi key={index} className={item.cName}>
                                                     {/* {item.icon} */}
                                                     <span>{item.title}</span>

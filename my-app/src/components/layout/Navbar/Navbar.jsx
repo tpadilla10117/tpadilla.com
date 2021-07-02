@@ -16,6 +16,38 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
         const { navToggle } = props;
 
         const [scrollNav, setScrollNav] = useState(false);
+        const [isActive, setIsActive ] = useState(false);
+        const [ navLinkState, changeNavLinkState ] = useState(NavbarData);
+
+      
+      /* Helper Function to toggle Active Nav link */
+        function toggleActiveNav() {
+            changeNavLinkState( {...navLinkState, activeObject: navLinkState.id} )
+        }
+
+        /* Helper Function to toggle the classNames that are styled */
+
+        function toggleActiveStyles() {
+            return navLinkState.id === navLinkState.activeObject ? " active" : "inactive";
+        }
+
+
+        const navData = () => {
+
+            console.log("HEre is the data Im grabbing:", NavbarData[2].path);
+            console.log("Here is the result of navLinkState:", navLinkState)
+            
+        }
+
+        navData();
+
+
+    /* Toggler to Change nav classes to active: */
+        const activeNavClassToggler = () => {
+            setIsActive(true);
+        }
+
+        
 
         const changeNav = () => {
             if(window.scrollY >= 80) {
@@ -27,7 +59,9 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
 
         useEffect(() => {
             window.addEventListener('scroll', changeNav)
-        }, [])
+        }, []);
+
+
 
         return  (
             <div id="navbar-wrapper">
@@ -40,23 +74,21 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
                             <FaIcons.FaBars/>
                         </MobileIcon>
                         <NavMenu>
-                            <NavItem>
+                            
                                 <NavLinks>
                                 {NavbarData.map( (item, index) => {
                                     return (
                                         
-                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"}}>
-                                            <NavLi key={index} className={item.cName}>
-                                                
+                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"}} key={index}>
+                                            <NavLi key={index} className={toggleActiveStyles()} onClick={() => { toggleActiveNav()}}/* {item.cName && isActive ? `${item.cName} active` : `${item.cName}`} onClick={() => activeNavClassToggler()} */>
                                                 <span>{item.title} {item.icon}</span>
                                             </NavLi>
                                         </Link>
                                         
                                     )
                                 } )}
-
                                 </NavLinks>
-                            </NavItem>
+                            
                         </NavMenu>
                         {/* <NavBtn>
                             <NavBtnLink to='signup'>Sign Up</NavBtnLink>
