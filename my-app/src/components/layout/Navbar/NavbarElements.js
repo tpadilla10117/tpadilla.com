@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
+    /* padding: 0 24px; */
     /* max-width: 1100px; */
     /* justify-content: flex-end; */
     
@@ -67,15 +67,18 @@ export const NavMenu = styled.ul`
     list-styled: none;
     text-align: center;
     margin-right: -22px;
+    
 
     @media screen and (max-width: 768px) {
         display: none;
     }
 `
 
-/* export const NavItem = styled.li`
+/* export const NavItem = styled.div`
     height: 80px;
     list-style: none;
+    background: yellow;
+    
 ` */
 
 export const NavLinks = styled(LinkScroll)`
@@ -86,17 +89,19 @@ export const NavLinks = styled(LinkScroll)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    
+    width: 100%;
+    /* border-bottom: 3px solid #01bf71; */
 
     &.active {
         border-bottom: 3px solid #01bf71;
+        background: yellow;
     }
 `
 export const NavLi = styled.li `
     text-decoration: none;
     list-style: none;
     color: white;
-    padding: 0 16px;
+    padding: 0 30px;
     text-transform: uppercase;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -104,19 +109,20 @@ export const NavLi = styled.li `
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     letter-spacing: 1px;
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: 'Trispace', sans-serif;
     font-weight: 300;
     
 
     &:hover{
-        color: #00D1FF;
+        color: var(--main-btn-color);
         transition: color 600ms ease 0s;
     }
 
     &.active {
-        color: #red;
-        border-bottom: 5px solid red;
+        color: #00D1FF;
+        /* border-bottom: 5px solid red; */
+        /* background: yellow; */
         width: 100%;
         border-radius: 1px;
         transition: 0.5s ease;
