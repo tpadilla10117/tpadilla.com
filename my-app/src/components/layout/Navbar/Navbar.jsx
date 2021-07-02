@@ -2,12 +2,10 @@ import React, {useState, useEffect} from 'react';
 
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-
-import { AiOutlineConsoleSql } from 'react-icons/ai';
 import { NavbarData } from '../../../utils';
 import { IconContext } from 'react-icons';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLi, NavBtn, NavBtnLink} from './NavbarElements.js';
+import './Navbar.css';
 
 /* NavbarComponent is for the landing page header */
     
@@ -27,7 +25,7 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
         /* Helper Function to toggle the classNames that are styled */
 
         function toggleActiveStyles(index) {
-            return navLinkState[index].id === navLinkState.activeObject ? " active" : "inactive";
+            return navLinkState[index].id === navLinkState.activeObject ? "active" : "inactive";
         }
 
         const changeNav = () => {
@@ -54,14 +52,14 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
                         <MobileIcon onClick={navToggle}>
                             <FaIcons.FaBars/>
                         </MobileIcon>
-                        <NavMenu>
+                        <NavMenu className="nav-menu">
                             
-                                <NavLinks>
+                                {/* <NavLinks className="look"> */}
                                     {/* <NavItem> */}
                                 {NavbarData.map( (item, index) => {
                                     return (
                                         
-                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"}} key={"nav-li-" + index}>
+                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"} } key={"nav-li-" + index}>
                                             <NavLi key={index} className={toggleActiveStyles(index)} onClick={() => { toggleActiveNav(index)}}>
                                                 <span>{item.title} {item.icon}</span>
                                             </NavLi>
@@ -70,7 +68,7 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
                                     )
                                 } )}
                                 {/* </NavItem> */}
-                                </NavLinks>
+                                {/* </NavLinks> */}
                             
                         </NavMenu>
                         {/* <NavBtn>

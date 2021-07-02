@@ -66,7 +66,8 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-styled: none;
     text-align: center;
-    margin-right: -22px;
+    /* margin-right: -22px; */
+    height: 100%;
     
 
     @media screen and (max-width: 768px) {
@@ -78,7 +79,6 @@ export const NavMenu = styled.ul`
     height: 80px;
     list-style: none;
     background: yellow;
-    
 ` */
 
 export const NavLinks = styled(LinkScroll)`
@@ -101,17 +101,19 @@ export const NavLi = styled.li `
     text-decoration: none;
     list-style: none;
     color: white;
-    padding: 0 30px;
+    padding: 0 2rem;
     text-transform: uppercase;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-size: 1em;
     font-family: 'Trispace', sans-serif;
     font-weight: 300;
+    /* margin-top: 4.5rem; */
+    
     
 
     &:hover{
@@ -121,16 +123,19 @@ export const NavLi = styled.li `
 
     &.active {
         color: #00D1FF;
-        /* border-bottom: 5px solid red; */
-        /* background: yellow; */
+        border-bottom: 5px solid var(--main-btn-color);
+        background: var(--misc-color);
+        padding: 2rem;
         width: 100%;
         border-radius: 1px;
         transition: 0.5s ease;
+        
     }
     
 `
 
-export const NavBtn = styled.nav`
+
+/* export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
 
@@ -157,4 +162,4 @@ export const NavBtnLink = styled(LinkRouter)`
         background: #fff;
         color: #010606;
     }
-`
+` */
