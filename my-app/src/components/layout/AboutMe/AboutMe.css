@@ -164,27 +164,23 @@
         padding: 4rem;
         border-radius: 30px;
         width: 65vw;
+        /* height: 40rem; */
         margin-bottom: 2rem;
         margin-right: 4rem;
         color: #2c426a;
         overflow-x: hidden;
-            overflow-y: auto;
+        overflow-y: auto;
     }
 
     .sideBio h3 {
         display: flex;
+        text-align: center;
         /* justify-content: center; */
     }
     .about-picture {
         height: 400px;
         width: 100%;
-        /* margin-top: -25px; */
-        /* border-radius: 2rem; */
     }
-    /* .img-container:hover .img-overlay {
-        opacity: 1;
-    } */
-
 
     .about-heading {
         margin-bottom: 1rem;
@@ -197,6 +193,7 @@
         font-weight: 300;
         overflow-x: hidden;
         overflow-y: auto;
+        text-align: center;
     }
 
     .stackIcons {
@@ -210,9 +207,9 @@
 .links-about {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 1rem;
-    margin-top: 8rem;
+    margin-top: 2rem;
     position: relative
 }
 
@@ -229,7 +226,7 @@
 
 .links-about a:nth-child(1):hover {
     
-    color: #00F0FF;
+    color: var(--main-btn-color);
     transition: color 500ms ease .1s;
     animation-name: scale;
     animation-duration: .4s;
@@ -254,7 +251,7 @@
 
 .links-about a:nth-child(2):hover {
     
-    color: #00F0FF;
+    color: var(--main-btn-color);
     transition: color 500ms ease .1s;
     transition: color 500ms ease .1s;
     animation-name: scale;
@@ -265,7 +262,7 @@
 
 .links-about a:nth-child(3):hover {
     
-    color: #00F0FF;
+    color: var(--main-btn-color);
     transition: color 500ms ease .1s;
     transition: color 500ms ease .1s;
     animation-name: scale;
@@ -276,7 +273,7 @@
 
 .links-about a:nth-child(4):hover {
     
-    color: #00F0FF;
+    color: var(--main-btn-color);
     transition: color 500ms ease .1s;
     transition: color 500ms ease .1s;
     animation-name: scale;
@@ -310,7 +307,6 @@
 
         #mainPage-wrapper {
             width: 100%;
-            /* height:100%; */
             padding: 2.5rem 2.5rem 1.5rem 2.5rem;
             margin-top: 4rem;
         }
@@ -373,24 +369,18 @@
 
         .sideBio {
             width: 100%;
-            height: 90vh;
+            /* height: 40rem; */
             overflow-x: hidden;
             overflow-y: auto;
-            /* margin-top: 20px;  */
-            /* transform: translate(-10%, 0%); */
         }
 
         .sideBio .links-about {
             
-            /* padding-top: 0; */
-            /* transform: translate(-18%, -70%); */
             display: grid;
             grid-template-columns: 50% 50%;
-            /* margin-top: 1.5rem; */
             justify-content: center;
             align-items: center;
             margin: 1rem;
-            /* padding: 1rem; */
         }
 
         .sideBio .links-about a{
@@ -401,7 +391,6 @@
         }
 
         .sideBio p {
-            width: 60vw;
             font-size: 17px;
             overflow-x: hidden;
             overflow-y: auto;
@@ -468,7 +457,7 @@
 
         .sideBio {
             width: 90vw;
-            height: 90vh;
+            /* height: 90vh; */
             overflow-x: hidden;
             overflow-y: auto;
             /* margin-top: 20px;  */
@@ -563,15 +552,12 @@
 
         .sideBio {
             width: 90vw;
-            height: 60vh;
-            /* margin-top: 20px;  */
-            /* transform: translate(-10%, 0%); */
+            /* height: 60vh; */
         }
 
         .sideBio .links-about {
             
             padding-top: 0px;
-            /* transform: translate(0%, -60%); */
             margin: 5rem;
             display: flex;
         }
@@ -639,7 +625,7 @@
 
         .sideBio {
             width: 50vw;
-            height: 60vh;
+            /* height: 60vh; */
             /* margin-top: 20px;  */
             transform: translate(-10%, 0%);
         }
@@ -726,8 +712,7 @@
 
     .sideBio {
         width: 50vw;
-        height: 90vh;
-        /* margin-top: 20px;  */
+        /* height: 90vh; */
         transform: translate(-10%, 0%);
     }
 
