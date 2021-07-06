@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -15,12 +14,13 @@
 
 #form-wrapper {
     position: absolute;
-    top: 50%;
-    left: 70%;
-    margin-top: 10vh;
-    transform: translate(-50%, -50%);
+    z-index:1;
+    /* top: 50%; */
+    /* left: 70%; */
+    margin-top: 7rem;
+    /* transform: translate(-50%, -50%); */
     width: /* 280px */ 450px;
-    height: 520px;
+    height: 645px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -32,10 +32,13 @@
     color: #2c426a;
     grid-area: email;
     text-transform: uppercase;
-    /* background-image: url("http://clubsolaris.com/imgs/tips-to-take-care-of-the-beach-during-your-vacations/beach-sea-cancun-sun.png") */
+    /* background-image: url("http://clubsolaris.com/imgs/tips-to-take-care-of-the-beach-during-your-vacations/beach-sea-cancun-sun.png"); */
+    /* background-image: url("../../../../src/assets/images/Waves.mp4"); */
+    background-color: #fff;
 }
 
 .intro-text {
+
     width: 260px;
     height: 60px;
     /* margin: .2rem; */
@@ -45,34 +48,38 @@
 }
 
 .email-form {
+    z-index:50;
     width: 260px;
-    height: 390px;
+    /* height: 390px; */
 }
 
 
 /* THIS IS FOR THE NAME INPUTS */
-    .name-input {
-        display: flex;
-    }
-
-    .name-input input{
+   
+    .input-one input {
+        border-radius: 3px 0 0 3px;
+        box-shadow: 0 0 10px #494f653b;
         width: 100%;
+        min-width: auto;
         height: 50px;
         outline: none;
         border: .5px solid #dbdbdb;
         padding: .9rem;
-        /* margin-right: .5rem; */
+        /* margin-top: 1rem; */
+        /* margin-right: 30px; */
     }
 
-    .input-one input {
-        border-radius: 3px 0 0 3px;
-        box-shadow: 0 0 10px #494f653b;
-    }
-
-    .input-two input {
+    /* .input-two input {
         border-radius: 0 3px 3px 0;
         box-shadow: 0 0 10px #494f653b;
-    }
+        width: 100%;
+        min-width: auto;
+        height: 50px;
+        outline: none;
+        border: .5px solid #dbdbdb;
+        padding: .9rem;
+        margin-top: 1rem;
+    } */
 
     input::placeholder{
         color: #bfbfbf;
@@ -122,13 +129,13 @@
     .btn-box button {
         font-size: 1rem;
         border-radius: 3em;
-        border: 1px solid #494F65;
-        color: #494F65;
+        border: 1px solid var(  --sec-bg-color);
+        color: var(--main-bg-color);
         outline: none;
         /* background: var(--main-btn-color); */
-        color: white;
+        color: #fff;
         cursor: pointer;
-        background: transparent;
+        /* background: transparent; */
         display: inline-block;
         border-radius: 3em;
         font-size: 1em;
@@ -149,15 +156,12 @@
 
     .message-text {
         width: 100%;
-        height: 45px;
-        font-size: 1rem;
-        border-radius: 2px;
-        border: none;
+        height: 50px;
         outline: none;
-        background: white;
-        color: black;
-        box-shadow: 0 0 10px #494f653b;
+        border: .5px solid #dbdbdb;
+        border-radius: 3px;
         padding: .9rem;
+        box-shadow: 0 0 10px #494f653b;
     }
 
     .message-text::placeholder{

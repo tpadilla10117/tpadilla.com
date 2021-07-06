@@ -87,33 +87,27 @@
     /* The .content-box text is transformed to the middle of the projCard-container */
     .projCard-container .projCard-box .details-box .content-box {
       position: absolute;
-      top: 50px;
-      transform: translateY(-50%);
+      /* top: 50px; */
+      /* transform: translateY(-50%); */
       text-align: center;
-      padding: 15px;
+      /* padding: 15px; */
       color: /* #f0e9dc */#fff;
+      /* border: 10px solid yellow; */
+      width: 100%;
+      height: 100%;
     }
 
-/* 8) Adjusting styles for header2 */
-    /* */
-    /* .projCard-container .projCard-box .details-box .content-box h2{
-      margin-left: 20rem;
-      margin-top: 5rem;
-      padding-right: 20rem;
-      font-size: 20px;
-      color: blue;
-      text-align: center;
-      align-items: center;
-    } */
-
  /* 9) Adjusting styles for p */
-    /* Text Overlay has no Zoom*/
     .projCard-container .projCard-box .details-box .content-box p {
-      /* margin: 10px 0 0;
-      padding: 0; */
       font-size: 50px;
-      margin-top: 11rem;
-      color: #fff
+      /* margin-top: 10vh; */
+      padding: 4rem;
+      color: #fff;
+      /* border: 10px solid red; */
+      /* transform: translateY(50%); */
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
     }
 
   /* 10) This is the piece that allows the image overlay to transition / open up upon hover */
@@ -135,15 +129,12 @@
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 5rem;
         /* border: .7px solid red; */
       }
 
       .projCard-container .projCard-box {
         width: 100%;
-        height: 300px;
-        /* transform: translate(-3%, -10%); */
-        /* border: .7px solid yellow; */
         margin: 0px;
         padding: .5rem;
       }
@@ -152,8 +143,7 @@
       
         background-size: cover;
         background-position: center;
-        height: 300px;
-        /* border: 1px solid orange; */
+        
       }
 
       .projCard-container .projCard-box .img-wrapper img {
@@ -166,7 +156,7 @@
 
       .projCard-container .projCard-box .details-box .content-box p {
         font-size: 25px;
-        margin-top: 11rem;
+        padding: 5rem;
       }
     }
 
@@ -177,7 +167,7 @@
           flex-direction: column;
           flex-wrap: wrap;
           width: 100%;
-          margin-top: 10px;
+          margin-top: 5rem;
           
       }
 
@@ -199,7 +189,8 @@
 
       .projCard-container .projCard-box .details-box .content-box p {
         font-size: 25px;
-        margin-top: 11rem;
+        /* margin-top: 5vh; */
+        padding: 6rem;
       }
   
       
@@ -214,7 +205,7 @@
       grid-template-columns: 50% 50%;
       flex-wrap: wrap;
       width: 100%;
-      margin-top: 10px;
+      margin-top: 5rem;
     }
 
     .projCard-container .projCard-box {
@@ -256,10 +247,10 @@
     .projCard-container .projCard-box .details-box .content-box {
       
       /* border: solid brown; */
-      top: 50%;
+      /* top: 50%; */
       /* transform: translate(20%, -12%); */
       /* width: 500px; */
-      width:100%;
+      /* width:100%; */
     }
 
     .projCard-container .projCard-box .details-box .content-box p {
@@ -268,6 +259,7 @@
       /* margin: 10px 0 0; */
       /* margin-top: 11rem; */
       margin: 0px;
+      padding: 4rem;
     }
 
   }
@@ -281,7 +273,7 @@
       flex-wrap: wrap;
       width: 100%;
       /* grid-gap: 10px; */
-      margin-top: 2rem;
+      margin-top: 6rem;
     }
 
     .projCard-container .projCard-box {
@@ -315,20 +307,41 @@
     .projCard-container .projCard-box .details-box .content-box {
       
       /* border: solid brown; */
-      top: 25%;
+      /* top: 25%; */
       /* transform: translate(5%, -20%); */
       width:100%;
       /* border: solid yellow; */
     }
 
     .projCard-container .projCard-box .details-box .content-box p {
-      font-size: 3rem;
-      margin-top: 11rem;
+      /* font-size: 3rem; */
+      /* margin-top: 11rem; */
       /* transform: translate(0%, -70%); */
       /* border: solid brown; */
+      padding: 6rem;
       
     }
   }
+
+  @media only screen and (min-device-width: 1366px) and (max-device-width: 2500px) {
+    .projCard-container {
+         
+      display: grid;
+      grid-template-columns: 50% 50%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      /* grid-gap: 10px; */
+      margin-top: 6rem;
+    }
+
+    .projCard-container .projCard-box .details-box .content-box p {
+  
+      padding: 6rem;
+      
+    }
+    
+}
 
 
 /* For Landscape view */

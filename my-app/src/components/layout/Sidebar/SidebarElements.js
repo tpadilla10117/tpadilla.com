@@ -3,35 +3,39 @@ import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRouter } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 
+
+/* Transition doesn't work */
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #07678E;;
+    background: #07678E;
     display: grid;
     align-items: center;
     top: 0;
     left: 0;
-    transition: 0.3 ease-in-out;
+    /* transition: 0.3 ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */
 `
+/* ------------------------------------------------------------------------------- */
+/* These are the Styles for the "x" on the sidebar: */
 
-export const CloseIcon = styled(FaIcons.FaTimes)`
-    color: #fff;
-`
+    export const CloseIcon = styled(FaIcons.FaTimes)`
+        color: #fff;
+    `
 
-export const Icon = styled.div`
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    background: transparent;
-    font-size: 2rem;
-    cursor: pointer;
-    outline: nine;
-`
-
+    export const Icon = styled.div`
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        background: transparent;
+        font-size: 2rem;
+        cursor: pointer;
+        outline: nine;
+    `
+/* ------------------------------------------------------------------------------- */
 export const SidebarWrapper = styled.div`
     color: #fff;
 `
@@ -40,6 +44,7 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 80px);
@@ -63,15 +68,15 @@ export const SidebarLi = styled.li`
     color: white;
     letter-spacing: 1px;
     font-size: 1.5em;
-    font-family: 'Trispace', sans-serif;
-    font-weight: 500;
+    font-family: 'Otomanopee One', sans-serif;
+    /* font-weight: 500; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 20px);
     text-align: center;
 
     &:hover{
-        color: #00D1FF;
+        color: var(--main-btn-color);
         transition: color 600ms ease 0s;
     }
 

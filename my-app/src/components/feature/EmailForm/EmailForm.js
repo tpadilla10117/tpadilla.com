@@ -1,10 +1,11 @@
 import React from 'react';
-import './EmailForm.css'
+import './EmailForm.css';
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
 
 const EmailFormComponent = (props) => {
 
     return <> 
+
         <div id="component-wrapper">
             <div id="form-wrapper">
                 
@@ -12,20 +13,20 @@ const EmailFormComponent = (props) => {
                     <div className="intro-text">
                         <h5>Want to Get in Touch? <br/> Send me an Email!</h5>
                     </div>
-                    <div className="name-input">
-                        <div className="input-one">
-                            <label for="first-name" className="first-name" required>First Name: </label>
-                            <input type="text" className="txt-box" placeholder="Sasuke" name="email" required></input>
-                        </div>
-
-                        <div className="input-two">
-                            <label for="last-name" className="last-name" required>Last Name: </label>
-                            <input type="text" className="txt-box" placeholder="Uchiha" name="name" required></input>
-                        </div>
+    
+                    <div className="input-one">
+                        <label for="first-name" className="first-name" required>Name: </label>
+                        <input type="text" className="txt-box" placeholder="Sasuke Uchiha" name="email" required></input>
                     </div>
+
+                    {/* <div className="input-two">
+                        <label for="last-name" className="last-name" required>Last Name: </label>
+                        <input type="text" className="txt-box" placeholder="Uchiha" name="name" required></input>
+                    </div> */}
+                    
                     
                     <div className="email-input">
-                        <label for="email" id="email" className="input-two">Email: </label>
+                        <label for="email" id="email">Email: </label>
                         <input type="email" className="txt-box" placeholder="avenger@uchiha.com" name="email"></input>
                     </div>
                     

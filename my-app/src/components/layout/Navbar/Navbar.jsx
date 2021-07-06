@@ -1,12 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
-/* import '../../assets/css/Navbar.css'; */
-
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-
-import { AiOutlineConsoleSql } from 'react-icons/ai';
 import { NavbarData } from '../../../utils';
 import { IconContext } from 'react-icons';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLi, NavBtn, NavBtnLink} from './NavbarElements.js';
@@ -18,6 +13,19 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
         const { navToggle } = props;
 
         const [scrollNav, setScrollNav] = useState(false);
+        const [ navLinkState, changeNavLinkState ] = useState(NavbarData);
+
+      
+      /* Helper Function to toggle Active Nav link */
+        function toggleActiveNav(index) {
+            changeNavLinkState( {...navLinkState, activeObject: navLinkState[index].id} )
+        }
+
+        /* Helper Function to toggle the classNames that are styled */
+
+        function toggleActiveStyles(index) {
+            return navLinkState[index].id === navLinkState.activeObject ? "active" : "inactive";
+        }
 
         const changeNav = () => {
             if(window.scrollY >= 80) {
@@ -29,7 +37,9 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
 
         useEffect(() => {
             window.addEventListener('scroll', changeNav)
-        }, [])
+        }, []);
+
+
 
         return  (
             <div id="navbar-wrapper">
@@ -41,24 +51,24 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, N
                         <MobileIcon onClick={navToggle}>
                             <FaIcons.FaBars/>
                         </MobileIcon>
-                        <NavMenu>
-                            <NavItem>
-                                <NavLinks>
+                        <NavMenu className="nav-menu">
+                            
+                                {/* <NavLinks className="look"> */}
+                                    {/* <NavItem> */}
                                 {NavbarData.map( (item, index) => {
                                     return (
                                         
-                                        <Link to={item.path} className="nav-item" style={{textDecoration: "none"}}>
-                                            <NavLi key={index} className={item.cName}>
-                                                
+                                        <Link to={item.path} className={toggleActiveStyles(index)} onClick={() => { toggleActiveNav(index)}} style={{textDecoration: "none"} } key={"nav-li-" + index}>
+                                            <NavLi key={index} className={toggleActiveStyles(index)} onClick={() => { toggleActiveNav(index)}}>
                                                 <span>{item.title} {item.icon}</span>
                                             </NavLi>
                                         </Link>
                                         
                                     )
                                 } )}
-
-                                </NavLinks>
-                            </NavItem>
+                                {/* </NavItem> */}
+                                {/* </NavLinks> */}
+                            
                         </NavMenu>
                         {/* <NavBtn>
                             <NavBtnLink to='signup'>Sign Up</NavBtnLink>
