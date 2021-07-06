@@ -1,10 +1,11 @@
 import React from 'react';
-import './EmailForm.css'
+import './EmailForm.css';
 import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
 
 const EmailFormComponent = (props) => {
 
     return <> 
+
         <div id="component-wrapper">
             <div id="form-wrapper">
                 

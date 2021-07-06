@@ -60,13 +60,9 @@
     }
 
     #form-wrapper {
-        /* transform: translate(-4%, 00%); */
         width: 100%;
-        height: 80vh;
-        margin-top: 30rem;
-        top:0%;
-        left:0%;
-        transform: translate(0%, 0%);
+        border-radius: 0px;
+        margin-top: 1rem;
     }
 
     .email {
@@ -119,15 +115,9 @@
         font-size: 40px;
     }
 
-
     #form-wrapper {
-        /* transform: translate(-4%, 00%); */
         width: 100%;
-        height: 65vh;
-        margin-top: 30rem;
-        top:0%;
-        left:0%;
-        transform: translate(0%, 0%);
+        border-radius: 0;
     }
 
     .email {
@@ -196,11 +186,8 @@
     #form-wrapper {
         /* transform: translate(-4%, 00%); */
         width: 100%;
-        height: 70vh;
-        margin-top: 12rem;
-        top:0%;
-        left:0%;
-        transform: translate(0%, 0%);
+        border-radius: 0;
+        /* margin-top: 0; */
     }
 
     .email {
