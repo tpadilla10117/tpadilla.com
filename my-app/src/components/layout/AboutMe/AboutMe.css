@@ -134,7 +134,8 @@
         color: #fff;
         transform: translateY(200px);
         transition: 0.5s;
-        font-size: 14px;
+        font-size: 20px;
+        font-family: 'Amatic SC', sans-serif;
     }
 
     .overlay-practice .img-box:hover .img-content p {
