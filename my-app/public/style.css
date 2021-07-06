@@ -10,6 +10,7 @@
     display: block;
     background: linear-gradient(to top,#07678E 30%, #f0e9dc 60%);
     background-attachment: fixed;
+    height: 100%;
   }
   
   .app {
