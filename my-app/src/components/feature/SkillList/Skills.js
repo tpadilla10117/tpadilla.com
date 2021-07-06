@@ -26,10 +26,13 @@ const Skills = () => {
     return (
         <>
         {/* <div id="skills"></div> */}
-        <div className="skills-title">
+       {/*  <div className="skills-title">
             <h5>Fullstack UX Engineer</h5>
-        </div>
+        </div> */}
         <div className="skills-container">
+            <div className="skills-title">
+                <h5>Fullstack UX Engineer</h5>
+            </div>
             <div className="skills-images" data-aos="fade-in">
                 <ul>
                     <li>

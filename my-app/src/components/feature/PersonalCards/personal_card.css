@@ -9,12 +9,6 @@
     margin: 0;
     padding: 0;
   }
-  
-  body {
-    font-family: 'Amatic SC', sans-serif;
-    width: 100%;
-    min-height: 100vh;
-  }
 
   /* Card hover FX */
   .card{

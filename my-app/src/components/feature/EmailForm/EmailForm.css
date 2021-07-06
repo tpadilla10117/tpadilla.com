@@ -17,7 +17,7 @@
     z-index:1;
     /* top: 50%; */
     /* left: 70%; */
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     /* transform: translate(-50%, -50%); */
     width: /* 280px */ 450px;
     height: 645px;
@@ -35,21 +35,33 @@
     /* background-image: url("http://clubsolaris.com/imgs/tips-to-take-care-of-the-beach-during-your-vacations/beach-sea-cancun-sun.png"); */
     /* background-image: url("../../../../src/assets/images/Waves.mp4"); */
     background-color: #fff;
+    box-shadow: 0 0 10px #494f653b;
+}
+
+.email {
+    /* border: .7px solid yellow; */
+    margin-top: 5rem;
+    height:100%;
+    width: 100%;
 }
 
 .intro-text {
 
     width: 260px;
     height: 60px;
+    font-family: 'Otomanopee One', sans-serif;
     /* margin: .2rem; */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* color: #2c426a; */
     /* color: #BF4E30; */
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .email-form {
     z-index:50;
     width: 260px;
+    font-family: 'Amatic SC', sans-serif;
     /* height: 390px; */
 }
 
@@ -65,24 +77,16 @@
         outline: none;
         border: .5px solid #dbdbdb;
         padding: .9rem;
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 1rem;;
         /* margin-top: 1rem; */
         /* margin-right: 30px; */
     }
 
-    /* .input-two input {
-        border-radius: 0 3px 3px 0;
-        box-shadow: 0 0 10px #494f653b;
-        width: 100%;
-        min-width: auto;
-        height: 50px;
-        outline: none;
-        border: .5px solid #dbdbdb;
-        padding: .9rem;
-        margin-top: 1rem;
-    } */
-
     input::placeholder{
         color: #bfbfbf;
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 1rem;
     }
 
     .txt-box {
@@ -103,6 +107,8 @@
        border-radius: 3px;
        padding: .9rem;
        box-shadow: 0 0 10px #494f653b;
+       font-family: 'Amatic SC', sans-serif;
+       font-size: 1rem;;
     }
 
     ._subject {
@@ -118,6 +124,8 @@
         border-radius: 3px;
         padding: .9rem;
         box-shadow: 0 0 10px #494f653b;
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 1rem;;
     }
 
     .btn-box p {
@@ -138,6 +146,7 @@
         /* background: transparent; */
         display: inline-block;
         border-radius: 3em;
+        font-family: 'Otomanopee One', sans-serif;
         font-size: 1em;
         padding: 8px 45px;
         line-height: initial;
@@ -162,10 +171,13 @@
         border-radius: 3px;
         padding: .9rem;
         box-shadow: 0 0 10px #494f653b;
+        font-family: 'Amatic SC', sans-serif;
     }
 
     .message-text::placeholder{
         color: #bfbfbf;
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 1rem;
     }
 
 /* THIS IS FOR THE ICON BOXES/PICS */

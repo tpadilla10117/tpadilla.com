@@ -8,23 +8,17 @@
   body {
     /* background: #418DFF; */
     display: block;
-    margin: 0;
-    height: 100;
     background: linear-gradient(to top,#07678E 30%, #f0e9dc 60%);
     background-attachment: fixed;
-  }
-
-  
-  #root {
-    height: 100vh;
+    height: 100%;
   }
   
   .app {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 18px;
-    height: 100%;
+    height: 100%; */
   }
   
   .app > * {
@@ -35,10 +29,10 @@
     overflow-y: scroll;
   }
   
-  .profile {
+  /* .profile {
     grid-column: 1;
     grid-row: 1;
-  }
+  } */
 
 
 .route-container{
