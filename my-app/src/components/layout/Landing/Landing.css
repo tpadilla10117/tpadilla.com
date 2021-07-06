@@ -372,6 +372,11 @@
     /* border: .7px solid red; */
 
   }
+  .projCard-container .projCard-box .details-box .content-box p {
+  
+    padding: 8rem;
+    
+  }
 }
 
 @media (orientation: landscape) and (min-width: 768px) and (max-width: 1000px) {
@@ -398,5 +403,19 @@
   .projCard-container .projCard-box .img-wrapper img {
     max-width: 100%;
     /* border: .7px solid red; */
+  }
+
+  .projCard-container .projCard-box .details-box .content-box p {
+  
+    padding: 7rem;
+    
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 2500px) {
+  .projCard-container .projCard-box .details-box .content-box p {
+  
+    padding: 7rem;
+    
   }
 }

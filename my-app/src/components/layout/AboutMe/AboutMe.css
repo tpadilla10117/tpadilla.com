@@ -161,6 +161,7 @@
 
     .sideBio {
         background-color: white;
+        text-align: center;
         padding: 4rem;
         border-radius: 30px;
         width: 65vw;
@@ -508,7 +509,6 @@ color: #2c426a;
         }
 
         .sideBio p {
-            width: 60vw;
             font-size: 17px;
             overflow-x: hidden;
             overflow-y: auto;
@@ -578,7 +578,7 @@ color: #2c426a;
 
         .sideBio {
             width: 90vw;
-            height: 45vh;
+            height: 100%;
         }
 
         .sideBio .links-about {
