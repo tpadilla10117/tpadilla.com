@@ -416,7 +416,7 @@
 @media (orientation: landscape) and (min-width: 1366px) and (max-width: 2500px) {
   .projCard-container .projCard-box .details-box .content-box p {
   
-    padding: 7rem;
+    padding: 6.5rem;
     
   }
 }

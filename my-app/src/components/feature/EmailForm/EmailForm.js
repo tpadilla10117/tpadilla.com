@@ -6,7 +6,7 @@ const EmailFormComponent = (props) => {
 
     return <> 
 
-        <div id="component-wrapper">
+        
             <div id="form-wrapper">
                 
                 <form className="email-form" action="https://formsubmit.co/socratesclown@gmail.com" method="POST">
@@ -54,7 +54,7 @@ const EmailFormComponent = (props) => {
 
                 </form>
             </div>
-        </div>
+        
     
     </>
 }

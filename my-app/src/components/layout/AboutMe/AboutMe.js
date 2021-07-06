@@ -3,7 +3,7 @@ import React from 'react';
 import './AboutMe.css';
 import PersonalCard from '../../feature/PersonalCards/personal_card.jsx';
 import Trin from "../../../../src/assets/images/trin.jpg";
-import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiInstagram, SiFacebook, SiBehance  } from "react-icons/si";
 
 const AboutMeComponent = (props) => {
 
@@ -36,7 +36,7 @@ const AboutMeComponent = (props) => {
                     
                     <div className="links-about">
                                 <a href="https://github.com/tpadilla10117" className="github">{<SiGithub size={45}/>}</a>
-                                <a href="#" className="facebook">{<SiFacebook size={45}/>}</a>
+                                <a href="#" className="behance">{<SiBehance size={45}/>}</a>
                                 <a href="#" className="instagram">{<SiInstagram size={45}/>}</a>
                                 <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin size={45}/>}</a>
                     </div>

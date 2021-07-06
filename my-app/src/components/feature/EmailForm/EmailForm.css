@@ -17,7 +17,7 @@
     z-index:1;
     /* top: 50%; */
     /* left: 70%; */
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     /* transform: translate(-50%, -50%); */
     width: /* 280px */ 450px;
     height: 645px;
@@ -26,7 +26,7 @@
     flex-direction: column;
     -webkit-backdrop-filter: blur(10px);
     /* border: .7px solid rgba(255,255,255,.2); */
-    /* border: .7px solid red; */
+    border: .7px solid red;
     align-items: center;
     justify-content:space-evenly;
     color: #2c426a;
@@ -35,6 +35,13 @@
     /* background-image: url("http://clubsolaris.com/imgs/tips-to-take-care-of-the-beach-during-your-vacations/beach-sea-cancun-sun.png"); */
     /* background-image: url("../../../../src/assets/images/Waves.mp4"); */
     background-color: #fff;
+}
+
+.email {
+    border: .7px solid yellow;
+    margin-top: 5rem;
+    height:100%;
+    width: 100%;
 }
 
 .intro-text {

@@ -1,25 +1,23 @@
 .skills-title {
     margin-top: 5rem;
     font-size: 56px;
+    font-family: 'Otomanopee One', sans-serif;
     letter-spacing: 0.005em;
     display: grid;
     justify-content: center;
     align-items: center;
     color: #1d1d1f;
     position: static;
-    font-family: 'Otomanopee One', sans-serif;
-    /* background-color: #fff; */
 }
 
 /* EVERYTHING PERTAINING TO THE SKILLS-CONTAINER */
     .skills-container {
         display: grid;
         width: 100%;
-        /* margin-top: 2rem; */
+        margin-top: 2rem;
         justify-content: center;
         grid-template-columns: auto;
         grid-template-areas: ".skills-images" ".skill-list";
-        /* background-color: #fff; */
     }
 
     .skills-container li:hover {
