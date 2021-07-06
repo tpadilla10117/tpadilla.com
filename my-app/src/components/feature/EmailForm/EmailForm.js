@@ -1,6 +1,6 @@
 import React from 'react';
 import './EmailForm.css';
-import { SiGithub, SiLinkedin, SiInstagram, SiFacebook  } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiInstagram, SiFacebook, SiBehance  } from "react-icons/si";
 
 const EmailFormComponent = (props) => {
 
@@ -46,8 +46,8 @@ const EmailFormComponent = (props) => {
                         
                         <div className="links">
                                 <a href="https://github.com/tpadilla10117" className="github">{<SiGithub size={35}/>}</a>
-                                <a href="#" className="facebook">{<SiFacebook size={35}/>}</a>
                                 <a href="#" className="instagram">{<SiInstagram size={35}/>}</a>
+                                <a href="#" className="behance">{<SiBehance size={35}/>}</a>
                                 <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin size={35}/>}</a>
                         </div>
                     </div>
