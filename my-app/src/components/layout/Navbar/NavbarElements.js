@@ -11,6 +11,7 @@ export const Nav = styled.nav`
     width: 100%;
     align-items: center;
     font-size: 1rem;
+    font-family: 'Otomanopee One', sans-serif;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -40,6 +41,7 @@ export const NavLogo = styled(LinkRouter)`
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
+    font-family: 'Otomanopee One', sans-serif;
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
@@ -110,8 +112,8 @@ export const NavLi = styled.li `
     padding-inline-start: 40px;
     letter-spacing: 1.5px;
     font-size: 1em;
-    font-family: 'Trispace', sans-serif;
-    font-weight: 300;
+    font-family: 'Otomanopee One', sans-serif;
+    /* font-weight: 300; */
     /* margin-top: 4.5rem; */
     
     
@@ -122,9 +124,9 @@ export const NavLi = styled.li `
     }
 
     &.active {
-        color: #00D1FF;
-        border-bottom: 5px solid var(--main-btn-color);
-        background: var(--misc-color);
+        color: #fff;
+        /* border-bottom: 5px solid var(--misc-color); */
+        background: var(--main-btn-color);
         padding: 2rem;
         width: 100%;
         border-radius: 1px;

@@ -11,7 +11,7 @@
   }
   
   body {
-    font-family: sans-serif;
+    font-family: 'Amatic SC', sans-serif;
     width: 100%;
     min-height: 100vh;
   }
@@ -165,6 +165,7 @@
     color: var(--primary);
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Amatic SC', sans-serif;
   }
 
 

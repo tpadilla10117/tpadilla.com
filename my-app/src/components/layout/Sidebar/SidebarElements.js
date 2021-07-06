@@ -44,6 +44,7 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 80px);
@@ -67,15 +68,15 @@ export const SidebarLi = styled.li`
     color: white;
     letter-spacing: 1px;
     font-size: 1.5em;
-    font-family: 'Trispace', sans-serif;
-    font-weight: 500;
+    font-family: 'Otomanopee One', sans-serif;
+    /* font-weight: 500; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 20px);
     text-align: center;
 
     &:hover{
-        color: #00D1FF;
+        color: var(--main-btn-color);
         transition: color 600ms ease 0s;
     }
 

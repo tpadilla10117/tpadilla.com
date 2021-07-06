@@ -172,9 +172,16 @@
         overflow-y: auto;
     }
 
+    .sideBio h1 {
+        font-family: 'Otomanopee One', sans-serif;
+        color: var(--sec-bg-color);
+    }
+
     .sideBio h3 {
         display: flex;
         text-align: center;
+        font-family: 'Otomanopee One', sans-serif;
+        color: var(--sec-bg-color);
         /* justify-content: center; */
     }
     .about-picture {
@@ -189,7 +196,7 @@
     }
 
     .sideBio p {
-        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Amatic SC', sans-serif;
         font-weight: 300;
         overflow-x: hidden;
         overflow-y: auto;
@@ -297,6 +304,25 @@
     flex-wrap: wrap;
     position: relative;
   }
+
+.container .card h2 {
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.container .card .card__inner .card__face.card__face--front h2 {
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+
+.container .card h3 {
+    font-family: 'Otomanopee One', sans-serif;
+    color: var(--sec-bg-color);
+}
+
+.container .card p {
+font-family: 'Amatic SC', sans-serif;
+color: #2c426a;
+}
 
 /* ------------------------------------------------------------------------------- */
 /* THIS IS FOR RESPONSIVENESS*/
@@ -552,7 +578,7 @@
 
         .sideBio {
             width: 90vw;
-            /* height: 60vh; */
+            height: 45vh;
         }
 
         .sideBio .links-about {
@@ -563,7 +589,7 @@
         }
 
         .sideBio p {
-            font-size: 16px;
+            font-size: 20px;
             overflow-x: hidden;
             overflow-y: auto;
             width: 75vw;
@@ -655,6 +681,12 @@
             padding: 4.5rem 2.5rem 1.5rem 2.5rem;
             margin-top: 6rem;
         }
+
+        .sideBio p {
+            font-size: 25px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
         
     }
 
@@ -682,7 +714,7 @@
     }
 
     .container .card p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #bio-wrapper {
@@ -727,7 +759,7 @@
     }
 
     .sideBio p {
-        font-size: 15.5px;
+        font-size: 20.5px;
         overflow-x: hidden;
         overflow-y: auto;
     }
