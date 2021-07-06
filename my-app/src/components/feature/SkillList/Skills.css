@@ -6,18 +6,19 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: #1d1d1f;
     position: static;
 }
 
 /* EVERYTHING PERTAINING TO THE SKILLS-CONTAINER */
     .skills-container {
-        display: grid;
+        /* display: flex; */
         width: 100%;
         margin-top: 2rem;
         justify-content: center;
-        grid-template-columns: auto;
-        grid-template-areas: ".skills-images" ".skill-list";
+        /* grid-template-columns: auto; */
+        /* grid-template-areas: ".skills-images" ".skill-list"; */
     }
 
     .skills-container li:hover {
