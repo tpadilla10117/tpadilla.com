@@ -6,6 +6,7 @@ const Modal = ( {children, onModalClose} ) => {
     const modalReference = useRef(null);
 
 
+    //Returns the modal UI: 
     return (
         <div className={styles.ModalContainer} role="dialog" aria-modal="true">
             <div className={styles.ModalContent} ref={modalReference}>

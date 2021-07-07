@@ -3,6 +3,7 @@ export { default as App } from './App';
 export { default as Header } from './Header';
 export { default as EmailFormComponent } from './feature/EmailForm/EmailForm.js';
 export { default as Modal } from './feature/Modal/Modal.jsx';
+export { default as ProjectPage } from './feature/ProjectPage/ProjectPage.jsx';
 export { default as AboutMeComponent } from './layout/AboutMe/AboutMe';
 export { default as ResumeComponent } from './feature/Resume/resume';
 export { default as NavbarComponent } from './layout/Navbar/Navbar.jsx';
