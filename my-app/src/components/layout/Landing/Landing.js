@@ -7,12 +7,27 @@ import PixelDraw from "../../../../src/assets/images/pixel_draw.png";
 import Postbook from "../../../../src/assets/images/postbook.png";
 import RoboSearch from "../../../../src/assets/images/robo_search.png";
 import TechStackFooter from '../Footer/Footer.jsx';
+import { projects, techSkills } from '../../../utils';
+import { Modal, ProjectPage } from '../../index.js';
 
 const Landing = (props) => {
 
+    const { activeProject, setActiveProject, modalVisibility, setModalVisibility } = props;
+
+/* Handler for making a modal visible: */
+    const handleModalVisibility = () => {
+        setModalVisibility(!modalVisibility)
+        /* setActiveProject(projects.find(project => project.id === id)) */;
+    }
 
         return (
         <>
+        {modalVisibility &&
+        <Modal onModalClose={() => setModalVisibility(false)}>
+            <ProjectPage></ProjectPage>
+
+        </Modal>
+        }
 
         <div className="projCard-container">
 
@@ -23,7 +38,7 @@ const Landing = (props) => {
                 </div>
 
                 <div className="details-box">
-                <div className="content-box">
+                <div className="content-box" onClick={ () => handleModalVisibility()}>
                     {/* <h2>This is the Card Title</h2> */}
                     <p>An e-commerce for Stylish, Trendy Clothing</p>
                 </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent, Modal } from './index';
-import { projects, techSkills } from '../utils/index.js';
+/* import { projects, techSkills } from '../utils/index.js'; */
 
 function App() {
 
@@ -15,12 +15,6 @@ function App() {
     activeObject: null,
     objects: [{ id:1 }, {id: 2}, {id:3}]
   })
-
-/* Handler for making a modal visible: */
-  const handleModalVisibility = (id) => {
-    setModalVisibility(!modalVisibility)
-    setActiveProject(projects.find(project => project.id === id));
-  }
 
   return (
     
@@ -66,8 +60,8 @@ function App() {
                   classNames="fade"
                   unmountOnExit>
                     <div className="fade">
-                      <Landing />
-
+                      <Landing modalVisibility={modalVisibility} setModalVisibility={setModalVisibility} activeProject={activeProject} setActiveProject={setActiveProject}/>
+                   
                     </div>
                   </CSSTransition>
                 )}

@@ -1,0 +1,55 @@
+.ProjectCard {
+    flex: 1;
+    margin: .5rem;
+    padding: 1.25rem 1.25rem .5rem 1.25rem;
+    width: 80%;
+  
+    &:hover {
+      transform: scale(0.98);
+      cursor: pointer;
+    }
+  
+    h1 {
+      font-size: 1.563rem;
+      font-weight: 600;
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .Img {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .Text {
+    padding: .75rem 0 .5rem 0;
+  }
+  
+  @media (min-width: 640px) {
+    .ProjectCard {
+      h1 {
+        font-size: 1.25rem; 
+      }
+  
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media (min-width: 840px) {
+    .ProjectCard {
+      h1 {
+        font-size: 2rem;
+      }
+  
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
