@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent } from './index';
+import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent, Modal } from './index';
 
 function App() {
 
@@ -84,6 +84,7 @@ function App() {
                   unmountOnExit>
                     <div className="fade">
                       <ResumeComponent />
+                      {/* <Modal /> */}
 
                     </div>
                   </CSSTransition>
