@@ -5,6 +5,23 @@ const Modal = ( {children, onModalClose} ) => {
 
     const modalReference = useRef(null);
 
+    useEffect( () => {
+        document.body.classList.add(styles.ModalOpen);
+        return () => {
+            document.body.classList.remove(styles.ModalOpen);
+        }
+    }, []);
+
+    useEffect( () => {
+        function handleClick(event) {
+            if (!modalReference.current?.contains(event.target) ) {
+                onModalClose();
+            }
+        }
+        document.addEventListener("click", handleClick);
+        return () => document.removeEventListener("click", handleClick);
+    })
+
 
     //Returns the modal UI: 
     return (

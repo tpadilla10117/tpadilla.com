@@ -15,9 +15,9 @@ const Landing = (props) => {
     const { activeProject, setActiveProject, modalVisibility, setModalVisibility } = props;
 
 /* Handler for making a modal visible: */
-    const handleModalVisibility = () => {
+    const handleModalVisibility = (id) => {
         setModalVisibility(!modalVisibility)
-        /* setActiveProject(projects.find(project => project.id === id)) */;
+        setActiveProject(projects.find(project => project.id === id));
     }
 
         return (
@@ -29,24 +29,24 @@ const Landing = (props) => {
         </Modal>
         }
 
-        <div className="projCard-container">
+        {/* <div className="projCard-container">
 
-        {/* <a href="https://github.com/tpadilla10117/crwn-clothing"> */}
+        <a href="https://github.com/tpadilla10117/crwn-clothing">
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={CrwnClothing} alt="A clickable card of an application called `Crwn Clothing`"/>
                 </div>
 
                 <div className="details-box">
-                <div className="content-box" onClick={ () => handleModalVisibility()}>
-                    {/* <h2>This is the Card Title</h2> */}
+                <div className="content-box" >
+                    
                     <p>An e-commerce for Stylish, Trendy Clothing</p>
                 </div>
                 </div>
             </div>
-        {/* </a> */}
+        </a>
 
-            {/* <a href="https://github.com/2006-cpu/codalorians"> */}
+            <a href="https://github.com/2006-cpu/codalorians">
             <div className="projCard-box">
                 
                 <div className="img-wrapper">
@@ -56,14 +56,14 @@ const Landing = (props) => {
 
                 <div className="details-box">
                 <div className="content-box">
-                    {/* <h2>This is the Card Title</h2> */}
+                    
                     <p>An e-commerce for Musical Instruments</p>
                 </div>
                 </div>
             </div>
-            {/* </a> */}
+            </a>
 
-            {/* <a href="https://objective-volhard-a4bd7a.netlify.app/"> */}
+            <a href="https://objective-volhard-a4bd7a.netlify.app/">
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={PixelDraw} alt="A clickable card of an application called `Pixel Draw`"/>
@@ -76,9 +76,9 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
-            {/* </a> */}
+            
 
-            {/* <a href="https://laughing-austin-fe12b7.netlify.app/#"> */}
+            <a href="https://laughing-austin-fe12b7.netlify.app/#">
                 <div className="projCard-box">
                     <div className="img-wrapper">
                         <img src={Postbook} alt="A clickable card of an application called `PostBook`"/>
@@ -86,14 +86,14 @@ const Landing = (props) => {
 
                     <div className="details-box">
                     <div className="content-box">
-                        {/* <h2>This is the Card Title</h2> */} 
+                        
                         <p>An App Where Users Can Post Items For Sale</p>
                     </div>
                     </div>
                 </div>
-            {/* </a> */}
+            </a>
 
-            {/* <a href="https://tpadilla10117.github.io/robo_search/"> */}
+            
                 <div className="projCard-box">
                     <div className="img-wrapper">
                         <img src={RoboSearch} alt="A clickable card of an application called `Robo Search`"/>
@@ -101,27 +101,15 @@ const Landing = (props) => {
                     
                     <div className="details-box">
                     <div className="content-box">
-                        {/* <h2>This is the Card Title</h2> */}
+                        
                         <p>A Way To Search For Product Cards</p>
                     </div>
                     </div>
                 </div>
-            {/* </a> */}
-            {/* <div className="projCard-box">
-                <div className="img-wrapper">
-                    <img src={Image3}/>
-                </div>
-
-                <div className="details-box">
-                <div className="content-box">
-                    
-                    <p>This is the actual content on the card</p>
-                </div>
-                </div>
-            </div> */}
-        </div>
+            </a>
+        </div> */}
         
-        <TechStackFooter />
+        {/* <TechStackFooter /> */}
       
         </>
         )
