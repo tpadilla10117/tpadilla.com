@@ -1,0 +1,34 @@
+.Button p {
+    font-size: .8rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.Button {
+    font-size: 1rem;
+    border-radius: 3em;
+    border: 1px solid var(  --sec-bg-color);
+    color: var(--main-bg-color);
+    outline: none;
+    /* background: var(--main-btn-color); */
+    color: #fff;
+    cursor: pointer;
+    /* background: transparent; */
+    display: inline-block;
+    border-radius: 3em;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1em;
+    padding: 8px 45px;
+    line-height: initial;
+    -webkit-transition: all 250ms ease 50ms;
+    /* transform: translate(40%, 0%); */
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+}
+
+.Button:hover {
+    background: var(--main-btn-color);
+    box-shadow: 0 0 10px #494f653b;
+    /* transition: all 250ms ease 50ms; */
+    /* -webkit-transition: all 250ms ease 50ms; */
+}

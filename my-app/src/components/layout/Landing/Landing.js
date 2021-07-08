@@ -8,7 +8,7 @@ import Postbook from "../../../../src/assets/images/postbook.png";
 import RoboSearch from "../../../../src/assets/images/robo_search.png";
 import TechStackFooter from '../Footer/Footer.jsx';
 import { projects, techSkills } from '../../../utils';
-import { Modal, ProjectPage, SectionWrapper, CardWrapper, ProjectCard } from '../../index.js';
+import { Modal, ProjectPage, SectionWrapper, CardWrapper, ProjectCard, LinkBlock, LinkButton, BulletList } from '../../index.js';
 
 const Landing = (props) => {
 
@@ -59,8 +59,24 @@ const Landing = (props) => {
             img={activeProject.img}
             alt={activeProject.alt}
             description={activeProject.description}
-            />
-              
+            techHighlightsList={
+                <BulletList 
+                  listItems={
+                    activeProject.techHighlights.map((highlight, i) => {
+                      return <li key={i}>{highlight}</li>
+                    })
+                  }
+                  listStyle="Modal"
+                />
+              }
+              linkBlock={
+                <LinkBlock>
+                  {activeProject.links.map((link, i) => {
+                    return <LinkButton key={i} text={link.text} type="PrimaryInverse" link={link.link} />
+                  })}
+                </LinkBlock>
+              }
+            />   
             </Modal>
             }
             
