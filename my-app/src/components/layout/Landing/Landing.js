@@ -8,7 +8,7 @@ import Postbook from "../../../../src/assets/images/postbook.png";
 import RoboSearch from "../../../../src/assets/images/robo_search.png";
 import TechStackFooter from '../Footer/Footer.jsx';
 import { projects, techSkills } from '../../../utils';
-import { Modal, ProjectPage } from '../../index.js';
+import { Modal, ProjectPage, SectionWrapper, CardWrapper, ProjectCard } from '../../index.js';
 
 const Landing = (props) => {
 
@@ -22,12 +22,44 @@ const Landing = (props) => {
 
         return (
         <>
-        {modalVisibility &&
-        <Modal onModalClose={() => setModalVisibility(false)}>
-            <ProjectPage></ProjectPage>
 
-        </Modal>
-        }
+        <SectionWrapper 
+                id="projects"
+                content={
+                
+                    
+                    <CardWrapper>
+                    {projects.map(project => {
+                        return (
+                        <ProjectCard
+                            onClick={() => handleModalVisibility(project.id)}
+                            title={project.title}
+                            tech={project.tech}
+                            svgImg={project.svgImg}
+                            key={project.id}
+                        />
+                        )
+                    })}
+                    </CardWrapper>
+                
+                }
+            />
+        
+
+        {/* Project Modal */}
+      {modalVisibility && 
+        <Modal onModalClose={() => setModalVisibility(false)}> 
+          <ProjectPage 
+            title={activeProject.title}
+            tech={activeProject.tech}
+            img={activeProject.img}
+            alt={activeProject.alt}
+            description={activeProject.description}
+            />
+              
+            </Modal>
+            }
+            
 
         {/* <div className="projCard-container">
 

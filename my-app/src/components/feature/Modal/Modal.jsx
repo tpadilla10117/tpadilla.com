@@ -1,26 +1,28 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './Modal.scss';
+import styles from './Modal.module.scss';
 
 const Modal = ( {children, onModalClose} ) => {
 
     const modalReference = useRef(null);
 
-    useEffect( () => {
+    useEffect(() => {
         document.body.classList.add(styles.ModalOpen);
         return () => {
-            document.body.classList.remove(styles.ModalOpen);
+          document.body.classList.remove(styles.ModalOpen);
         }
-    }, []);
-
-    useEffect( () => {
-        function handleClick(event) {
-            if (!modalReference.current?.contains(event.target) ) {
-                onModalClose();
-            }
+      }, []);
+    
+      useEffect(() => {
+        function handleClick(e) {
+          if (!modalReference.current?.contains(e.target)) {
+            onModalClose();
+          }
         }
         document.addEventListener("click", handleClick);
-        return () => document.removeEventListener("click", handleClick);
-    })
+        return () => document.removeEventListener("click", handleClick)
+      })
+
+    
 
 
     //Returns the modal UI: 

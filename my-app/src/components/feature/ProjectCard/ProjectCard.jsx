@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ProjectCard.scss';
+import styles from './ProjectCard.module.scss';
 
 const ProjectCard = ({/* svgImg,  */title, tech, onClick}) => {
     return (

@@ -10,6 +10,7 @@ export { default as ResumeComponent } from './feature/Resume/resume';
 export { default as NavbarComponent } from './layout/Navbar/Navbar.jsx';
 export { default as SideBarComponent } from './layout/Sidebar/Sidebar';
 export { default as SectionWrapper } from './layout/SectionWrapper/SectionWrapper.jsx';
+export { default as CardWrapper } from './layout/CardWrapper/CardWrapper.jsx';
 export { default as SkillsComponent } from './feature/SkillList/Skills';
 export { default as ContactComponent } from './layout/Contact/Contact';
 export { default as Portfolio } from './layout/Portfolio/Portfolio';

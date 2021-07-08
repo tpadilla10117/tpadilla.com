@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ProjectPage.scss';
+import styles from './ProjectPage.module.scss';
 
 const ProjectPage = ({title, tech, description, alt, img, highlightsList, linkBlock}) => {
     return (
