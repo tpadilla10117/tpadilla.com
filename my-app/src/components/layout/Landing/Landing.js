@@ -23,19 +23,22 @@ const Landing = (props) => {
         return (
         <>
 
-        {/* <SectionWrapper 
+        <SectionWrapper 
                 id="projects"
-                content={ */}
+                content={
                 
                     
                     <CardWrapper>
                     {projects.map(project => {
                         return (
+                            //This is where I'm going to have to be creative with styling
                         <ProjectCard
                             onClick={() => handleModalVisibility(project.id)}
                             title={project.title}
                             tech={project.tech}
+                            cardCoverText={project.cardCoverText}
                             svgImg={project.svgImg}
+                            img={project.img}
                             key={project.id}
                         />
                         )
@@ -43,8 +46,8 @@ const Landing = (props) => {
                     </CardWrapper>
                     
                 
-              {/*   }
-            /> */}
+                }
+            />
         
 
         {/* Project Modal */}

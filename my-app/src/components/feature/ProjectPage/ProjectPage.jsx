@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './ProjectPage.module.scss';
 
+//This is what's appearing on the Modal:
+
 const ProjectPage = ({title, tech, description, alt, img, highlightsList, linkBlock}) => {
     return (
         <main className={styles.ProjectPage}>

@@ -4,6 +4,12 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as GrIcons from "react-icons/gr";
 
+import CrwnClothing from "../assets/images/crwn_clothing_landing.png";
+import Codalorians from "../assets/images/codalorians.png";
+import PixelDraw from "../assets/images/pixel_draw.png";
+import Postbook from "../assets/images/postbook.png";
+import RoboSearch from "../assets/images/robo_search.png";
+
 export const SidebarData = [
 
     {
@@ -88,8 +94,8 @@ export const projects = [
       title: "Crwn Clothing",
       tech: "",
       cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
-      /* svgImg: <Color />, */
-      /* img: ColorImg, */
+      svgImg: `${CrwnClothing}`,
+      img: `${CrwnClothing}`,
       alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
       description: "",
       techHighlights: [
@@ -107,8 +113,8 @@ export const projects = [
       title: "Codalorians",
       tech: "",
       cardCoverText: "An e-commerce for Musical Instruments",
-      /* svgImg: <Volunteer />, */
-      /* img: VolunteerImg, */
+      svgImg: `${Codalorians}`,
+      img: `${Codalorians}`,
       alt: "",
       description: "",
       techHighlights: [
@@ -127,8 +133,8 @@ export const projects = [
       title: "Pixel Draw",
       tech: "",
       cardCoverText: "A Simple, Grid-Based, Pixel-Art Creator",
-      /* svgImg: <Zoo />, */
-      /* img: ZooImg, */
+      svgImg: `${PixelDraw}`,
+      img: `${PixelDraw}`,
       alt: "",
       description: "",
       techHighlights: [
@@ -140,7 +146,46 @@ export const projects = [
         {text: "Demo", link: "https://objective-volhard-a4bd7a.netlify.app/"},
         {text: "GitHub", link: ""}
       ]
+    }, 
+    {
+      id: 4,
+      title: "Post Book",
+      tech: "",
+      cardCoverText: "An App Where Users Can Post Items For Sale",
+      svgImg: `${Postbook}`,
+      img: `${Postbook}`,
+      alt: "A clickable card of an application called `PostBook`",
+      description: "",
+      techHighlights: [
+        "Stored user-submitted images via Cloudinary and attached them to database records via ActiveStorage",
+        "Created a frontend with object-oriented JavaScript and a Rails API to structure the app as a single-page application",
+        "Used ActiveRecord scope methods and the gem Kaminari to enable sorting features and pagination for reviews"
+      ],
+      links: [
+        {text: "Demo", link: "https://laughing-austin-fe12b7.netlify.app/#"},
+        {text: "GitHub", link: ""}
+      ]
+    },
+    {
+      id: 5,
+      title: "Robo Search",
+      tech: "",
+      cardCoverText: "An App Where Users Can Post Items For Sale",
+      svgImg: `${RoboSearch}`,
+      img: `${RoboSearch}`,
+      alt: "A clickable card of an application called `Robo Search`",
+      description: "A Way To Search For Product Cards",
+      techHighlights: [
+        "Stored user-submitted images via Cloudinary and attached them to database records via ActiveStorage",
+        "Created a frontend with object-oriented JavaScript and a Rails API to structure the app as a single-page application",
+        "Used ActiveRecord scope methods and the gem Kaminari to enable sorting features and pagination for reviews"
+      ],
+      links: [
+        {text: "Demo", link: ""},
+        {text: "GitHub", link: ""}
+      ]
     }
+    
   ]
 
   export const techSkills = [ 
