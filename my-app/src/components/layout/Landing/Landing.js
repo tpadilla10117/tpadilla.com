@@ -52,7 +52,7 @@ const Landing = (props) => {
 
         {/* Project Modal */}
       {modalVisibility && 
-        <Modal onModalClose={() => setModalVisibility(false)}> 
+        <Modal onModalClose={() => setModalVisibility(false) } > 
           <ProjectPage 
             title={activeProject.title}
             tech={activeProject.tech}

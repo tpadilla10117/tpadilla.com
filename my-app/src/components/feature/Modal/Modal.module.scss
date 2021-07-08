@@ -21,6 +21,16 @@
     overflow: auto;
     z-index: 999;
     box-shadow: 0 0 10px #494f653b;
+    animation: fadein .5s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
   }
 
   .ModalContent {
@@ -38,6 +48,7 @@
   
   .ModalOpen {
     overflow: hidden;
+    
   }
   
   .ModalHeader {
