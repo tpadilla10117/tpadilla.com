@@ -4,12 +4,12 @@ $width-main: 1180px;
 $width-text: 640px;
 $color-transition: 0.3s linear; */
 
-:root {
-  --width-text: 640px;
-  --width-main: 1180px;
-  --gray-light: #f7f8f8;
-  --gray-primary: #C4C4C4;
-}
+
+  $--width-text: 640px;
+  $--width-main: 1180px;
+  $--gray-light: #f7f8f8;
+  $--gray-primary: #C4C4C4;
+
 
 .ModalContainer {
     background-color: rgba(0, 0, 0, 0.5);
@@ -25,10 +25,10 @@ $color-transition: 0.3s linear; */
   .ModalContent {
     background-color: #fff;
     border-radius: 3px;
-    max-width: var(--width-text); 
+    max-width: $--width-text; 
     margin: 50px 1rem;
   
-    @media (min-width: var(--width-text)) {
+    @media (min-width: $--width-text) {
       max-width: calc(640px - 2rem); //640 from $width-text
       margin: 50px auto;
       padding: 0 2rem;
@@ -55,7 +55,7 @@ $color-transition: 0.3s linear; */
     color: gray;
     cursor: pointer;
   
-    @media (min-width: var(--width-text)) {
+    @media (min-width: $--width-text) {
       margin-right: -2rem;
     }
   

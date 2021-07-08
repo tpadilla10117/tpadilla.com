@@ -61,9 +61,9 @@ const Landing = (props) => {
             }
             
 
-        {/* <div className="projCard-container">
+        <div className="projCard-container">
 
-        <a href="https://github.com/tpadilla10117/crwn-clothing">
+        
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={CrwnClothing} alt="A clickable card of an application called `Crwn Clothing`"/>
@@ -76,9 +76,9 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
-        </a>
+        
 
-            <a href="https://github.com/2006-cpu/codalorians">
+            
             <div className="projCard-box">
                 
                 <div className="img-wrapper">
@@ -93,9 +93,9 @@ const Landing = (props) => {
                 </div>
                 </div>
             </div>
-            </a>
+            
 
-            <a href="https://objective-volhard-a4bd7a.netlify.app/">
+            
             <div className="projCard-box">
                 <div className="img-wrapper">
                     <img src={PixelDraw} alt="A clickable card of an application called `Pixel Draw`"/>
@@ -138,8 +138,8 @@ const Landing = (props) => {
                     </div>
                     </div>
                 </div>
-            </a>
-        </div> */}
+            
+        </div>
         
         {/* <TechStackFooter /> */}
       

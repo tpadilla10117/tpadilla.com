@@ -1,5 +1,11 @@
+
+  $--width-text: 640px;
+  $--width-main: 1180px;
+  $--gray-light: #f7f8f8;
+  $--gray-primary: #C4C4C4;
+
 .ProjectPage {
-    max-width: var(--width-text);
+    max-width: $--width-text;
     margin: 0 auto;
     padding: 4rem 2rem;
   
@@ -29,5 +35,5 @@
   .Img {
     width: 100%;
     margin: 0 auto;
-    border: 1px solid var(gray-primary);
+    border: 1px solid $--gray-primary;
   }
