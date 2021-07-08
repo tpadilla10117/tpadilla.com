@@ -23,9 +23,9 @@ const Landing = (props) => {
         return (
         <>
 
-        <SectionWrapper 
+        {/* <SectionWrapper 
                 id="projects"
-                content={
+                content={ */}
                 
                     
                     <CardWrapper>
@@ -41,9 +41,10 @@ const Landing = (props) => {
                         )
                     })}
                     </CardWrapper>
+                    
                 
-                }
-            />
+              {/*   }
+            /> */}
         
 
         {/* Project Modal */}
@@ -70,7 +71,7 @@ const Landing = (props) => {
                 </div>
 
                 <div className="details-box">
-                <div className="content-box" >
+                <div className="content-box">
                     
                     <p>An e-commerce for Stylish, Trendy Clothing</p>
                 </div>

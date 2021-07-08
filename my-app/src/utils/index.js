@@ -87,6 +87,7 @@ export const projects = [
       id: 1,
       title: "Crwn Clothing",
       tech: "",
+      cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
       /* svgImg: <Color />, */
       /* img: ColorImg, */
       alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
@@ -105,6 +106,7 @@ export const projects = [
       id: 2,
       title: "Codalorians",
       tech: "",
+      cardCoverText: "An e-commerce for Musical Instruments",
       /* svgImg: <Volunteer />, */
       /* img: VolunteerImg, */
       alt: "",
@@ -124,6 +126,7 @@ export const projects = [
       id: 3,
       title: "Pixel Draw",
       tech: "",
+      cardCoverText: "A Simple, Grid-Based, Pixel-Art Creator",
       /* svgImg: <Zoo />, */
       /* img: ZooImg, */
       alt: "",
