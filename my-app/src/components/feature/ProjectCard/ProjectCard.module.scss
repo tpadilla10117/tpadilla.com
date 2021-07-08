@@ -54,10 +54,11 @@
 
         &:hover {
           transform: scale(1.2);
+
         }
       }
     }
-
+    
     .detailsBox {
       position: absolute;
       top: 10px;
@@ -70,7 +71,6 @@
       transform: scaleY(0);
       transition: transform .5s;
 
-    
       .contentBox {
         position: absolute;
         /* top: 50px; */
@@ -100,6 +100,10 @@
       }
     }
   }
+}
+
+.projCardContainer .projCardBox:hover .detailsBox {
+  transform: scaleY(1)
 }
 
 
