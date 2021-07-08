@@ -1,3 +1,10 @@
+$--main-bg-color: #F0E9DC; /* Alabaster */
+$--sec-bg-color: #07678E; /* Blue Sapphire */
+$--main-btn-color: #2DBCB4; /* Tiffany Blue */
+$--neutral-color: #12130F; /* Smoky Black */
+$--misc-color: #BF4E30; /* Vermillion */
+$--txt-color: #2c426a;
+
 .Button p {
     font-size: .8rem;
     padding: 1rem 0;
@@ -7,10 +14,9 @@
 .Button {
     font-size: 1rem;
     border-radius: 3em;
-    border: 1px solid var(  --sec-bg-color);
-    color: var(--main-bg-color);
+    border: 1px solid $--sec-bg-color;
     outline: none;
-    /* background: var(--main-btn-color); */
+    background: $--main-bg-color;
     color: #fff;
     cursor: pointer;
     /* background: transparent; */
@@ -24,11 +30,34 @@
     /* transform: translate(40%, 0%); */
     margin-top: 2rem;
     margin-left: 3.5rem;
+    text-decoration: none;
 }
 
 .Button:hover {
-    background: var(--main-btn-color);
+    background: $--main-btn-color;
+    transition: background 0.5s;
     box-shadow: 0 0 10px #494f653b;
+    border: 1px solid $--sec-bg-color;
+    color: #fff;
     /* transition: all 250ms ease 50ms; */
     /* -webkit-transition: all 250ms ease 50ms; */
 }
+
+.Wide {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* .Center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   */
+
+a.Button {
+    display: inline-block;
+  
+    &:hover {
+      text-decoration: initial;
+    }
+  }

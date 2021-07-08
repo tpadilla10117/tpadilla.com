@@ -1,14 +1,14 @@
-/* $gray-primary: #C4C4C4;
-$gray-light: #f7f8f8;
-$width-main: 1180px;
-$width-text: 640px;
-$color-transition: 0.3s linear; */
-
 
   $--width-text: 640px;
   $--width-main: 1180px;
   $--gray-light: #f7f8f8;
   $--gray-primary: #C4C4C4;
+  $--main-bg-color: #F0E9DC; /* Alabaster */
+  $--sec-bg-color: #07678E; /* Blue Sapphire */
+  $--main-btn-color: #2DBCB4; /* Tiffany Blue */
+  $--neutral-color: #12130F; /* Smoky Black */
+  $--misc-color: #BF4E30; /* Vermillion */
+  $--txt-color: #2c426a;
 
 
 .ModalContainer {
@@ -20,10 +20,11 @@ $color-transition: 0.3s linear; */
     height: 100%;
     overflow: auto;
     z-index: 999;
+    box-shadow: 0 0 10px #494f653b;
   }
 
   .ModalContent {
-    background-color: #fff;
+    background-color: /* $--main-bg-color */#fff;
     border-radius: 3px;
     max-width: $--width-text; 
     margin: 50px 1rem;
@@ -52,14 +53,38 @@ $color-transition: 0.3s linear; */
     right: 10px;
     font-weight: bold;
     font-size: 1.25rem;
-    color: gray;
+    color: $--sec-bg-color;
     cursor: pointer;
+    opacity: .5;
+
   
     @media (min-width: $--width-text) {
       margin-right: -2rem;
     }
   
     &:hover {
-      color: red;
+      color: $--main-btn-color;
+      transition: 500ms ease .1s;
+      opacity: 1;
+      animation-name: scale;
+      animation-duration: .4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+     
     }
   }
+
+@keyframes scale {
+  0% {
+      transform: scale(1.5);
+  }
+  25% {
+      transform: scale(1.5);
+  }
+  75% {
+      transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+}
