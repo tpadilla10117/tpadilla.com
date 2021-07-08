@@ -1,0 +1,39 @@
+
+  $--width-text: 640px;
+  $--width-main: 1180px;
+  $--gray-light: #f7f8f8;
+  $--gray-primary: #C4C4C4;
+
+.ProjectPage {
+    max-width: $--width-text;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  
+    h1 {
+      color: red;
+    }
+  
+    p {
+      margin: 2rem 0;
+    }
+  
+    h2 {
+      margin-top: .25rem;
+    }
+  
+    h3 {
+      font-size: 1.563rem;
+      text-align: center;
+      margin: 2rem 0 1rem 0;
+    }
+  
+    ul {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .Img {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid $--gray-primary;
+  }

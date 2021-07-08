@@ -1,0 +1,21 @@
+
+  $--width-text: 640px;
+  $--width-main: 1180px;
+  $--gray-light: #f7f8f8;
+  $--gray-primary: #C4C4C4;
+
+.CardWrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: $--width-main;
+    margin: 1rem auto;
+  }
+  
+  /* @include medium-screens {
+    .CardWrapper {
+      flex-direction: row;
+    }
+  } */

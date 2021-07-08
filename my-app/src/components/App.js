@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent } from './index';
+import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent, Modal } from './index';
+/* import { projects, techSkills } from '../utils/index.js'; */
 
 function App() {
+
+/* State for Modals: */
+  const [modalVisibility, setModalVisibility] = useState(false);
+  const [activeProject, setActiveProject] = useState(null);
 
 /* State for Animated Cards */
   const [cardState, changeCardState] = useState({
@@ -55,8 +60,8 @@ function App() {
                   classNames="fade"
                   unmountOnExit>
                     <div className="fade">
-                      <Landing />
-
+                      <Landing modalVisibility={modalVisibility} setModalVisibility={setModalVisibility} activeProject={activeProject} setActiveProject={setActiveProject}/>
+                   
                     </div>
                   </CSSTransition>
                 )}
@@ -84,6 +89,7 @@ function App() {
                   unmountOnExit>
                     <div className="fade">
                       <ResumeComponent />
+                      {/* <Modal /> */}
 
                     </div>
                   </CSSTransition>
