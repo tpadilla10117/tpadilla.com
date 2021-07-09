@@ -148,6 +148,9 @@
   }
 }
 
-/* @media (orientation: landscape) and (min-width: 1366px) and (max-width: 2500px) {
-  
-} */
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 2500px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 3rem
+  }
+}
