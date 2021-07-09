@@ -97,13 +97,14 @@ export const projects = [
       svgImg: `${CrwnClothing}`,
       img: `${CrwnClothing}`,
       alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
-      description: "",
+      description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
       techHighlights: [
         "Utilized Google Firebase for user authentication",
         "Managed user data with queries to Firestore",
         "Designed frontend UI with Sass and custom CSS",
       ],
       links: [
+        {text: "Demo", link: "https://peaceful-edison-ca2461.netlify.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
       ]
     }, 
@@ -115,7 +116,7 @@ export const projects = [
       svgImg: `${Codalorians}`,
       img: `${Codalorians}`,
       alt: "",
-      description: "",
+      description: "A full stack, e-commerce web-application that guides users through an intuitive shopping experience. Users can browse a catalog of items, add/remove items from their cart, make purchases, & create product reviews.",
       techHighlights: [
         "Created API and database with Express.js, Node.js, and PostgreSQL to store and retrieve products",
         "Managed user authentication through bcrypt",
@@ -123,7 +124,7 @@ export const projects = [
         "Developed templates for common elements such as forms to reduce redundancies"
       ],
       links: [
-        /* {text: "Demo", link: "https://youtu.be/degqCx92P_c"}, */
+        {text: "Demo", link: "https://afternoon-brook-26059.herokuapp.com/home"},
         {text: "GitHub", link: "https://github.com/2006-cpu/codalorians"}
       ]
     },
@@ -134,52 +135,65 @@ export const projects = [
       cardCoverText: "A Simple, Grid-Based, Pixel-Art Creator",
       svgImg: `${PixelDraw}`,
       img: `${PixelDraw}`,
-      alt: "",
-      description: "",
+      alt: "An image of an empty grid of blocks surrounded by a colored grid-palette",
+      description: "A simple drawing web-application where users can choose from a palette of defined colors and create pixelated art.",
       techHighlights: [
         "Designed frontend UI within React.js library using custom CSS frameworks",
         "Developed custom, interactive buttons using logic based in JS",
       ],
       links: [
         {text: "Demo", link: "https://objective-volhard-a4bd7a.netlify.app/"},
-        {text: "GitHub", link: ""}
+        {text: "GitHub", link: "https://github.com/tpadilla10117/pixel_draw/tree/master/my-app"}
       ]
     }, 
     {
       id: 4,
       title: "Post Book",
-      tech: "",
+      tech: "JS, Node.js, Express.js, jQuery, HTML, CSS, Bootstrap",
       cardCoverText: "An App Where Users Can Post Items For Sale",
       svgImg: `${Postbook}`,
       img: `${Postbook}`,
       alt: "A clickable card of an application called `PostBook`",
-      description: "",
+      description: "A 'Craigslist'-like clone that allows users to post objects for sale.  Users can interact with each other via message and coordinate purchases.",
       techHighlights: [
-        "Stored user-submitted images via Cloudinary and attached them to database records via ActiveStorage",
-        "Created a frontend with object-oriented JavaScript and a Rails API to structure the app as a single-page application",
-        "Used ActiveRecord scope methods and the gem Kaminari to enable sorting features and pagination for reviews"
+        ""
       ],
       links: [
         {text: "Demo", link: "https://laughing-austin-fe12b7.netlify.app/#"},
-        {text: "GitHub", link: ""}
+        {text: "GitHub", link: "https://github.com/tpadilla10117/strangersThings-PostBook-"}
       ]
     },
     {
       id: 5,
       title: "Robo Search",
-      tech: "",
-      cardCoverText: "An App Where Users Can Post Items For Sale",
+      tech: "JS, React.js, HTML, CSS",
+      cardCoverText: "An image filter",
       svgImg: `${RoboSearch}`,
       img: `${RoboSearch}`,
       alt: "A clickable card of an application called `Robo Search`",
-      description: "",
+      description: "A simple application and UI that allows users to browse and filter through images of Robots (an array of data fetched from an API).",
       techHighlights: [
-        "Stored user-submitted images via Cloudinary and attached them to database records via ActiveStorage",
-        "Created a frontend with object-oriented JavaScript and a Rails API to structure the app as a single-page application",
-        "Used ActiveRecord scope methods and the gem Kaminari to enable sorting features and pagination for reviews"
+        ""
       ],
       links: [
         {text: "Demo", link: ""},
+        {text: "GitHub", link: ""}
+      ]
+    },
+    {
+      id: 6,
+      title: "Post Integration",
+      tech: "JS, Node.js, Express.js, PostgreSQL, CSS, HTML, SASS, jsonwebtoken",
+      cardCoverText: "",
+      svgImg: ``,
+      img: ``,
+      alt: "",
+      description: "A custom-built API and database intended to serve as the backend for a “Tumblr” clone. Users can create an account as well as view, create, delete, and edit posts with content.",
+      techHighlights: [
+        ""
+      ],
+      links: [
+        {text: "Demo", link: "https://murmuring-garden-99126.herokuapp.com/api/posts"},
         {text: "GitHub", link: ""}
       ]
     }
