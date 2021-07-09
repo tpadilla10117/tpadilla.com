@@ -5,13 +5,23 @@
   $--gray-primary: #C4C4C4;
 
 .CardWrapper {
-    display: flex;
+    /* display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-between;
     flex-direction: column;
     max-width: $--width-main;
-    margin: 1rem auto;
+    margin: 1rem auto; */
+
+    width: 100%;
+    min-height: 50px;
+    margin-top: 10px;
+    display: grid;
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: orangered; */
+    grid-template-columns: 50% 50%;
   }
   
   /* @include medium-screens {

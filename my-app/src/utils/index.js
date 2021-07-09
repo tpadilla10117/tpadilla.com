@@ -92,17 +92,16 @@ export const projects = [
     {
       id: 1,
       title: "Crwn Clothing",
-      tech: "",
+      tech: "Sass, CSS, Firebase, HTML, React.js, JS",
       cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
       svgImg: `${CrwnClothing}`,
       img: `${CrwnClothing}`,
       alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
       description: "",
       techHighlights: [
-        "Utilized Redux reducers and action creators to centralize state management",
-        "Applied Thunk as Redux middleware to handle asynchronous actions like API calls",
-        "Designed SVGs in Illustrator to serve as the canvas templates",
-        "Built a Rails backend API with a PostgreSQL database to store and retrieve finished images"
+        "Utilized Google Firebase for user authentication",
+        "Managed user data with queries to Firestore",
+        "Designed frontend UI with Sass and custom CSS",
       ],
       links: [
         {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
@@ -111,17 +110,17 @@ export const projects = [
     {
       id: 2,
       title: "Codalorians",
-      tech: "",
+      tech: "Express.js, JS, HTML, React.js, PostgreSQL, CSS, Node.js, Axios, Stripe, Bootstrap, Heroku, bcrypt",
       cardCoverText: "An e-commerce for Musical Instruments",
       svgImg: `${Codalorians}`,
       img: `${Codalorians}`,
       alt: "",
       description: "",
       techHighlights: [
-        "Styled the site with custom CSS based on mockups designed with Figma",
-        "Enabled third-party login through GitHub using OmniAuth; used BCrypt and sessions to manage user authentication",
-        "Utilized ActiveRecord query methods to develop a dashboard displaying core stats on engagement levels",
-        "Developed partial templates for common elements like forms and error notifications to reduce code repetition"
+        "Created API and database with Express.js, Node.js, and PostgreSQL to store and retrieve products",
+        "Managed user authentication through bcrypt",
+        "Designed frontend UI with Bootstrap CSS and custom CSS libraries.",
+        "Developed templates for common elements such as forms to reduce redundancies"
       ],
       links: [
         /* {text: "Demo", link: "https://youtu.be/degqCx92P_c"}, */
@@ -131,16 +130,15 @@ export const projects = [
     {
       id: 3,
       title: "Pixel Draw",
-      tech: "",
+      tech: "JS, React.js, CSS, Node.js, HTML",
       cardCoverText: "A Simple, Grid-Based, Pixel-Art Creator",
       svgImg: `${PixelDraw}`,
       img: `${PixelDraw}`,
       alt: "",
       description: "",
       techHighlights: [
-        "Stored user-submitted images via Cloudinary and attached them to database records via ActiveStorage",
-        "Created a frontend with object-oriented JavaScript and a Rails API to structure the app as a single-page application",
-        "Used ActiveRecord scope methods and the gem Kaminari to enable sorting features and pagination for reviews"
+        "Designed frontend UI within React.js library using custom CSS frameworks",
+        "Developed custom, interactive buttons using logic based in JS",
       ],
       links: [
         {text: "Demo", link: "https://objective-volhard-a4bd7a.netlify.app/"},
@@ -174,7 +172,7 @@ export const projects = [
       svgImg: `${RoboSearch}`,
       img: `${RoboSearch}`,
       alt: "A clickable card of an application called `Robo Search`",
-      description: "A Way To Search For Product Cards",
+      description: "",
       techHighlights: [
         "Stored user-submitted images via Cloudinary and attached them to database records via ActiveStorage",
         "Created a frontend with object-oriented JavaScript and a Rails API to structure the app as a single-page application",

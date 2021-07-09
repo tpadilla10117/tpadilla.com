@@ -18,6 +18,7 @@ const Landing = (props) => {
     const handleModalVisibility = (id) => {
         setModalVisibility(!modalVisibility)
         setActiveProject(projects.find(project => project.id === id));
+    
     }
 
         return (
@@ -31,7 +32,7 @@ const Landing = (props) => {
                     <CardWrapper>
                     {projects.map(project => {
                         return (
-                            //This is where I'm going to have to be creative with styling
+                            
                         <ProjectCard
                             onClick={() => handleModalVisibility(project.id)}
                             title={project.title}
@@ -51,8 +52,8 @@ const Landing = (props) => {
         
 
         {/* Project Modal */}
-      {modalVisibility && 
-        <Modal onModalClose={() => setModalVisibility(false) } > 
+      {modalVisibility &&  
+        <Modal onModalClose={() => setModalVisibility(false)} > 
           <ProjectPage 
             title={activeProject.title}
             tech={activeProject.tech}
@@ -81,7 +82,7 @@ const Landing = (props) => {
             }
             
 
-        <div className="projCard-container">
+        {/* <div className="projCard-container">
 
         
             <div className="projCard-box">
@@ -159,9 +160,9 @@ const Landing = (props) => {
                     </div>
                 </div>
             
-        </div>
+        </div> */}
         
-        {/* <TechStackFooter /> */}
+        <TechStackFooter />
       
         </>
         )
