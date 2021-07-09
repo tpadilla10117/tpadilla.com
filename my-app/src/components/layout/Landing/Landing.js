@@ -1,13 +1,13 @@
-import React, { useEffect, useState, Component } from 'react';
+import React from 'react';
 
-import './Landing.css';
-import CrwnClothing from "../../../../src/assets/images/crwn_clothing_landing.png";
+/* import './Landing.css'; */
+/* import CrwnClothing from "../../../../src/assets/images/crwn_clothing_landing.png";
 import Codalorians from "../../../../src/assets/images/codalorians.png";
 import PixelDraw from "../../../../src/assets/images/pixel_draw.png";
 import Postbook from "../../../../src/assets/images/postbook.png";
-import RoboSearch from "../../../../src/assets/images/robo_search.png";
+import RoboSearch from "../../../../src/assets/images/robo_search.png"; */
 import TechStackFooter from '../Footer/Footer.jsx';
-import { projects, techSkills } from '../../../utils';
+import { projects } from '../../../utils';
 import { Modal, ProjectPage, SectionWrapper, CardWrapper, ProjectCard, LinkBlock, LinkButton, BulletList } from '../../index.js';
 
 const Landing = (props) => {
@@ -24,11 +24,10 @@ const Landing = (props) => {
         return (
         <>
 
+    {/* This is for the main cards on Landing Page: */}
         <SectionWrapper 
                 id="projects"
                 content={
-                
-                    
                     <CardWrapper>
                     {projects.map(project => {
                         return (
@@ -45,41 +44,39 @@ const Landing = (props) => {
                         )
                     })}
                     </CardWrapper>
-                    
-                
                 }
             />
         
 
-        {/* Project Modal */}
-      {modalVisibility &&  
-        <Modal onModalClose={() => setModalVisibility(false)} > 
-          <ProjectPage 
-            title={activeProject.title}
-            tech={activeProject.tech}
-            img={activeProject.img}
-            alt={activeProject.alt}
-            description={activeProject.description}
-            techHighlightsList={
-                <BulletList 
-                  listItems={
-                    activeProject.techHighlights.map((highlight, i) => {
-                      return <li key={i}>{highlight}</li>
-                    })
-                  }
-                  listStyle="Modal"
-                />
-              }
-              linkBlock={
-                <LinkBlock>
-                  {activeProject.links.map((link, i) => {
-                    return <LinkButton key={i} text={link.text} type="PrimaryInverse" link={link.link} />
-                  })}
-                </LinkBlock>
-              }
-            />   
-            </Modal>
-            }
+    {/* The modal that appears when clicking a project card: */}
+        {modalVisibility &&  
+            <Modal onModalClose={() => setModalVisibility(false)} > 
+            <ProjectPage 
+                title={activeProject.title}
+                tech={activeProject.tech}
+                img={activeProject.img}
+                alt={activeProject.alt}
+                description={activeProject.description}
+                techHighlightsList={
+                    <BulletList 
+                    listItems={
+                        activeProject.techHighlights.map((highlight, i) => {
+                        return <li key={i}>{highlight}</li>
+                        })
+                    }
+                    listStyle="Modal"
+                    />
+                }
+                linkBlock={
+                    <LinkBlock>
+                    {activeProject.links.map((link, i) => {
+                        return <LinkButton key={i} text={link.text} type="PrimaryInverse" link={link.link} />
+                    })}
+                    </LinkBlock>
+                }
+                />   
+                </Modal>
+                }
             
 
         {/* <div className="projCard-container">

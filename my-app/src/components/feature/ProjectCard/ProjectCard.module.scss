@@ -85,7 +85,7 @@
         /* top: 50px; */
         /* transform: translateY(-50%); */
         text-align: center;
-        /* padding: 15px; */
+        padding-top: 8vh;
         color: /* #f0e9dc */#fff;
         /* border: 10px solid yellow; */
         width: 100%;
@@ -93,16 +93,17 @@
         
       
         p {
-          font-size: 50px;
-            /* margin-top: 10vh; */
-            padding: 4rem;
-            font-family: 'Amatic SC', sans-serif;
-            color: #fff;
-            /* border: 10px solid red; */
-            /* transform: translateY(50%); */
-            width: 100%;
-            display: inline-block;
-            vertical-align: middle;
+          font-size: 40px;
+          /* padding: 4rem; */
+          font-family: 'Amatic SC', sans-serif;
+          color: #fff;
+          width: 100%;
+          display: inline-block;
+          vertical-align: middle;
+          /* border: 10px solid red; */
+          /* justify-content: center;
+          align-items: center;
+          text-align: center; */
             
         }
         
@@ -115,6 +116,26 @@
   transform: scaleY(1)
 }
 
+@media only screen and (min-device-width: 280px) and (max-width: 480px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 1.5rem
+  }
+}
+
+@media only screen and (min-device-width: 375px)and (max-width: 768px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    /* padding: 2rem */
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 2rem
+  }
+}
 
 
 

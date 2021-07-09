@@ -1,31 +1,49 @@
-
-  $--width-text: 640px;
-  $--width-main: 1180px;
-  $--gray-light: #f7f8f8;
-  $--gray-primary: #C4C4C4;
+//Root variables:
+$--width-main: 1180px;
 
 .CardWrapper {
-    /* display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    flex-direction: column;
-    max-width: $--width-main;
-    margin: 1rem auto; */
-
-    width: 100%;
-    min-height: 50px;
-    margin-top: 10px;
-    display: grid;
-    /* display: flex; */
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* background-color: orangered; */
-    grid-template-columns: 50% 50%;
-  }
+  
+  width: 100%;
+  min-height: 50px;
+  margin-top: 2rem;
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-template-columns: 50% 50%;
+}
   
   /* @include medium-screens {
     .CardWrapper {
       flex-direction: row;
     }
   } */
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+//Media Queries:
+
+  @media only screen and (min-device-width: 280px) and (max-width: 480px) {
+
+    .CardWrapper {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-width: $--width-main;
+      margin: 1rem auto
+    }
+  }
+
+  @media only screen and (min-device-width: 375px)and (max-width: 768px) {
+    .CardWrapper {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-width: $--width-main;
+      margin: 1rem auto
+    }
+  }
