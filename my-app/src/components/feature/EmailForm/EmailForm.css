@@ -135,32 +135,33 @@
     }
 
     .btn-box button {
-        font-size: 1rem;
-        border-radius: 3em;
-        border: 1px solid var(  --sec-bg-color);
-        color: var(--main-bg-color);
+        border: 1px solid var(--sec-bg-color);
         outline: none;
-        /* background: var(--main-btn-color); */
-        color: #fff;
+        background: var(--main-bg-color);
+        color:#fff;
         cursor: pointer;
         /* background: transparent; */
         display: inline-block;
-        border-radius: 3em;
+        border-radius: .2em;
         font-family: 'Otomanopee One', sans-serif;
-        font-size: 1em;
-        padding: 8px 45px;
-        line-height: initial;
-        -webkit-transition: all 250ms ease 50ms;
+        font-size: 18px;
+        padding: 12px 20px;
+        line-height: 120%;
+        height: 48px;
+        min-width: 48px;
+        --webkit-transition: all 250ms ease 50ms;
         /* transform: translate(40%, 0%); */
         margin-top: 2rem;
-        margin-left: 3.5rem;
+        /* margin-left: 3.5rem; */
+        text-decoration: none;
     }
 
     .btn-box button:hover {
         background: var(--main-btn-color);
+        transition: background 0.5s;
         box-shadow: 0 0 10px #494f653b;
-        /* transition: all 250ms ease 50ms; */
-        /* -webkit-transition: all 250ms ease 50ms; */
+        border: 1px solid var(--sec-bg-color);
+        color: #fff;
     }
 
     .message-text {
@@ -208,7 +209,7 @@
         text-align: center;
         border-radius: 3px;
         color: var(--main-bg-color);
-        -webkit-transition: all 250ms ease 50ms;
+        --webkit-transition: all 250ms ease 50ms;
     }
 
     .links a:nth-child(1):hover {

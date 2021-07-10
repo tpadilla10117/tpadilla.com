@@ -184,17 +184,17 @@ export const projects = [
       id: 6,
       title: "Post Integration",
       tech: "JS, Node.js, Express.js, PostgreSQL, CSS, HTML, SASS, jsonwebtoken",
-      cardCoverText: "",
+      cardCoverText: "A custom backend for a Tumblr clone",
       svgImg: ``,
       img: ``,
-      alt: "",
+      alt: "An image of post data in JSON format",
       description: "A custom-built API and database intended to serve as the backend for a “Tumblr” clone. Users can create an account as well as view, create, delete, and edit posts with content.",
       techHighlights: [
         ""
       ],
       links: [
         {text: "Demo", link: "https://murmuring-garden-99126.herokuapp.com/api/posts"},
-        {text: "GitHub", link: ""}
+        {text: "GitHub", link: "https://github.com/tpadilla10117/post-integration"}
       ]
     }
     

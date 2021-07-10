@@ -5,31 +5,31 @@ $--neutral-color: #12130F; /* Smoky Black */
 $--misc-color: #BF4E30; /* Vermillion */
 $--txt-color: #2c426a;
 
-.Button p {
+/* .Button p {
     font-size: .8rem;
     padding: 1rem 0;
     text-align: center;
-}
+} */
 
 .Button {
-    font-size: 1rem;
-    border-radius: 3em;
     border: 1px solid $--sec-bg-color;
     outline: none;
     background: $--main-bg-color;
-    color: #fff;
+    color:#fff;
     cursor: pointer;
     /* background: transparent; */
     display: inline-block;
-    border-radius: 3em;
+    border-radius: .2em;
     font-family: 'Otomanopee One', sans-serif;
-    font-size: 1em;
-    padding: 8px 45px;
-    line-height: initial;
+    font-size: 18px;
+    padding: 12px 20px;
+    line-height: 120%;
+    height: 48px;
+    min-width: 48px;
     -webkit-transition: all 250ms ease 50ms;
     /* transform: translate(40%, 0%); */
     margin-top: 2rem;
-    margin-left: 3.5rem;
+    /* margin-left: 3.5rem; */
     text-decoration: none;
 }
 
