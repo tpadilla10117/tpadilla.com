@@ -26,13 +26,13 @@ export const SidebarData = [
         id: 2
     },
 
-    {
+    /* {
         title: 'UX Portfolio',
         path: '/portfolio',
         icon: <FaIcons.FaProjectDiagram />,
         cName: 'nav-text',
         id: 3
-    },
+    }, */
     {
         title: 'Contact',
         path: '/contact',
