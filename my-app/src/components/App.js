@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent, Modal } from './index';
+import { Header, AboutMeComponent, Portfolio, ContactComponent, Landing, ResumeComponent } from './index';
 /* import { projects, techSkills } from '../utils/index.js'; */
 
 function App() {
@@ -19,7 +19,8 @@ function App() {
   return (
     
             <div>
-                <CSSTransition >
+                <CSSTransition 
+                timeout={300}>
                   <Header/>
                 </CSSTransition>
             

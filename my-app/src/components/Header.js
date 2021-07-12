@@ -15,7 +15,7 @@ import {NavbarComponent, SideBarComponent} from './index';
         return (
             <div id="headerwrapper">
                 <header id="header">
-                    <div class="logo">
+                    <div className="logo">
                     {/* <!-- <span>TP</span> --> */}
                         {/* <span class="icon fa-circle"></span> */}
                     </div>

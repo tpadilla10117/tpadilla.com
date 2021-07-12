@@ -2,13 +2,13 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
-import * as GrIcons from "react-icons/gr";
 
 import CrwnClothing from "../assets/images/crwn_clothing_landing.png";
 import Codalorians from "../assets/images/codalorians.png";
 import PixelDraw from "../assets/images/pixel_draw.png";
 import Postbook from "../assets/images/postbook.png";
 import RoboSearch from "../assets/images/robo_search.png";
+import Turtle from "../assets/images/turtleBeach.jpg";
 
 export const SidebarData = [
 
@@ -104,7 +104,7 @@ export const projects = [
         "Designed frontend UI with Sass and custom CSS",
       ],
       links: [
-        {text: "Demo", link: "https://peaceful-edison-ca2461.netlify.app/"},
+        {text: "In Development", link: "https://peaceful-edison-ca2461.netlify.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
       ]
     }, 
@@ -120,7 +120,7 @@ export const projects = [
       techHighlights: [
         "Created API and database with Express.js, Node.js, and PostgreSQL to store and retrieve products",
         "Managed user authentication through bcrypt",
-        "Designed frontend UI with Bootstrap CSS and custom CSS libraries.",
+        "Designed frontend UI with Bootstrap CSS and custom CSS frameworks",
         "Developed templates for common elements such as forms to reduce redundancies"
       ],
       links: [
@@ -156,7 +156,9 @@ export const projects = [
       alt: "A clickable card of an application called `PostBook`",
       description: "A 'Craigslist'-like clone that allows users to post objects for sale.  Users can interact with each other via message and coordinate purchases.",
       techHighlights: [
-        ""
+        "Created a UI with Express.js API and structured the app as a single-page application",
+        "Implemented jQuery JS library to handle click events, state management, etc. ",
+        "Designed UX with Bootstrap CSS framework"
       ],
       links: [
         {text: "Demo", link: "https://laughing-austin-fe12b7.netlify.app/#"},
@@ -171,13 +173,14 @@ export const projects = [
       svgImg: `${RoboSearch}`,
       img: `${RoboSearch}`,
       alt: "A clickable card of an application called `Robo Search`",
-      description: "A simple application and UI that allows users to browse and filter through images of Robots (an array of data fetched from an API).",
+      description: "A simple application and UI that allows users to browse and filter through images of Robots",
       techHighlights: [
-        ""
+        "Designed UI and UX with custom CSS",
+        "Implemented basic filter logic allowing users to search cards"
       ],
       links: [
-        {text: "Demo", link: ""},
-        {text: "GitHub", link: ""}
+        {text: "Demo", link: "https://tpadilla10117.github.io/robo_search/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/robo_search"}
       ]
     },
     {
@@ -186,14 +189,16 @@ export const projects = [
       tech: "JS, Node.js, Express.js, PostgreSQL, CSS, HTML, SASS, jsonwebtoken",
       cardCoverText: "A custom backend for a Tumblr clone",
       svgImg: ``,
-      img: ``,
+      img: `${Turtle}`,
       alt: "An image of post data in JSON format",
       description: "A custom-built API and database intended to serve as the backend for a “Tumblr” clone. Users can create an account as well as view, create, delete, and edit posts with content.",
       techHighlights: [
-        ""
+        "Designed scalable, custom-built API",
+        "Implemented user authentication through bcrypt",
+        "Developed user post & tag content generation through CRUD methodology"
       ],
       links: [
-        {text: "Demo", link: "https://murmuring-garden-99126.herokuapp.com/api/posts"},
+        {text: "In Development", link: "https://murmuring-garden-99126.herokuapp.com/api/posts"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/post-integration"}
       ]
     }

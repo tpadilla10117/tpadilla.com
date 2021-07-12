@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarLi, SidebarRoute } from './SidebarElements.js';
 import './SideBarTransition.css';
