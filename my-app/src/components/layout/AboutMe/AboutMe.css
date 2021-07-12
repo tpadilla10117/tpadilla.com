@@ -372,8 +372,6 @@ color: #2c426a;
             display: flex;
             flex-direction: column;
             width: 90vw;
-            /* margin-top: 10vh; */
-            /* grid-gap: 60px; */
         }
 
         .overlay-practice {
@@ -400,6 +398,7 @@ color: #2c426a;
             /* height: 40rem; */
             overflow-x: hidden;
             overflow-y: auto;
+            padding-bottom: 0;
         }
 
         .sideBio .links-about {
@@ -460,16 +459,13 @@ color: #2c426a;
             display: flex;
             flex-direction: column;
             width: 90vw;
-            /* margin-top: 10vh; */
-            /* grid-gap: 60px; */
         }
 
         .overlay-practice {
             width: 90vw;
             margin-right: -10px;
             /* margin-top: 70vh; */
-            transform: translate(0%, 0%);
-            
+            transform: translate(0%, 0%);   
         }
 
         .overlay-practice .img-box:hover {
@@ -488,13 +484,12 @@ color: #2c426a;
             /* height: 90vh; */
             overflow-x: hidden;
             overflow-y: auto;
-            /* margin-top: 20px;  */
-            /* transform: translate(-10%, 0%); */
+            padding-bottom: 1rem;
         }
 
         .sideBio .links-about {
             
-            padding-top: 0;
+            padding-top: 1rem;
             display: flex;
             /* grid-template-columns: 50% 50%; */
             margin: 0px;
@@ -506,7 +501,6 @@ color: #2c426a;
             /* height: 70px; */
             padding: .8rem;
             margin: 0rem 10px 25px 0px;
-            
         }
 
         .sideBio p {
@@ -580,12 +574,12 @@ color: #2c426a;
         .sideBio {
             width: 90vw;
             height: 100%;
+            padding-bottom: 0;
         }
 
         .sideBio .links-about {
             
-            padding-top: 0px;
-            margin: 5rem;
+            margin: 2rem;
             display: flex;
         }
 

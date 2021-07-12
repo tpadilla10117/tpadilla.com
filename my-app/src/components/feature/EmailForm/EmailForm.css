@@ -15,17 +15,12 @@
 #form-wrapper {
     position: absolute;
     z-index:1;
-    /* top: 50%; */
-    /* left: 70%; */
-    /* margin-top: 7rem; */
-    /* transform: translate(-50%, -50%); */
     width: /* 280px */ 450px;
     height: 645px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    -webkit-backdrop-filter: blur(10px);
-    /* border: .7px solid rgba(255,255,255,.2); */
+    --webkit-backdrop-filter: blur(10px);
     /* border: .7px solid red; */
     align-items: center;
     justify-content:space-evenly;
@@ -144,6 +139,7 @@
         display: inline-block;
         border-radius: .2em;
         font-family: 'Otomanopee One', sans-serif;
+        letter-spacing: .08em;
         font-size: 18px;
         padding: 12px 20px;
         line-height: 120%;

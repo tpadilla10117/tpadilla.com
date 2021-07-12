@@ -25,6 +25,7 @@
     margin: 5px auto 0;
     /* width: 1200px; */
     width: 100%;
+    /* max-width: 80%; */
     height: 520px;
     perspective: 1000px;
     display: flex;
