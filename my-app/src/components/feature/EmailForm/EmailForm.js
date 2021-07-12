@@ -15,23 +15,23 @@ const EmailFormComponent = (props) => {
                     </div>
     
                     <div className="input-one">
-                        <label for="first-name" className="first-name form-label" required>Name: </label>
+                        <label htmlFor="first-name" className="first-name form-label" required>Name: </label>
                         <input type="text" className="txt-box" placeholder="Sasuke Uchiha" name="email" required></input>
                     </div>
 
                     {/* <div className="input-two">
-                        <label for="last-name" className="last-name" required>Last Name: </label>
+                        <label htmlFor="last-name" className="last-name" required>Last Name: </label>
                         <input type="text" className="txt-box" placeholder="Uchiha" name="name" required></input>
                     </div> */}
                     
                     
                     <div className="email-input">
-                        <label for="email" id="email" className="form-label">Email: </label>
+                        <label htmlFor="email" id="email" className="form-label">Email: </label>
                         <input type="email" className="txt-box" placeholder="avenger@uchiha.com" name="email"></input>
                     </div>
                     
                     <div className="_subject">
-                        <label for="_subject" className="form-label">Subject: </label>
+                        <label htmlFor="_subject" className="form-label">Subject: </label>
                         <input className="txt-box" type="text" name="_subject" placeholder="S Rank Mission" /* value="New Email From Personal Site!" *//>
                     </div>
                     <div className="btn-box">
@@ -46,8 +46,8 @@ const EmailFormComponent = (props) => {
                         
                         <div className="links">
                                 <a href="https://github.com/tpadilla10117" className="github">{<SiGithub size={35}/>}</a>
-                                <a href="#" className="instagram">{<SiInstagram size={35}/>}</a>
-                                <a href="#" className="behance">{<SiBehance size={35}/>}</a>
+                                <a href="https://www.instagram.com/tpadilla10117/" className="instagram">{<SiInstagram size={35}/>}</a>
+                                <a href="https://www.behance.net/tpadilla10117" className="behance">{<SiBehance size={35}/>}</a>
                                 <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin size={35}/>}</a>
                         </div>
                     </div>
