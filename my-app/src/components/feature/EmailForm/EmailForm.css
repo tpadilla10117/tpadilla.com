@@ -73,7 +73,7 @@
         border: .5px solid #dbdbdb;
         padding: .9rem;
         font-family: 'Amatic SC', sans-serif;
-        font-size: 1rem;;
+        font-size: 1rem;
         /* margin-top: 1rem; */
         /* margin-right: 30px; */
     }
@@ -86,6 +86,10 @@
 
     .txt-box {
         margin-top: .5rem;
+    }
+
+    .form-label {
+        font-size: 1em;
     }
 
 /* THIS IS FOR THE EMAIL INPUTS */
@@ -103,7 +107,7 @@
        padding: .9rem;
        box-shadow: 0 0 10px #494f653b;
        font-family: 'Amatic SC', sans-serif;
-       font-size: 1rem;;
+       font-size: 1rem;
     }
 
     ._subject {
@@ -124,7 +128,7 @@
     }
 
     .btn-box p {
-        font-size: .8rem;
+        font-size: 1em;
         padding: 1rem 0;
         text-align: center;
     }

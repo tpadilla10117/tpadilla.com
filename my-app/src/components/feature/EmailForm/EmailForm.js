@@ -15,7 +15,7 @@ const EmailFormComponent = (props) => {
                     </div>
     
                     <div className="input-one">
-                        <label for="first-name" className="first-name" required>Name: </label>
+                        <label for="first-name" className="first-name form-label" required>Name: </label>
                         <input type="text" className="txt-box" placeholder="Sasuke Uchiha" name="email" required></input>
                     </div>
 
@@ -26,12 +26,12 @@ const EmailFormComponent = (props) => {
                     
                     
                     <div className="email-input">
-                        <label for="email" id="email">Email: </label>
+                        <label for="email" id="email" className="form-label">Email: </label>
                         <input type="email" className="txt-box" placeholder="avenger@uchiha.com" name="email"></input>
                     </div>
                     
                     <div className="_subject">
-                        <label for="_subject">Subject: </label>
+                        <label for="_subject" className="form-label">Subject: </label>
                         <input className="txt-box" type="text" name="_subject" placeholder="S Rank Mission" /* value="New Email From Personal Site!" *//>
                     </div>
                     <div className="btn-box">

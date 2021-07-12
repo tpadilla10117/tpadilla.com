@@ -49,12 +49,6 @@ $--txt-color: #2c426a;
   padding-right: 5rem;
 }
 
-/* .Center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}   */
-
 a.Button {
     display: inline-block;
   
@@ -62,3 +56,9 @@ a.Button {
       text-decoration: initial;
     }
   }
+
+/* .DisabledButton {
+  cursor: not-allowed;
+    border-style: dashed;
+    opacity: 0.4;
+} */
