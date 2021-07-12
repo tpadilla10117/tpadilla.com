@@ -1,4 +1,4 @@
-.ProjectCard {
+/* .ProjectCard {
     flex: 1;
     margin: .5rem;
     padding: 1.25rem 1.25rem .5rem 1.25rem;
@@ -17,39 +17,140 @@
     h2 {
       font-size: 1.25rem;
     }
+  } */
+
+.projCardContainer {
+  /* width: 100%;
+  min-height: 50px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+
+  
+  &:hover {
+    cursor: pointer;
   }
   
-  .Img {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
+
+  .projCardBox {
+    position: relative;
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
   
-  .Text {
-    padding: .75rem 0 .5rem 0;
-  }
-  
-  @media (min-width: 640px) {
-    .ProjectCard {
-      h1 {
-        font-size: 1.25rem; 
+    .imgWrapper {
+      position: relative;
+      overflow: hidden;
+      
+      
+
+      img {
+        max-width: 100%;
+        transition: transform 2s;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        height: 300px;
+        
+
+        &:hover {
+          transform: scale(1.2);
+
+        }
       }
-  
-      h2 {
-        font-size: 1rem;
+    }
+    
+    .detailsBox {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      background: #2DBCB4;
+      border-radius: 18px;
+      opacity: .95;
+      transform: scaleY(0);
+      transition: transform .5s;
+
+      .contentBox {
+        position: absolute;
+        text-align: center;
+        padding-top: 8vh;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        
+      
+        p {
+          font-size: 40px;
+          /* padding: 4rem; */
+          font-family: 'Amatic SC', sans-serif;
+          color: #fff;
+          width: 100%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        
       }
     }
   }
-  
-  @media (min-width: 840px) {
-    .ProjectCard {
-      h1 {
-        font-size: 2rem;
-      }
-  
-      h2 {
-        font-size: 1rem;
-      }
-    }
+}
+
+.projCardContainer .projCardBox:hover .detailsBox {
+  transform: scaleY(1)
+}
+
+@media only screen and (min-device-width: 280px) and (max-width: 480px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 1.5rem
   }
+}
+
+@media only screen and (min-device-width: 375px)and (max-width: 768px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    /* padding: 2rem */
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 2rem
+  }
+}
+
+@media (orientation: landscape) and (min-width: 480px) and (max-width: 768px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 4.5rem
+  }
+}
+
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1000px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 3rem
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1000px) and (max-width: 1366px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 2rem
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 2500px) {
+  .projCardContainer .projCardBox .detailsBox .contentBox p {
+    /* border: 10px solid red; */
+    padding: 3rem
+  }
+}
