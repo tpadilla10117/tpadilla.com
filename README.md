@@ -1,9 +1,16 @@
-### PROJECT DESCRIPTION
+### // PROJECT DESCRIPTION
 My Personal Portfolio / Website
 
-
 ## Work In Progress
-### For a pre-alpha version, click the following: https://mystifying-carson-47291d.netlify.app/
+
+### **RECRUITERS**
+
+To view work in progress:
+
+You can visit an early alpha at: 
+
+1) Open a terminal
+2) Enter ###`npm start` in the "my-app" project directory
 ______________________________________________________________________________
 
 ## Available Scripts
