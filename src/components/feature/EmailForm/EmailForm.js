@@ -9,7 +9,7 @@ const EmailFormComponent = (props) => {
         
             <div id="form-wrapper">
                 
-                <form className="email-form" action="https://formsubmit.co/socratesclown@gmail.com" method="POST">
+                <form className="email-form" action="https://formsubmit.co/trinpadilla101@gmail.com" method="POST">
                     <div className="intro-text">
                         <h5>Want to Get in Touch? <br/> Send me an Email!</h5>
                     </div>
