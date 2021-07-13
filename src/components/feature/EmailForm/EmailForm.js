@@ -16,7 +16,7 @@ const EmailFormComponent = (props) => {
     
                     <div className="input-one">
                         <label htmlFor="first-name" className="first-name form-label" required>Name: </label>
-                        <input type="text" className="txt-box" placeholder="Sasuke Uchiha" name="text" required></input>
+                        <input type="text" className="txt-box" placeholder="Sasuke Uchiha" name="name" required></input>
                     </div>
 
                     {/* <div className="input-two">
@@ -32,11 +32,11 @@ const EmailFormComponent = (props) => {
                     
                     <div className="_subject">
                         <label htmlFor="_subject" className="form-label">Subject: </label>
-                        <input className="txt-box" type="text" name="text" placeholder="S Rank Mission" /* value="New Email From Personal Site!" *//>
+                        <input className="txt-box" type="text" name="subject" placeholder="S Rank Mission" /* value="New Email From Personal Site!" *//>
                     </div>
                     <div className="btn-box">
                         <p>By sending a message, you agree to not spam</p>
-                        <textarea className="message-text" placeholder="What would you like to ask me?" type="text" name="name"/>
+                        <textarea className="message-text" placeholder="What would you like to ask me?" type="text" name="message"/>
                         <button type="submit" className="form-submit" value="Submit">Submit</button>
                     </div>
                     {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
