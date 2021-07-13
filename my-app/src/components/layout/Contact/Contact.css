@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --sec-bg-color: #07678E; /* Blue Sapphire */
+}
+
 #contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,6 +26,7 @@
 .email {
     /* margin-top: 12rem; */
     flex-direction: column;
+    display: flex;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -73,14 +78,21 @@
     #form-wrapper {
         width: 100%;
         border-radius: 0px;
+        box-shadow: 0 0 10px #494f653b;
+        border: 1px solid var(--sec-bg-color);
         /* margin-top: 1rem; */
-        /* padding: 1rem; */
     }
 
     .email {
         display: flex;
         margin-top: 0;
+        /* border: 10px solid red; */
+        /* padding: 1rem; */
     }    
+
+    .email-form {
+        padding: .5rem;
+    }
 }
 
 @media only screen and (min-device-width: 375px) and (max-width: 768px) {
@@ -141,7 +153,7 @@
     }
 
     .email-form {
-        width: 90vw;
+        padding: 0;
     }
 
     .btn-box button {

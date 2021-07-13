@@ -611,8 +611,14 @@ color: #2c426a;
             max-width: 80%;
         }
 
+        /* Edited from 40px*/
+        .container .card .card__inner .card__face.card__face--front h2 {
+            font-size: 30px;
+          }
+
+        /* Edited from 18px */
         .container .card h2 {
-            font-size: 18px;
+            font-size: 1em;
         }
 
         .container .card p {
