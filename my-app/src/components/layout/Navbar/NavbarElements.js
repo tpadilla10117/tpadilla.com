@@ -41,6 +41,7 @@ export const NavLogo = styled(LinkRouter)`
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
+    letter-spacing: .08em;
     font-family: 'Otomanopee One', sans-serif;
     align-items: center;
     margin-left: 24px;
