@@ -36,8 +36,8 @@ const AboutMeComponent = (props) => {
                     
                     <div className="links-about">
                                 <a href="https://github.com/tpadilla10117" className="github">{<SiGithub size={45}/>}</a>
-                                <a href="#" className="behance">{<SiBehance size={45}/>}</a>
-                                <a href="#" className="instagram">{<SiInstagram size={45}/>}</a>
+                                <a href="https://www.behance.net/tpadilla10117" className="behance">{<SiBehance size={45}/>}</a>
+                                <a href="https://www.instagram.com/tpadilla10117/" className="instagram">{<SiInstagram size={45}/>}</a>
                                 <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin size={45}/>}</a>
                     </div>
                 </div>

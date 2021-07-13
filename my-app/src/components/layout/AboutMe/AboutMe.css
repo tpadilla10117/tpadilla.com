@@ -365,7 +365,7 @@ color: #2c426a;
         }
 
         .container .card p {
-            font-size: 12px;
+            font-size: 1em;
         }
 
         #bio-wrapper {
@@ -452,7 +452,7 @@ color: #2c426a;
         }
 
         .container .card p {
-            font-size: 12px;
+            font-size: 1em;
         }
 
         #bio-wrapper {
@@ -525,6 +525,7 @@ color: #2c426a;
 
         .container .card {
             /* width: 70vw; */
+            max-width: 80%;
             display: flex;
             flex-direction: column;
             /* height: 200vh; */
@@ -608,15 +609,21 @@ color: #2c426a;
         }
 
         .container .card {
-            /* width: 100vw; */
+            max-width: 80%;
         }
 
+        /* Edited from 40px*/
+        .container .card .card__inner .card__face.card__face--front h2 {
+            font-size: 30px;
+          }
+
+        /* Edited from 18px */
         .container .card h2 {
-            font-size: 18px;
+            font-size: 1em;
         }
 
         .container .card p {
-            font-size: 15px;
+            font-size: 1.5em;
         }
 
         #bio-wrapper {
@@ -645,7 +652,8 @@ color: #2c426a;
         }
 
         .sideBio {
-            width: 50vw;
+            /* width: 50vw; */
+            width: 100%;
             /* height: 60vh; */
             /* margin-top: 20px;  */
             transform: translate(-10%, 0%);
@@ -682,81 +690,9 @@ color: #2c426a;
             overflow-x: hidden;
             overflow-y: auto;
         }
+
+        .container .card p {
+            font-size: 1.5em;
+        }
         
     }
-
-/* For Landscape view */
-
-@media (orientation: landscape) and (min-width: 480px) and (max-width: 768px) {
-    
-}
-
-@media (orientation: landscape) and (min-width: 768px) and (max-width: 1000px) {
-
-}
-
-@media (orientation: landscape) and (min-width: 1000px) and (max-height: 900px) {
-    .container {
-        width: 100%;
-    }
-
-    .container .card {
-        /* width: 100vw; */
-    }
-
-    .container .card h2 {
-        font-size: 18px;
-    }
-
-    .container .card p {
-        font-size: 20px;
-    }
-
-    #bio-wrapper {
-        /* display: flex; */
-        /* flex-direction: column; */
-        width: 90vw;
-        margin-top: 1vh;
-        grid-gap: 60px;
-    }
-
-    .overlay-practice {
-        width: 40vw;
-        margin-right: -10px;
-        transform: translate(-5%, 0%);
-    }
-
-    .overlay-practice .img-box:hover {
-        z-index: 1;
-        transform: scale(1.05);
-        box-shadow: 0 25px 40px rgba(0,0,0,.5);
-
-    }
-
-    .overlay-practice .img-box {
-        width: 90%;
-    }
-
-    .sideBio {
-        width: 50vw;
-        /* height: 90vh; */
-        transform: translate(-10%, 0%);
-    }
-
-    .sideBio h3 {
-        justify-content: center;
-    }
-
-    .sideBio .links-about {
-        
-        padding-top: 0;
-        /* transform: translate(0%, -60%); */
-    }
-
-    .sideBio p {
-        font-size: 20.5px;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
-}

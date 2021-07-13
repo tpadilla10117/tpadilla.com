@@ -1,6 +1,6 @@
 import React  from 'react';
 import Resume from "../../../../src/assets/images/resume.png";
-import ResumeDl from "../../../../src/assets/resume/FullStackEngGeneralResume.pdf"
+import ResumeDl from "../../../../src/assets/resume/v2.0FullstackUXEngineerResume_tPadillaJr.pdf"
 import './resume.css';
 
 const ResumeComponent = () => {
