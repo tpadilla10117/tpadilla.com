@@ -91,6 +91,26 @@ export const NavbarData = [
 export const projects = [
     {
       id: 1,
+      title: "Airbnb-clone",
+      tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, React.js, JS",
+      cardCoverText: "A replica of the current Airbnb build",
+      svgImg: `${CrwnClothing}`,
+      img: `${CrwnClothing}`,
+      alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
+      description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
+      techHighlights: [
+        "Utilized server-side rendering with Next.js to optimize load-times and overall UX",
+        "Designed a responsive, frontend UI with Tailwind CSS",
+        "Produced custom, re-usable functional components that can be used in future builds",
+      ],
+      links: [
+        {text: "Demo", link: "https://airbnb-clone-tpadilla-edrpd04h9-tpadilla10117.vercel.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/airbnb-clone"}
+      ]
+    }, 
+
+    {
+      id: 2,
       title: "Crwn Clothing",
       tech: "Sass, CSS, Firebase, HTML, React.js, JS",
       cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
@@ -107,9 +127,10 @@ export const projects = [
         {text: "In Development", link: "https://peaceful-edison-ca2461.netlify.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
       ]
-    }, 
+    },
+
     {
-      id: 2,
+      id: 3,
       title: "Codalorians",
       tech: "Express.js, JS, HTML, React.js, PostgreSQL, CSS, Node.js, Axios, Stripe, Bootstrap, Heroku, bcrypt",
       cardCoverText: "An e-commerce for Musical Instruments",
@@ -129,7 +150,7 @@ export const projects = [
       ]
     },
     {
-      id: 3,
+      id: 4,
       title: "Pixel Draw",
       tech: "JS, React.js, CSS, Node.js, HTML",
       cardCoverText: "A Simple, Grid-Based, Pixel-Art Creator",
@@ -147,7 +168,7 @@ export const projects = [
       ]
     }, 
     {
-      id: 4,
+      id: 5,
       title: "Post Book",
       tech: "JS, Node.js, Express.js, jQuery, HTML, CSS, Bootstrap",
       cardCoverText: "An App Where Users Can Post Items For Sale",
@@ -166,7 +187,7 @@ export const projects = [
       ]
     },
     {
-      id: 5,
+      id: 6,
       title: "Robo Search",
       tech: "JS, React.js, HTML, CSS",
       cardCoverText: "An image filter",
@@ -184,7 +205,7 @@ export const projects = [
       ]
     },
     {
-      id: 6,
+      id: 7,
       title: "Post Integration",
       tech: "JS, Node.js, Express.js, PostgreSQL, CSS, HTML, SASS, jsonwebtoken",
       cardCoverText: "A custom backend for a Tumblr clone",
