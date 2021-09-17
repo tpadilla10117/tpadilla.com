@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Component } from 'react';
+/* import React, { useEffect, useState, Component } from 'react';
 
 import './Portfolio.css';
 
@@ -23,4 +23,4 @@ export default class Portfolio extends Component {
             </>
         )
     }
-}
+} */

@@ -26,7 +26,7 @@ function App() {
             
                 <div className="route-container">
                   
-                <Route exact path="/portfolio">{({ match }) => (
+                {/* <Route exact path="/portfolio">{({ match }) => (
                   <CSSTransition
                   in={match != null}
                   timeout={300}
@@ -38,7 +38,7 @@ function App() {
                     </div>
                   </CSSTransition>
                 )}
-                </Route>
+                </Route> */}
 
                 <Route exact path="/about">{({ match }) => (
                   <CSSTransition

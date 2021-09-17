@@ -3,8 +3,8 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import { NavbarData } from '../../../utils';
-import { IconContext } from 'react-icons';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLi, NavBtn, NavBtnLink} from './NavbarElements.js';
+/* import { IconContext } from 'react-icons'; */
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLi/* , NavBtn, NavBtnLink, NavItem, NavLinks */} from './NavbarElements.js';
 
 /* NavbarComponent is for the landing page header */
     

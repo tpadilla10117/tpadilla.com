@@ -1,6 +1,6 @@
 import React  from 'react';
 
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarLi, SidebarRoute } from './SidebarElements.js';
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarLi, /* SidebarRoute  */} from './SidebarElements.js';
 import './SideBarTransition.css';
 import { SidebarData } from '../../../utils';
 import { Link } from 'react-router-dom';
