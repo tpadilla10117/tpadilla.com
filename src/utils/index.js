@@ -9,6 +9,10 @@ import PixelDraw from "../assets/images/pixel_draw.png";
 import Postbook from "../assets/images/postbook.png";
 import RoboSearch from "../assets/images/robo_search.png";
 import Turtle from "../assets/images/turtleBeach.jpg";
+import AirBNB from "../assets/images/AirBNB.png";
+import Amazon from "../assets/images/Amazon.png";
+import LinkedIn from "../assets/images/LinkedIn.png";
+import Netflix from "../assets/images/Netflix.png";
 
 export const SidebarData = [
 
@@ -94,9 +98,8 @@ export const projects = [
       title: "Amazon-Clone / Replica",
       tech: "Next.js, Tailwind CSS, Firebase (Firestore), Stripe API, Fake Store API, Vercel, HTML, Redux, React.js, JS",
       cardCoverText: "A full stack replica of the current Amazon build",
-      /* TODO: Need to update pictures */
-      svgImg: `${CrwnClothing}`,
-      img: `${CrwnClothing}`,
+      svgImg: `${Amazon}`,
+      img: `${Amazon}`,
       alt: "Screenshot of the Amazon, e-commerce replica",
       description: "A responsive, full stack replica of Amazon deployed via Vercel. Users can log into an account, browse items, and initialize checkout with Stripe API integration.",
       techHighlights: [
@@ -115,9 +118,8 @@ export const projects = [
       title: "Netflix-Clone / Replica",
       tech: "Next.js, Stripe API, Firebase(Firestore, NoSQL DB), Firebase(Cloud Hosting), CSS, HTML, React.js, Redux, JS",
       cardCoverText: "A partial replica of the current Netflix build",
-      /* TODO: Need to change pictures */
-      svgImg: `${CrwnClothing}`,
-      img: `${CrwnClothing}`,
+      svgImg: `${Netflix}`,
+      img: `${Netflix}`,
       alt: "Screenshot of the Netflix, e-commerce replica",
       description: "A responsive, full stack replica of the latest Netflix build deployed via Firebase Hosting.  Users can create / log into an account, subscribe to a service / mock a purchase using Stripe API, and browse a collection of films fetched from themoviedb.org.",
       techHighlights: [
@@ -135,9 +137,8 @@ export const projects = [
       title: "Airbnb-Clone / Replica",
       tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, Vercel, React.js, JS",
       cardCoverText: "A replica of the current Airbnb build",
-      /* TODO: NEED TO UPDATE PICTURES */
-      svgImg: `${CrwnClothing}`,
-      img: `${CrwnClothing}`,
+      svgImg: `${AirBNB}`,
+      img: `${AirBNB}`,
       alt: "Screenshot of the Airbnb Replica landing page",
       description: "A replica of the recently deployed Airbnb dashboard and query page, complete with a calendar for user-scheduling and an interactable map via Mapbox GL.",
       techHighlights: [
@@ -175,9 +176,8 @@ export const projects = [
       title: "LinkedIn-Clone",
       tech: "Firebase (Firestore, NoSQL DB), React.js, Redux, JS, Material UI",
       cardCoverText: "A static replica of the LinkedIn Dashboard",
-      /* TODO: Need to update Pictures: */
-      svgImg: `${CrwnClothing}`,
-      img: `${CrwnClothing}`,
+      svgImg: `${LinkedIn}`,
+      img: `${LinkedIn}`,
       alt: "Screenshot of the LinkedIn-Replica Dashboard.",
       description: "A full stack, static web-application in which user's can create an account and make posts on an interactable dashbaord",
       techHighlights: [
