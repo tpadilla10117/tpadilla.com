@@ -170,24 +170,24 @@ export const projects = [
         {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
       ]
     },
-/* TODO: Need to update all of LinkedIn section */
     {
       id: 5,
       title: "LinkedIn-Clone",
-      tech: "Sass, CSS, Firebase, HTML, React.js, JS",
-      cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
+      tech: "Firebase (Firestore, NoSQL DB), React.js, Redux, JS, Material UI",
+      cardCoverText: "A static replica of the LinkedIn Dashboard",
+      /* TODO: Need to update Pictures: */
       svgImg: `${CrwnClothing}`,
       img: `${CrwnClothing}`,
-      alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
-      description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
+      alt: "Screenshot of the LinkedIn-Replica Dashboard.",
+      description: "A full stack, static web-application in which user's can create an account and make posts on an interactable dashbaord",
       techHighlights: [
         "Utilized Google Firebase for user authentication",
         "Managed user data with queries to Firestore",
-        "Designed frontend UI with Sass and custom CSS",
+        "Designed frontend UI with Material UI and CSS",
       ],
       links: [
-        {text: "In Development", link: "https://peaceful-edison-ca2461.netlify.app/"},
-        {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
+        /* {text: "In Development", link: "https://peaceful-edison-ca2461.netlify.app/"}, */
+        {text: "GitHub", link: "https://github.com/tpadilla10117/linkedin-clone"}
       ]
     },
 
