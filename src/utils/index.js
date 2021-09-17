@@ -91,6 +91,50 @@ export const NavbarData = [
 export const projects = [
     {
       id: 1,
+      title: "Amazon-clone",
+      /* TODO: Need to update tech */
+      tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, React.js, JS",
+      cardCoverText: "A full stack replica of the current Amazon build",
+      /* TODO: Need to update pictures */
+      svgImg: `${CrwnClothing}`,
+      img: `${CrwnClothing}`,
+      alt: "Screenshot of the Amazon, e-commerce replica.",
+      description: "A full stack, e-commerce web-application that guides users through a mock shopping experience.  Users can browse a catalog of products, create an account, view orders, and mock-purchase items through Stripe API.",
+      //TODO: Need to change tech highlights
+      techHighlights: [
+        "Utilized server-side rendering with Next.js to optimize load-times and overall UX",
+        "Designed a responsive, frontend UI with Tailwind CSS",
+        "Produced custom, re-usable functional components that can be used in future builds",
+      ],
+      /* TODO: Need to change to Amazon links: */
+      links: [
+        {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
+      ]
+    }, 
+/* TODO: NEED TO UPDATE ALL INFORMATION (minus links)*/
+    {
+      id: 2,
+      title: "Netflix-clone",
+      tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, React.js, JS",
+      cardCoverText: "A replica of the current Airbnb build",
+      svgImg: `${CrwnClothing}`,
+      img: `${CrwnClothing}`,
+      alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
+      description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
+      techHighlights: [
+        "Utilized server-side rendering with Next.js to optimize load-times and overall UX",
+        "Designed a responsive, frontend UI with Tailwind CSS",
+        "Produced custom, re-usable functional components that can be used in future builds",
+      ],
+      links: [
+        {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
+      ]
+    }, 
+/* TODO: NEED TO UPDATE ALL INFORMATION */
+    {
+      id: 3,
       title: "Airbnb-clone",
       tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, React.js, JS",
       cardCoverText: "A replica of the current Airbnb build",
@@ -108,10 +152,30 @@ export const projects = [
         {text: "GitHub", link: "https://github.com/tpadilla10117/airbnb-clone"}
       ]
     }, 
-
+/* TODO: Need to update with latest build */
     {
-      id: 2,
+      id: 4,
       title: "Crwn Clothing",
+      tech: "Sass, CSS, Firebase, HTML, React.js, JS",
+      cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
+      svgImg: `${CrwnClothing}`,
+      img: `${CrwnClothing}`,
+      alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
+      description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
+      techHighlights: [
+        "Utilized Google Firebase for user authentication",
+        "Managed user data with queries to Firestore",
+        "Designed frontend UI with Sass and custom CSS",
+      ],
+      links: [
+        {text: "In Development", link: "https://peaceful-edison-ca2461.netlify.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
+      ]
+    },
+/* TODO: Need to update all of LinkedIn section */
+    {
+      id: 5,
+      title: "LinkedIn-Clone",
       tech: "Sass, CSS, Firebase, HTML, React.js, JS",
       cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
       svgImg: `${CrwnClothing}`,
@@ -130,7 +194,7 @@ export const projects = [
     },
 
     {
-      id: 3,
+      id: 6,
       title: "Codalorians",
       tech: "Express.js, JS, HTML, React.js, PostgreSQL, CSS, Node.js, Axios, Stripe, Bootstrap, Heroku, bcrypt",
       cardCoverText: "An e-commerce for Musical Instruments",
@@ -150,7 +214,7 @@ export const projects = [
       ]
     },
     {
-      id: 4,
+      id: 7,
       title: "Pixel Draw",
       tech: "JS, React.js, CSS, Node.js, HTML",
       cardCoverText: "A Simple, Grid-Based, Pixel-Art Creator",
@@ -168,7 +232,7 @@ export const projects = [
       ]
     }, 
     {
-      id: 5,
+      id: 8,
       title: "Post Book",
       tech: "JS, Node.js, Express.js, jQuery, HTML, CSS, Bootstrap",
       cardCoverText: "An App Where Users Can Post Items For Sale",
@@ -186,26 +250,9 @@ export const projects = [
         {text: "GitHub", link: "https://github.com/tpadilla10117/strangersThings-PostBook-"}
       ]
     },
+    /* TODO: Need to update with latest deploy: */
     {
-      id: 6,
-      title: "Robo Search",
-      tech: "JS, React.js, HTML, CSS",
-      cardCoverText: "An image filter",
-      svgImg: `${RoboSearch}`,
-      img: `${RoboSearch}`,
-      alt: "A clickable card of an application called `Robo Search`",
-      description: "A simple application and UI that allows users to browse and filter through images of Robots",
-      techHighlights: [
-        "Designed UI and UX with custom CSS",
-        "Implemented basic filter logic allowing users to search cards"
-      ],
-      links: [
-        {text: "Demo", link: "https://tpadilla10117.github.io/robo_search/"},
-        {text: "GitHub", link: "https://github.com/tpadilla10117/robo_search"}
-      ]
-    },
-    {
-      id: 7,
+      id: 9,
       title: "Post Integration",
       tech: "JS, Node.js, Express.js, PostgreSQL, CSS, HTML, SASS, jsonwebtoken",
       cardCoverText: "A custom backend for a Tumblr clone",
@@ -222,7 +269,25 @@ export const projects = [
         {text: "In Development", link: "https://murmuring-garden-99126.herokuapp.com/api/posts"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/post-integration"}
       ]
-    }
+    },
+    {
+      id: 10,
+      title: "Robo Search",
+      tech: "JS, React.js, HTML, CSS",
+      cardCoverText: "An image filter",
+      svgImg: `${RoboSearch}`,
+      img: `${RoboSearch}`,
+      alt: "A clickable card of an application called `Robo Search`",
+      description: "A simple application and UI that allows users to browse and filter through images of Robots",
+      techHighlights: [
+        "Designed UI and UX with custom CSS",
+        "Implemented basic filter logic allowing users to search cards"
+      ],
+      links: [
+        {text: "Demo", link: "https://tpadilla10117.github.io/robo_search/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/robo_search"}
+      ]
+    },
     
   ]
 
