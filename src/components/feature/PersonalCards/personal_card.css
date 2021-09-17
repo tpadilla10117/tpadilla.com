@@ -33,6 +33,7 @@
     padding: .7rem;
    /*  flex-wrap: wrap; */
     justify-content: space-between;
+    object-fit: contain;
   }
 
   .img__container {
