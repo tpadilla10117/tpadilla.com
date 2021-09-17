@@ -91,57 +91,55 @@ export const NavbarData = [
 export const projects = [
     {
       id: 1,
-      title: "Amazon-clone",
-      /* TODO: Need to update tech */
-      tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, React.js, JS",
+      title: "Amazon-Clone / Replica",
+      tech: "Next.js, Tailwind CSS, Firebase (Firestore), Stripe API, Fake Store API, Vercel, HTML, Redux, React.js, JS",
       cardCoverText: "A full stack replica of the current Amazon build",
       /* TODO: Need to update pictures */
       svgImg: `${CrwnClothing}`,
       img: `${CrwnClothing}`,
-      alt: "Screenshot of the Amazon, e-commerce replica.",
-      description: "A full stack, e-commerce web-application that guides users through a mock shopping experience.  Users can browse a catalog of products, create an account, view orders, and mock-purchase items through Stripe API.",
-      //TODO: Need to change tech highlights
+      alt: "Screenshot of the Amazon, e-commerce replica",
+      description: "A responsive, full stack replica of Amazon deployed via Vercel. Users can log into an account, browse items, and initialize checkout with Stripe API integration.",
       techHighlights: [
-        "Utilized server-side rendering with Next.js to optimize load-times and overall UX",
-        "Designed a responsive, frontend UI with Tailwind CSS",
+        "Integrated Fake Store API for product queries and managed app state with Redux",
+        "Integrated Stripe API with Firebase (Firestore, NoSQL DB) for user-checkout and data storage",
+        "Developed responsive and optimized UI with Tailwind CSS",
         "Produced custom, re-usable functional components that can be used in future builds",
       ],
-      /* TODO: Need to change to Amazon links: */
       links: [
-        {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
-        {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
+        {text: "Demo", link: "https://trinp-amazon-clone.vercel.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/amazon-clone"}
       ]
     }, 
-/* TODO: NEED TO UPDATE ALL INFORMATION (minus links)*/
     {
       id: 2,
-      title: "Netflix-clone",
-      tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, React.js, JS",
-      cardCoverText: "A replica of the current Airbnb build",
+      title: "Netflix-Clone / Replica",
+      tech: "Next.js, Stripe API, Firebase(Firestore, NoSQL DB), Firebase(Cloud Hosting), CSS, HTML, React.js, Redux, JS",
+      cardCoverText: "A partial replica of the current Netflix build",
+      /* TODO: Need to change pictures */
       svgImg: `${CrwnClothing}`,
       img: `${CrwnClothing}`,
-      alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
-      description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
+      alt: "Screenshot of the Netflix, e-commerce replica",
+      description: "A responsive, full stack replica of the latest Netflix build deployed via Firebase Hosting.  Users can create / log into an account, subscribe to a service / mock a purchase using Stripe API, and browse a collection of films fetched from themoviedb.org.",
       techHighlights: [
-        "Utilized server-side rendering with Next.js to optimize load-times and overall UX",
-        "Designed a responsive, frontend UI with Tailwind CSS",
-        "Produced custom, re-usable functional components that can be used in future builds",
+        "Integrated Stripe API for successful test / mock transactions via Firebase extensions.  Users may use test-card #: 4242 4242 4242 4242 to mock a transaction",
+        "Managed app state via Redux Global Store to compensate for scalability",
+        "Designed a responsive, frontend UI with CSS",
       ],
       links: [
         {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
       ]
     }, 
-/* TODO: NEED TO UPDATE ALL INFORMATION */
     {
       id: 3,
-      title: "Airbnb-clone",
-      tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, React.js, JS",
+      title: "Airbnb-Clone / Replica",
+      tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, Vercel, React.js, JS",
       cardCoverText: "A replica of the current Airbnb build",
+      /* TODO: NEED TO UPDATE PICTURES */
       svgImg: `${CrwnClothing}`,
       img: `${CrwnClothing}`,
-      alt: "Screenshot of the e-commerce app for Stylish, Trendy Clothing.",
-      description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
+      alt: "Screenshot of the Airbnb Replica landing page",
+      description: "A replica of the recently deployed Airbnb dashboard and query page, complete with a calendar for user-scheduling and an interactable map via Mapbox GL.",
       techHighlights: [
         "Utilized server-side rendering with Next.js to optimize load-times and overall UX",
         "Designed a responsive, frontend UI with Tailwind CSS",
@@ -164,7 +162,7 @@ export const projects = [
       description: "A full stack, e-commerce web-application in-progress that will guide users through a simple, easy-to-follow shopping experience for hip/trendy apparel. Users can currently browse a catalog of products, create an account, and sign-out of the application.",
       techHighlights: [
         "Utilized Google Firebase for user authentication",
-        "Managed user data with queries to Firestore",
+        "Managed user data with queries to Firestore (NoSQL DB)",
         "Designed frontend UI with Sass and custom CSS",
       ],
       links: [
@@ -254,14 +252,15 @@ export const projects = [
     {
       id: 9,
       title: "Post Integration",
-      tech: "JS, Node.js, Express.js, PostgreSQL, CSS, HTML, SASS, jsonwebtoken",
+      tech: "JS, Node.js, Express.js, PostgreSQL, Jest, CSS, HTML, SASS, jsonwebtoken, Axios",
       cardCoverText: "A custom backend for a Tumblr clone",
       svgImg: ``,
       img: `${Turtle}`,
       alt: "An image of post data in JSON format",
       description: "A custom-built API and database intended to serve as the backend for a “Tumblr” clone. Users can create an account as well as view, create, delete, and edit posts with content.",
       techHighlights: [
-        "Designed scalable, custom-built API",
+        "Developed backend logic containing login, logout, register, and routing functionality within a scalable, custom API",
+        "Automated unit tests in Jest to test JS, PostgreSQL, and API scripts",
         "Implemented user authentication through bcrypt",
         "Developed user post & tag content generation through CRUD methodology"
       ],
