@@ -1,16 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef} from 'react';
 import styles from './Modal.module.scss';
 
 const Modal = ( {children, onModalClose } ) => {
 
     const modalReference = useRef(null);
 
+  /* Merely shows that Modal is open in the body: */
     useEffect(() => {
         document.body.classList.add(styles.ModalOpen);
-        /* document.body.classList.remove(styles.ModalClosed) */
         return () => {
           document.body.classList.remove(styles.ModalOpen);
-          /* document.body.classList.add(styles.ModalClosed) */
+          
         }
       }, []);
     
@@ -19,6 +19,7 @@ const Modal = ( {children, onModalClose } ) => {
         function handleClick(e) {
           if (!modalReference.current?.contains(e.target)) {
             onModalClose();
+            
           }
         }
         document.addEventListener("click", handleClick);
@@ -36,6 +37,7 @@ const Modal = ( {children, onModalClose } ) => {
                 </div>
                 {children}
             </div>
+          
         </div>
     )
 

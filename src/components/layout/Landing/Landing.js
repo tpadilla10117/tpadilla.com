@@ -18,6 +18,7 @@ const Landing = (props) => {
         <>
 
     {/* This is for the main cards on Landing Page: */}
+
         <SectionWrapper 
                 id="projects"
                 content={

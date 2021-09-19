@@ -23,6 +23,7 @@
     align-items: center;
     flex-direction: column;
     /* Margin-top: 22rem; */
+    
 }
 
 #bio-wrapper {
@@ -174,6 +175,7 @@
         overflow-y: auto;
     }
 
+
     .sideBio h1 {
         font-family: 'Otomanopee One', sans-serif;
         color: var(--sec-bg-color);
@@ -203,7 +205,21 @@
         overflow-x: hidden;
         overflow-y: auto;
         text-align: center;
+        animation-duration: 1s;
+        animation-name: slidein;
     }
+
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
 
     .stackIcons {
         display: flex;
