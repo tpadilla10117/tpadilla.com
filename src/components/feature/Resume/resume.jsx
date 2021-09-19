@@ -4,7 +4,7 @@ import ResumeDl from "../../../../src/assets/resume/v2.0FullstackUXEngineerResum
 import './resume.css';
 
 const ResumeComponent = () => {
-
+/* TODO: Need to replace Resume with latest Version */
     return <>
         <div className="resume__container">
             <a href={ResumeDl} download={ResumeDl}>

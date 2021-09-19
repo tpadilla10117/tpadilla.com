@@ -66,11 +66,12 @@ export const NavbarData = [
         id: 2
     },
 
-  /*   {
+   /*  {
         title: 'Portfolio',
-        path: '/portfolio',
+        path: '/',
         icon: <FaIcons.FaProjectDiagram />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        id: 3
     }, */
     {
         title: 'Contact',

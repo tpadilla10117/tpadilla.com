@@ -7,7 +7,7 @@ import { NavbarData } from '../../../utils';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLi/* , NavBtn, NavBtnLink, NavItem, NavLinks */} from './NavbarElements.js';
 
 /* NavbarComponent is for the landing page header */
-    
+    /* TODO: Need to ensure correct nav lunks get highlighted in botht he hamburger and normal nav view when clicked */
     const NavbarComponent = (props) => {
 
         const { navToggle } = props;

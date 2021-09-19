@@ -305,6 +305,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+   /*  overflow-y: hidden;
+    overflow-x: scroll; */
   }
 
 .container .card h2 {

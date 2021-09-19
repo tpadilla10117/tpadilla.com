@@ -56,7 +56,7 @@ const PersonalCard = (props) => {
             
         )
     }
-
+/* TODO: Need to change cards to make scrollable: */
         return(
             <>
             <div className="card">{cardInfo.map(renderCard)}</div>
