@@ -12,10 +12,10 @@ $--txt-color: #2c426a;
 } */
 
 .Button {
-    border: 1px solid $--sec-bg-color;
+    border: 1px solid $--main-btn-color;
     outline: none;
-    background: $--main-bg-color;
-    color:#fff;
+    background: #fff;
+    color:$--main-btn-color;
     cursor: pointer;
     /* background: transparent; */
     display: inline-block;

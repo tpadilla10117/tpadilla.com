@@ -1,10 +1,10 @@
 import React  from 'react';
 import Resume from "../../../../src/assets/images/resume.png";
-import ResumeDl from "../../../../src/assets/resume/v2.0FullstackUXEngineerResume_tPadillaJr.pdf"
+import ResumeDl from "../../../../src/assets/resume/v5.0FullstackUXEngineerResume_tPadillaJr.pdf"
 import './resume.css';
 
 const ResumeComponent = () => {
-/* TODO: Need to replace Resume with latest Version */
+
     return <>
         <div className="resume__container">
             <a href={ResumeDl} download={ResumeDl}>
