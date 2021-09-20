@@ -20,7 +20,8 @@ export const SidebarData = [
         title: 'Home',
         path: '/',
         icon: <AiIcons.AiFillHome />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        id: 1
     },
     {
         title: 'About',
@@ -56,6 +57,15 @@ export const SidebarData = [
 ]
 
 export const NavbarData = [
+
+     /*  {
+        title: 'Home',
+        path: '/',
+        icon: <AiIcons.AiFillHome />,
+        cName: 'nav-text',
+        activeObject: null,
+        id: 1
+    }, */
 
     {
         title: 'About',

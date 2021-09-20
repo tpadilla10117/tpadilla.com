@@ -39,8 +39,6 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLi/* , NavBtn, Na
             window.addEventListener('scroll', changeNav)
         }, []);
 
-
-
         return  (
             <div id="navbar-wrapper">
 
