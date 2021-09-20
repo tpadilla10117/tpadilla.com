@@ -25,7 +25,7 @@ const Modal = ( {children, onModalClose } ) => {
         document.addEventListener("click", handleClick);
         return () => document.removeEventListener("click", handleClick)
       });
-
+/* TODO:Need to find a way to make an animated FadeOut */
     //Returns the modal UI: 
     return (
         <div id="modalContainer" className={styles.ModalContainer} role="dialog" aria-modal="true">
