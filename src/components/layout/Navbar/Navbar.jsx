@@ -45,7 +45,7 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLi/* , NavBtn, Na
             {/* <IconContext.Provider value={{color: '#f0e9dc'}}> */}
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to="/">Trin P</NavLogo>
+                        {/* <NavLogo to="/">Trin P</NavLogo> */}
                         <MobileIcon onClick={navToggle}>
                             <FaIcons.FaBars/>
                         </MobileIcon>
@@ -58,7 +58,10 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLi/* , NavBtn, Na
                                         
                                         <Link to={item.path} className={toggleActiveStyles(index)} onClick={() => { toggleActiveNav(index)}} style={{textDecoration: "none"} } key={"nav-li-" + index}>
                                             <NavLi key={index} className={toggleActiveStyles(index)} onClick={() => { toggleActiveNav(index)}}>
-                                                <span>{item.title} {item.icon}</span>
+                                                <span style={ {display: 'flex', alignItems: "center",}}>{item.title} 
+                                                    <span style={ {paddingTop: '.2rem', paddingLeft: '.5rem' }}>{item.icon}</span> 
+                                                </span>
+                                                {/* <span className="item-icon" style={ { color: 'red'}}>{item.icon}</span> */}
                                             </NavLi>
                                         </Link>
                                         

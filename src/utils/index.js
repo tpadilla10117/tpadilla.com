@@ -58,14 +58,14 @@ export const SidebarData = [
 
 export const NavbarData = [
 
-     /*  {
+      {
         title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillHome />,
+        /* icon: <AiIcons.AiFillHome />, */
         cName: 'nav-text',
         activeObject: null,
         id: 1
-    }, */
+    },
 
     {
         title: 'About',

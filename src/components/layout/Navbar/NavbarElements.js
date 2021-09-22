@@ -25,7 +25,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -117,7 +117,6 @@ export const NavLi = styled.li `
     /* font-weight: 300; */
     /* margin-top: 4.5rem; */
     
-    
 
     &:hover{
         color: var(--main-btn-color);
@@ -126,9 +125,9 @@ export const NavLi = styled.li `
 
     &.active {
         color: #fff;
-        /* border-bottom: 5px solid var(--misc-color); */
+        /* border-bottom: 3px solid var(--main-btn-color); */
         background: var(--main-btn-color);
-        padding: 2rem;
+        padding: 1.8rem;
         width: 100%;
         border-radius: 1px;
         transition: 0.5s ease;
